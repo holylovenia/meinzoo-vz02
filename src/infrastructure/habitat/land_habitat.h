@@ -3,11 +3,15 @@
 
 #include "habitat.h"
 
-class LandHabitat: public Habitat {
+class LandHabitat: {
 	public:
 		// ctor
-		LandHabitat(int _x, int _y, bool isAccessible);
+		LandHabitat();
 
+	protected:
+		char type;
+		bool isAccessible;
+		
 	private:
 		const char defType;
 };

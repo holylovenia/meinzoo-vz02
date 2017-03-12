@@ -9,10 +9,10 @@ Barracuda::Barracuda(int _weight) : defID(15), defRatioMeat(60), defRatioPlant(0
 	isWaterAnimal = true;
 	isAirAnimal = false;
 	weight = _weight;
-	//herbivora
+	//carnivora
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
-	AnimalFood::AddTotalPlant(ratioPlant * weight / 100);
+	AnimalFood::AddTotalMeat(ratioMeat * weight / 100);
 }
 
 void Barracuda::Interact() {

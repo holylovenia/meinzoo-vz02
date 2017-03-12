@@ -1,16 +1,18 @@
 #ifndef AIR_HABITAT_H
 #define AIR_HABITAT_H
 
-#include "habitat.h"
-
-class AirHabitat : public Habitat {
+class AirHabitat {
 	public:
 		// ctor
-		AirHabitat(int _x, int _y, bool isAccessible);
+		AirHabitat();
+
+	protected:
+		char type;
+		bool isAccessible;
 		
 	private:
+		const bool defAccessible;
 		const char defType;
-
 };
 
 #endif

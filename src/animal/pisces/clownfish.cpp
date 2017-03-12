@@ -9,9 +9,10 @@ Clownfish::Clownfish(int _weight) : defID(14), defRatioMeat(30), defRatioPlant(4
 	isWaterAnimal = true;
 	isAirAnimal = false;
 	weight = _weight;
-	//herbivora
+	//omnivora
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
+	AnimalFood::AddTotalMeat(ratioMeat * weight / 100);
 	AnimalFood::AddTotalPlant(ratioPlant * weight / 100);
 }
 

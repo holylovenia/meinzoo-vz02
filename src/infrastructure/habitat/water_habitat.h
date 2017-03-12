@@ -1,12 +1,14 @@
 #ifndef WATER_HABITAT_H
 #define WATER_HABITAT_H
 
-#include "habitat.h"
-
-class WaterHabitat: public Habitat {
+class WaterHabitat {
 	public:
 		// ctor
-		WaterHabitat(int _x, int _y, bool isAccessible);
+		WaterHabitat();
+
+	protected:
+		char type;
+		bool isAccessible;
 
 	private:
 		const char defType;

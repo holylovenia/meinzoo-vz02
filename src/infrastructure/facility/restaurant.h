@@ -2,6 +2,7 @@
 #define RESTAURANT_H
 
 #include <string>
+
 class Restaurant {
 	public:
 		// ctor with parameter

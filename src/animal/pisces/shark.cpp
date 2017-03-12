@@ -9,10 +9,10 @@ Shark::Shark(int _weight) : defID(13), defRatioMeat(70), defRatioPlant(0), defLi
 	isWaterAnimal = true;
 	isAirAnimal = false;
 	weight = _weight;
-	//herbivora
+	//carnivora
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
-	AnimalFood::AddTotalPlant(ratioPlant * weight / 100);
+	AnimalFood::AddTotalMeat(ratioMeat * weight / 100);
 }
 
 void Shark::Interact() {

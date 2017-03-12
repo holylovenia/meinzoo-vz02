@@ -4,7 +4,7 @@
 #include "water_habitat.h"
 
 
-WaterHabitat::WaterHabitat(int _x, int _y, bool isAccessible): Habitat(_x, _y, isAccessible), defType('W')
-{
+WaterHabitat::WaterHabitat(): defType('W'), defAccessible(false) {
 	type = defType;
+	isAccessible = defAccessible;
 }
