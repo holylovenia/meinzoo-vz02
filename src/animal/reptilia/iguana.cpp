@@ -80,7 +80,7 @@ bool Iguana::isOmnivore() {
 	return (eatMeat && eatPlant);
 }
 
-bool Iguana::isEnemy() {
+bool Iguana::isEnemy(int x) {
 	return (false);
 }
 

@@ -79,7 +79,7 @@ bool Wolf::isOmnivore() {
 	return (eatMeat && eatPlant);
 }
 
-bool Wolf::isEnemy() {
+bool Wolf::isEnemy(int x) {
 	return (false);
 }
 

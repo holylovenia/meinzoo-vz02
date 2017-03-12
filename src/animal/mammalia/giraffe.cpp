@@ -79,7 +79,7 @@ bool Giraffe::isOmnivore() {
 	return (eatMeat && eatPlant);
 }
 
-bool Giraffe::isEnemy() {
+bool Giraffe::isEnemy(int x) {
 	return (false);
 }
 

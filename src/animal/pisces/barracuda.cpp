@@ -79,7 +79,7 @@ bool Barracuda::isOmnivore() {
 	return (eatMeat && eatPlant);
 }
 
-bool Barracuda::isEnemy() {
+bool Barracuda::isEnemy(int x) {
 	return (false);
 }
 

@@ -80,7 +80,7 @@ bool Zebra::isOmnivore() {
 	return (eatMeat && eatPlant);
 }
 
-bool Zebra::isEnemy() {
+bool Zebra::isEnemy(int x) {
 	return (false);
 }
 

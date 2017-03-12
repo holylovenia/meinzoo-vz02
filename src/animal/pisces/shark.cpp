@@ -79,7 +79,7 @@ bool Shark::isOmnivore() {
 	return (eatMeat && eatPlant);
 }
 
-bool Shark::isEnemy() {
+bool Shark::isEnemy(int x) {
 	return (false);
 }
 

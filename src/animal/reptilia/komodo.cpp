@@ -79,7 +79,7 @@ bool Komodo::isOmnivore() {
 	return (eatMeat && eatPlant);
 }
 
-bool Komodo::isEnemy() {
+bool Komodo::isEnemy(int x) {
 	return (false);
 }
 

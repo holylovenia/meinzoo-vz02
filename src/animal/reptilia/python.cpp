@@ -79,7 +79,7 @@ bool Python::isOmnivore() {
 	return (eatMeat && eatPlant);
 }
 
-bool Python::isEnemy() {
+bool Python::isEnemy(int x) {
 	return (false);
 }
 

@@ -79,7 +79,7 @@ bool Crocodile::isOmnivore() {
 	return (eatMeat && eatPlant);
 }
 
-bool Crocodile::isEnemy() {
+bool Crocodile::isEnemy(int x) {
 	return (false);
 }
 

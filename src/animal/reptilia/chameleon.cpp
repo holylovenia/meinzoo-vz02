@@ -80,7 +80,7 @@ bool Chameleon::isOmnivore() {
 	return (eatMeat && eatPlant);
 }
 
-bool Chameleon::isEnemy() {
+bool Chameleon::isEnemy(int x) {
 	return (false);
 }
 

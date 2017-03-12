@@ -24,7 +24,7 @@ class Giraffe {
 		int getReqPlant();
 		Point getPosition();
 
-		bool isEnemy();
+		bool isEnemy(int x);
 		int getID();
 		
 		//point setter

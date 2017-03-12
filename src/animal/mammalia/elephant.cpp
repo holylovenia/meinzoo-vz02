@@ -79,7 +79,7 @@ bool Elephant::isOmnivore() {
 	return (eatMeat && eatPlant);
 }
 
-bool Elephant::isEnemy() {
+bool Elephant::isEnemy(int x) {
 	return (false);
 }
 

@@ -79,7 +79,7 @@ bool Monkey::isOmnivore() {
 	return (eatMeat && eatPlant);
 }
 
-bool Monkey::isEnemy() {
+bool Monkey::isEnemy(int x) {
 	return (false);
 }
 

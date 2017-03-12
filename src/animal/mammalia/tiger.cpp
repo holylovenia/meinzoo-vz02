@@ -79,7 +79,7 @@ bool Tiger::isOmnivore() {
 	return (eatMeat && eatPlant);
 }
 
-bool Tiger::isEnemy() {
+bool Tiger::isEnemy(int x) {
 	return (false);
 }
 

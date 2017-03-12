@@ -95,10 +95,6 @@ bool WildBunny::isEnemy(int x) {
 	return(enemy.find(x) != enemy.end());
 }
 
-bool WildBunny::isEnemy() {
-	return (false);
-}
-
 int WildBunny::getID() {
 	return (ID);
 }

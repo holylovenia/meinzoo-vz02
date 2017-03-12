@@ -80,7 +80,7 @@ bool Clownfish::isOmnivore() {
 	return (eatMeat && eatPlant);
 }
 
-bool Clownfish::isEnemy() {
+bool Clownfish::isEnemy(int x) {
 	return (false);
 }
 
