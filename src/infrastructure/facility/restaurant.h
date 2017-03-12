@@ -6,7 +6,7 @@
 class Restaurant: public Facility {
 	public:
 		// ctor with parameter
-		Restaurant(int _x, int _y, bool _isAccessible, std::string _name);
+		Restaurant(bool Accessible, std::string _name);
 		// cctor
 		Restaurant(const Restaurant& R);
 		// operator=
@@ -14,7 +14,7 @@ class Restaurant: public Facility {
 		// dtor
 		std::string getRestaurantName();
 
-	protected:
+	private:
 		std::string name;
 		const std::string defFacilityType;
 };

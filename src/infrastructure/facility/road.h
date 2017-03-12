@@ -6,27 +6,18 @@
 class Road: public Facility {
 	public:
 		// ctor
-		Road();
-		// ctor with parameter
-		Road(bool _entrance, bool _exit);
-		// cctor
-		Road(Road& R);
-		// operator=
-		Road& operator=(Road& R);
-		// dtor
-		~Road();
-
-		bool getIsEntrance();
-		bool getIsExit();
+		Road(bool Accessible);
+		// others
+		bool IsEntrance();
+		bool IsExit();
 
 	protected:
-		string facilityType = "Road";
 		bool isEntrance;
 		bool isExit;
 
 	private:
-		const bool defIsEntrance = false;
-		const bool defIsExit = false;
+		const std::string defFacilityType;
+		const bool defRoad;
 };
 
 

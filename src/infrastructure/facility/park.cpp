@@ -4,29 +4,24 @@
 #include "park.h"
 
 
-Park::Park(int _x, int _y, bool _isAccessible, std::string _name): Facility(_x, _y, _isAccessible), defFacilityType("Park")
-{
+Park::Park(bool Accessible, std::string _name): Facility(Accessible), defFacilityType("Park") {
 	name = _name;
 	facilityType = defFacilityType;
 }
 
-Park::Park(const Park& P): Facility(P.Location.getX(), P.Location.getY(), P.isAccessible), defFacilityType("Park")
-{
+Park::Park(const Park& P): Facility(P.isAccessible), defFacilityType("Park") {
 	name = P.name;
 	facilityType = P.facilityType;
+	isAccessible = P.isAccessible;
 }
 
-Park& Park::operator=(const Park& P)
-{
+Park& Park::operator=(const Park& P) {
 	name = P.name;
 	facilityType = P.facilityType;
-	Location.setX(P.Location.getX());
-	Location.setY(P.Location.getY());
 	isAccessible = P.isAccessible;
 	return(*this);
 }
 
-std::string Park::getParkName()
-{
+std::string Park::getParkName() {
 	return(name);
 }
