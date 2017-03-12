@@ -1,14 +1,17 @@
 #include "monkey.h"
 
-Monkey::Monkey(int _weight) : defID(5), defRatioMeat(10), defRatioPlant(40), defLimbCount(4), defSkinType("Hairy"), defEatMeat(true), defEatPlant(true)  {
+Monkey::Monkey(int _x, int _y, int _weight) : defID(5), defRatioMeat(10), defRatioPlant(40), defLimbCount(4), defSkinType("Hairy"), defEatMeat(true), defEatPlant(true)  {
 	//monkey
 	ID = defID;
+	Location.setX(_x);
+	Location.setY(_y);
 	ratioMeat = defRatioMeat;
 	ratioPlant = defRatioPlant;
 	isLandAnimal = true;
 	isWaterAnimal = false;
 	isAirAnimal = false;
 	weight = _weight;
+	isWild = false;
 	//omnivora
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
@@ -66,10 +69,6 @@ bool Monkey::isCarnivore() {
 }
 bool Monkey::isOmnivore() {
 	return (eatMeat && eatPlant);
-}
-
-void Monkey::setBehavior() {
-	isWild = false;
 }
 
 // Setter

@@ -1,14 +1,15 @@
-#ifndef ZEBRA_H
-#define ZEBRA_H
+#ifndef WILD_COLIBRI_H
+#define WILD_COLIBRI_H
 
+#include <set>
 #include <string>
 #include <iostream>
 #include "../animalfood.h"
 #include "../../misc/point.h"
 
-class Zebra {
+class WildColibri {
 	public :
-		Zebra(int _x, int _y, int _weight);
+		WildColibri(int _x, int _y, int _weight);
 		//animal
 		void Interact();
 		void Move(int movement);
@@ -23,6 +24,11 @@ class Zebra {
 		int getReqMeat();
 		int getReqPlant();
 
+		//behaviorwild
+		void addEnemy(int x);
+		void removeEnemy(int x);
+		bool isEnemy(int x);
+
 		//point setter
 		void setLocation(int _x, int _y);
 		//point getter
@@ -31,6 +37,7 @@ class Zebra {
 		//behavior
 		bool getBehavior();
 	private:
+		std::set<int> enemy;
 		//point
 		Point Location;
 		//animal

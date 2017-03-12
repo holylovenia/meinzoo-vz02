@@ -8,7 +8,7 @@
 
 class Iguana {
 	public :
-		Iguana(int _weight);
+		Iguana(int _x, int _y, int _weight);
 		//animal
 		void Interact();
 		void Move(int movement);
@@ -23,8 +23,6 @@ class Iguana {
 		int getReqMeat();
 		int getReqPlant();
 
-		//behaviortame
-		void setBehavior();
 		//point setter
 		void setLocation(int _x, int _y);
 		//point getter

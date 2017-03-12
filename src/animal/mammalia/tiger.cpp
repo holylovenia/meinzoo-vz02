@@ -1,14 +1,17 @@
 #include "tiger.h"
 
-Tiger::Tiger(int _weight) : defID(3), defRatioMeat(50), defRatioPlant(0), defLimbCount(4), defSkinType("Hairy"), defEatMeat(true), defEatPlant(false)  {
+Tiger::Tiger(int _x, int _y, int _weight) : defID(3), defRatioMeat(50), defRatioPlant(0), defLimbCount(4), defSkinType("Hairy"), defEatMeat(true), defEatPlant(false)  {
 	//tiger
 	ID = defID;
+	Location.setX(_x);
+	Location.setY(_y);
 	ratioMeat = defRatioMeat;
 	ratioPlant = defRatioPlant;
 	isLandAnimal = true;
 	isWaterAnimal = false;
 	isAirAnimal = false;
 	weight = _weight;
+	isWild = false;
 	//omnivora
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
@@ -66,10 +69,6 @@ bool Tiger::isCarnivore() {
 }
 bool Tiger::isOmnivore() {
 	return (eatMeat && eatPlant);
-}
-
-void Tiger::setBehavior() {
-	isWild = false;
 }
 
 // Setter

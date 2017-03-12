@@ -1,14 +1,17 @@
 #include "zebra.h"
 
-Zebra::Zebra(int _weight) : defID(4), defRatioMeat(0), defRatioPlant(45), defLimbCount(4), defSkinType("Hairy"), defEatMeat(false), defEatPlant(true)  {
+Zebra::Zebra(int _x, int _y, int _weight) : defID(4), defRatioMeat(0), defRatioPlant(45), defLimbCount(4), defSkinType("Hairy"), defEatMeat(false), defEatPlant(true)  {
 	//wolf
 	ID = defID;
+	Location.setX(_x);
+	Location.setY(_y);
 	ratioMeat = defRatioMeat;
 	ratioPlant = defRatioPlant;
 	isLandAnimal = true;
 	isWaterAnimal = false;
 	isAirAnimal = false;
 	weight = _weight;
+	isWild = false;
 	//omnivora
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
@@ -67,10 +70,6 @@ bool Zebra::isCarnivore() {
 }
 bool Zebra::isOmnivore() {
 	return (eatMeat && eatPlant);
-}
-
-void Zebra::setBehavior() {
-	isWild = false;
 }
 
 // Setter

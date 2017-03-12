@@ -1,14 +1,17 @@
 #include "elephant.h"
 
-Elephant::Elephant(int _weight) : defID(3), defRatioMeat(0), defRatioPlant(80), defLimbCount(4), defSkinType("Hairy"), defEatMeat(false), defEatPlant(true) {
+Elephant::Elephant(int _x, int _y, int _weight) : defID(3), defRatioMeat(0), defRatioPlant(80), defLimbCount(4), defSkinType("Hairy"), defEatMeat(false), defEatPlant(true) {
 	//elephant
 	ID = defID;
+	Location.setX(_x);
+	Location.setY(_y);
 	ratioMeat = defRatioMeat;
 	ratioPlant = defRatioPlant;
 	isLandAnimal = true;
 	isWaterAnimal = false;
 	isAirAnimal = false;
 	weight = _weight;
+	isWild = false;
 	//herbivora
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
@@ -66,10 +69,6 @@ bool Elephant::isCarnivore() {
 }
 bool Elephant::isOmnivore() {
 	return (eatMeat && eatPlant);
-}
-
-void Elephant::setBehavior() {
-	isWild = false;
 }
 
 // Setter

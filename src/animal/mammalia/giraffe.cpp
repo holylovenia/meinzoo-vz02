@@ -1,14 +1,17 @@
 #include "giraffe.h"
 
-Giraffe::Giraffe(int _weight) : defID(3), defRatioMeat(0), defRatioPlant(60), defLimbCount(4), defSkinType("Hairy"), defEatMeat(false), defEatPlant(true) {
+Giraffe::Giraffe(int _x, int _y, int _weight) : defID(3), defRatioMeat(0), defRatioPlant(60), defLimbCount(4), defSkinType("Hairy"), defEatMeat(false), defEatPlant(true) {
 	//giraffe
 	ID = defID;
+	Location.setX(_x);
+	Location.setY(_y);
 	ratioMeat = defRatioMeat;
 	ratioPlant = defRatioPlant;
 	isLandAnimal = true;
 	isWaterAnimal = false;
 	isAirAnimal = false;
 	weight = _weight;
+	isWild = false;
 	//herbivora
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
@@ -66,10 +69,6 @@ bool Giraffe::isCarnivore() {
 }
 bool Giraffe::isOmnivore() {
 	return (eatMeat && eatPlant);
-}
-
-void Giraffe::setBehavior() {
-	isWild = false;
 }
 
 // Setter

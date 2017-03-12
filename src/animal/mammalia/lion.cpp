@@ -1,14 +1,17 @@
 #include "lion.h"
 
-Lion::Lion(int _weight) : defID(2), defRatioMeat(60), defRatioPlant(0), defLimbCount(4), defSkinType("Hairy"), defEatMeat(true), defEatPlant(false)  {
+Lion::Lion(int _x, int _y, int _weight) : defID(2), defRatioMeat(60), defRatioPlant(0), defLimbCount(4), defSkinType("Hairy"), defEatMeat(true), defEatPlant(false)  {
 	//lion
 	ID = defID;
+	Location.setX(_x);
+	Location.setY(_y);
 	ratioMeat = defRatioMeat;
 	ratioPlant = defRatioPlant;
 	isLandAnimal = true;
 	isWaterAnimal = false;
 	isAirAnimal = false;
 	weight = _weight;
+	isWild = false;
 	//carnivora
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
@@ -66,10 +69,6 @@ bool Lion::isCarnivore() {
 }
 bool Lion::isOmnivore() {
 	return (eatMeat && eatPlant);
-}
-
-void Lion::setBehavior() {
-	isWild = false;
 }
 
 // Setter

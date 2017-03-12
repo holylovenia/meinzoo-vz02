@@ -8,7 +8,7 @@
 
 class Giraffe {
 	public :
-		Giraffe(int _weight);
+		Giraffe(int _x, int _y, int _weight);
 		//animal
 		void Interact();
 		void Move(int movement);
@@ -23,8 +23,6 @@ class Giraffe {
 		int getReqMeat();
 		int getReqPlant();
 
-		//behaviortame
-		void setBehavior();
 		//point setter
 		void setLocation(int _x, int _y);
 		//point getter

@@ -1,7 +1,7 @@
-#include "iguana.h"
+#include "wild_bunny.h"
 
-Iguana::Iguana(int _x, int _y, int _weight) : defID(10), defRatioMeat(20), defRatioPlant(40), defLimbCount(4), defSkinType("Scute"), defEatMeat(true), defEatPlant(true) {
-	//Iguana
+WildBunny::WildBunny(int _x, int _y, int _weight) : defID(0), defRatioMeat(0), defRatioPlant(90), defLimbCount(4), defSkinType("Hairy"), defEatMeat(false), defEatPlant(true) {
+	//wildbunny
 	ID = defID;
 	Location.setX(_x);
 	Location.setY(_y);
@@ -11,19 +11,21 @@ Iguana::Iguana(int _x, int _y, int _weight) : defID(10), defRatioMeat(20), defRa
 	isWaterAnimal = false;
 	isAirAnimal = false;
 	weight = _weight;
-	isWild = false;
-	//omnivora
+	isWild = true;
+	//herbivora
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
-	AnimalFood::AddTotalMeat(ratioMeat * weight / 100);
 	AnimalFood::AddTotalPlant(ratioPlant * weight / 100);
+	for (int id = defID; id <= 21; id++) {
+		addEnemy(id);
+	}
 }
 
-void Iguana::Interact() {
-	std::cout << "The iguana is calmly sleeping on a tree" << std::endl;
+void WildBunny::Interact() {
+	std::cout << "The wild bunny is looking at you with murderous intent" << std::endl;
 }
 
-void Iguana::Move(int movement) {
+void WildBunny::Move(int movement) {
 	if (movement == 1) // Move up
 	{
 		Location.setY(Location.getY()-1);
@@ -42,46 +44,46 @@ void Iguana::Move(int movement) {
 	}
 }
 
-int Iguana::getReqMeat() {
+int WildBunny::getReqMeat() {
 	return(ratioMeat * weight / 100);
 }
 
-int Iguana::getReqPlant() {
+int WildBunny::getReqPlant() {
 	return(ratioPlant * weight / 100);
 }
 
-bool Iguana::IsLandAnimal() {
+bool WildBunny::IsLandAnimal() {
 	return(isLandAnimal);
 }
 
-bool Iguana::IsWaterAnimal() {
+bool WildBunny::IsWaterAnimal() {
 	return(isWaterAnimal);
 }
 
-bool Iguana::IsAirAnimal() {
+bool WildBunny::IsAirAnimal() {
 	return(isAirAnimal);
 }
 
-bool Iguana::isHerbivore() {
+bool WildBunny::isHerbivore() {
 	return (!eatMeat && eatPlant);
 }
-bool Iguana::isCarnivore() {
+bool WildBunny::isCarnivore() {
 	return (eatMeat && !eatPlant);
 }
-bool Iguana::isOmnivore() {
+bool WildBunny::isOmnivore() {
 	return (eatMeat && eatPlant);
 }
 
 // Setter
-void Iguana::setLocation(int _x, int _y) {
+void WildBunny::setLocation(int _x, int _y) {
 	Location.setX(_x);
 	Location.setY(_y);
 }
 
 // Getter
-int Iguana::getX() const {
+int WildBunny::getX() const {
 	return Location.getX();
 }
-int Iguana::getY() const {
+int WildBunny::getY() const {
 	return Location.getY();
 }

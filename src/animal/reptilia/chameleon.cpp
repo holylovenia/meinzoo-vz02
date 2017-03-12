@@ -1,14 +1,17 @@
 #include "chameleon.h"
 
-Chameleon::Chameleon(int _weight) : defID(10), defRatioMeat(20), defRatioPlant(50), defLimbCount(4), defSkinType("Scute"), defEatMeat(true), defEatPlant(true) {
+Chameleon::Chameleon(int _x, int _y, int _weight) : defID(10), defRatioMeat(20), defRatioPlant(50), defLimbCount(4), defSkinType("Scute"), defEatMeat(true), defEatPlant(true) {
 	//Chameleon
 	ID = defID;
+	Location.setX(_x);
+	Location.setY(_y);
 	ratioMeat = defRatioMeat;
 	ratioPlant = defRatioPlant;
 	isLandAnimal = true;
 	isWaterAnimal = false;
 	isAirAnimal = false;
 	weight = _weight;
+	isWild = false;
 	//omnivora
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
@@ -67,10 +70,6 @@ bool Chameleon::isCarnivore() {
 }
 bool Chameleon::isOmnivore() {
 	return (eatMeat && eatPlant);
-}
-
-void Chameleon::setBehavior() {
-	isWild = false;
 }
 
 // Setter

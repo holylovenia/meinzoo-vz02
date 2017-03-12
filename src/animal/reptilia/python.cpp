@@ -1,14 +1,17 @@
 #include "python.h"
 
-Python::Python(int _weight) : defID(9), defRatioMeat(40), defRatioPlant(0), defLimbCount(4), defSkinType("Scute"), defEatMeat(true), defEatPlant(false) {
+Python::Python(int _x, int _y, int _weight) : defID(9), defRatioMeat(40), defRatioPlant(0), defLimbCount(4), defSkinType("Scute"), defEatMeat(true), defEatPlant(false) {
 	//Python
 	ID = defID;
+	Location.setX(_x);
+	Location.setY(_y);
 	ratioMeat = defRatioMeat;
 	ratioPlant = defRatioPlant;
 	isLandAnimal = true;
 	isWaterAnimal = false;
 	isAirAnimal = false;
 	weight = _weight;
+	isWild = false;
 	//carnivora
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
@@ -66,10 +69,6 @@ bool Python::isCarnivore() {
 }
 bool Python::isOmnivore() {
 	return (eatMeat && eatPlant);
-}
-
-void Python::setBehavior() {
-	isWild = false;
 }
 
 // Setter

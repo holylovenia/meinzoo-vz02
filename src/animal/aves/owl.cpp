@@ -1,14 +1,17 @@
 #include "owl.h"
 
-Owl::Owl(int _weight) : defID(19), defRatioMeat(60), defRatioPlant(0), defLimbCount(2), defSkinType("Feather"), defEatMeat(true), defEatPlant(false) {
+Owl::Owl(int _x, int _y, int _weight) : defID(19), defRatioMeat(60), defRatioPlant(0), defLimbCount(2), defSkinType("Feather"), defEatMeat(true), defEatPlant(false) {
 	//owl
 	ID = defID;
+	Location.setX(_x);
+	Location.setY(_y);
 	ratioMeat = defRatioMeat;
 	ratioPlant = defRatioPlant;
 	isLandAnimal = true;
 	isWaterAnimal = false;
 	isAirAnimal = true;
 	weight = _weight;
+	isWild = false;
 	//herbivora
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
@@ -66,10 +69,6 @@ bool Owl::isCarnivore() {
 }
 bool Owl::isOmnivore() {
 	return (eatMeat && eatPlant);
-}
-
-void Owl::setBehavior() {
-	isWild = false;
 }
 
 // Setter
