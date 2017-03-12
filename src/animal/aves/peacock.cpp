@@ -7,7 +7,7 @@ Peacock::Peacock(int _weight) : defID(20), defRatioMeat(20), defRatioPlant(40), 
 	ratioPlant = defRatioPlant;
 	isLandAnimal = true;
 	isWaterAnimal = false;
-	isAirAnimal = true;
+	isAirAnimal = false;
 	weight = _weight;
 	//herbivora
 	eatMeat = defEatMeat;
