@@ -59,10 +59,9 @@ class LandCage {
 		void MoveAnimal();
 		
 		vector<Point> GetArea();
-		vector<Animal*> GetAnimal();
+		//vector<Animal*> GetAnimal();
 		
 	private:
-		int type;
 		set<Point> area;
 		vector<Colibri*> colibri;
 		vector<Duck*> duck;

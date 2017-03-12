@@ -3,10 +3,8 @@
 #include <ctime>
 #include <random>
 #include "land_cage.h"
-#include "../animal/behavior/behavior_wild.h"
-#include "../animal/diet/animal_diet.h"
 
-LandCage::LandCage(int _type): type(_type) {
+LandCage::LandCage() {
 	nbAnimal = 0;
 }
 
@@ -21,7 +19,7 @@ void LandCage::RemovePoint(const Point& p) {
 void LandCage::AddAnimal(Colibri& A) {
 	if (nbAnimal < int(area.size() / 10 * 3)) {	
 		bool placeable;
-		if (isWild) {
+		if (A.isWild) {
 			if ((colibri[0] != NULL) && (A.isEnemy(colibri[i]->getID())))
 			{
 				placeable = false;
@@ -1903,6 +1901,6 @@ vector<Point> LandCage::GetArea() {
 	return vector<Point>(area.begin(), area.end());
 }
 
-vector<Animal*> LandCage::GetAnimal() {
-	return animal;
-}
+// vector<Animal*> LandCage::GetAnimal() {
+// 	return animal;
+// }
