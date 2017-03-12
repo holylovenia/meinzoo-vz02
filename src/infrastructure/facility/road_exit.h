@@ -1,14 +1,24 @@
 #ifndef ROAD_EXIT_H
 #define ROAD_EXIT_H
 
-#include "road.h"
+#include <string>
 
-class RoadExit: public Road {
-	public:
+class RoadExit {
 		// ctor
 		RoadExit(bool Accessible);
 
+		bool IsEntrance();
+		bool IsExit();
+
+	protected:
+		bool isEntrance;
+		bool isExit;
+
 	private:
+		std::string facilityType;
+		bool isAccessible;
+		const std::string defFacilityType;
+		const bool defRoad;
 		const bool defRoadExit;
 };
 
