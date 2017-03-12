@@ -11,6 +11,7 @@ Giraffe::Giraffe(int _x, int _y, int _weight) : defID(3), defRatioMeat(0), defRa
 	isWaterAnimal = false;
 	isAirAnimal = false;
 	weight = _weight;
+	isWild = false;
 	//herbivora
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
@@ -68,10 +69,6 @@ bool Giraffe::isCarnivore() {
 }
 bool Giraffe::isOmnivore() {
 	return (eatMeat && eatPlant);
-}
-
-void Giraffe::setBehavior() {
-	isWild = false;
 }
 
 // Setter

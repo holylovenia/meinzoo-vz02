@@ -11,6 +11,7 @@ Elephant::Elephant(int _x, int _y, int _weight) : defID(3), defRatioMeat(0), def
 	isWaterAnimal = false;
 	isAirAnimal = false;
 	weight = _weight;
+	isWild = false;
 	//herbivora
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
@@ -68,10 +69,6 @@ bool Elephant::isCarnivore() {
 }
 bool Elephant::isOmnivore() {
 	return (eatMeat && eatPlant);
-}
-
-void Elephant::setBehavior() {
-	isWild = false;
 }
 
 // Setter

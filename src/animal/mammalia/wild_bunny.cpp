@@ -11,6 +11,7 @@ WildBunny::WildBunny(int _x, int _y, int _weight) : defID(0), defRatioMeat(0), d
 	isWaterAnimal = false;
 	isAirAnimal = false;
 	weight = _weight;
+	isWild = true;
 	//herbivora
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
@@ -71,10 +72,6 @@ bool WildBunny::isCarnivore() {
 }
 bool WildBunny::isOmnivore() {
 	return (eatMeat && eatPlant);
-}
-
-void WildBunny::setBehavior() {
-	isWild = false;
 }
 
 // Setter

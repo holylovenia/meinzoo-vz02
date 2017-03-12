@@ -11,6 +11,7 @@ Eagle::Eagle(int _x, int _y, int _weight) : defID(18), defRatioMeat(60), defRati
 	isWaterAnimal = false;
 	isAirAnimal = true;
 	weight = _weight;
+	isWild = false;
 	//herbivora
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
@@ -68,10 +69,6 @@ bool Eagle::isCarnivore() {
 }
 bool Eagle::isOmnivore() {
 	return (eatMeat && eatPlant);
-}
-
-void Eagle::setBehavior() {
-	isWild = false;
 }
 
 // Setter

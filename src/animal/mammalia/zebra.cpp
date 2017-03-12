@@ -11,6 +11,7 @@ Zebra::Zebra(int _x, int _y, int _weight) : defID(4), defRatioMeat(0), defRatioP
 	isWaterAnimal = false;
 	isAirAnimal = false;
 	weight = _weight;
+	isWild = false;
 	//omnivora
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
@@ -69,10 +70,6 @@ bool Zebra::isCarnivore() {
 }
 bool Zebra::isOmnivore() {
 	return (eatMeat && eatPlant);
-}
-
-void Zebra::setBehavior() {
-	isWild = false;
 }
 
 // Setter

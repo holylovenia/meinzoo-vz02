@@ -11,6 +11,7 @@ Peacock::Peacock(int _x, int _y, int _weight) : defID(20), defRatioMeat(20), def
 	isWaterAnimal = false;
 	isAirAnimal = true;
 	weight = _weight;
+	isWild = false;
 	//herbivora
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
@@ -68,10 +69,6 @@ bool Peacock::isCarnivore() {
 }
 bool Peacock::isOmnivore() {
 	return (eatMeat && eatPlant);
-}
-
-void Peacock::setBehavior() {
-	isWild = false;
 }
 
 // Setter

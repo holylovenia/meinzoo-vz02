@@ -25,7 +25,6 @@ class WildBunny {
 		int getReqPlant();
 
 		//behaviorwild
-		void setBehavior();
 		void addEnemy(int x);
 		void removeEnemy(int x);
 		bool isEnemy(int x);

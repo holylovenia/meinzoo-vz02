@@ -11,6 +11,7 @@ Colibri::Colibri(int _x, int _y, int _weight) : defID(19), defRatioMeat(0), defR
 	isWaterAnimal = false;
 	isAirAnimal = true;
 	weight = _weight;
+	isWild = false;
 	//herbivora
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
@@ -68,10 +69,6 @@ bool Colibri::isCarnivore() {
 }
 bool Colibri::isOmnivore() {
 	return (eatMeat && eatPlant);
-}
-
-void Colibri::setBehavior() {
-	isWild = false;
 }
 
 // Setter

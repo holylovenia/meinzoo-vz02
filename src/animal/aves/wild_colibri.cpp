@@ -11,6 +11,7 @@ WildColibri::WildColibri(int _x, int _y, int _weight) : defID(21), defRatioMeat(
 	isWaterAnimal = false;
 	isAirAnimal = true;
 	weight = _weight;
+	isWild = true;
 	//herbivora
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
@@ -72,10 +73,6 @@ bool WildColibri::isCarnivore() {
 }
 bool WildColibri::isOmnivore() {
 	return (eatMeat && eatPlant);
-}
-
-void WildColibri::setBehavior() {
-	isWild = true;
 }
 
 void WildColibri::addEnemy(int x) {

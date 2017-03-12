@@ -11,6 +11,7 @@ Iguana::Iguana(int _x, int _y, int _weight) : defID(10), defRatioMeat(20), defRa
 	isWaterAnimal = false;
 	isAirAnimal = false;
 	weight = _weight;
+	isWild = false;
 	//omnivora
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
@@ -69,10 +70,6 @@ bool Iguana::isCarnivore() {
 }
 bool Iguana::isOmnivore() {
 	return (eatMeat && eatPlant);
-}
-
-void Iguana::setBehavior() {
-	isWild = false;
 }
 
 // Setter

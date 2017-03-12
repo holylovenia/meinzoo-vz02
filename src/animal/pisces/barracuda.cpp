@@ -11,6 +11,7 @@ Barracuda::Barracuda(int _x, int _y, int _weight) : defID(15), defRatioMeat(60),
 	isWaterAnimal = true;
 	isAirAnimal = false;
 	weight = _weight;
+	isWild = false;
 	//carnivora
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
@@ -68,10 +69,6 @@ bool Barracuda::isCarnivore() {
 }
 bool Barracuda::isOmnivore() {
 	return (eatMeat && eatPlant);
-}
-
-void Barracuda::setBehavior() {
-	isWild = false;
 }
 
 // Setter

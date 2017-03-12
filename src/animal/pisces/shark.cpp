@@ -11,6 +11,7 @@ Shark::Shark(int _x, int _y, int _weight) : defID(13), defRatioMeat(70), defRati
 	isWaterAnimal = true;
 	isAirAnimal = false;
 	weight = _weight;
+	isWild = false;
 	//carnivora
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
@@ -68,10 +69,6 @@ bool Shark::isCarnivore() {
 }
 bool Shark::isOmnivore() {
 	return (eatMeat && eatPlant);
-}
-
-void Shark::setBehavior() {
-	isWild = false;
 }
 
 // Setter

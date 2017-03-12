@@ -11,6 +11,7 @@ Python::Python(int _x, int _y, int _weight) : defID(9), defRatioMeat(40), defRat
 	isWaterAnimal = false;
 	isAirAnimal = false;
 	weight = _weight;
+	isWild = false;
 	//carnivora
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
@@ -68,10 +69,6 @@ bool Python::isCarnivore() {
 }
 bool Python::isOmnivore() {
 	return (eatMeat && eatPlant);
-}
-
-void Python::setBehavior() {
-	isWild = false;
 }
 
 // Setter

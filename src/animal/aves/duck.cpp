@@ -11,6 +11,7 @@ Duck::Duck(int _x, int _y, int _weight) : defID(16), defRatioMeat(30), defRatioP
 	isWaterAnimal = true;
 	isAirAnimal = true;
 	weight = _weight;
+	isWild = false;
 	//herbivora
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
@@ -68,10 +69,6 @@ bool Duck::isCarnivore() {
 }
 bool Duck::isOmnivore() {
 	return (eatMeat && eatPlant);
-}
-
-void Duck::setBehavior() {
-	isWild = false;
 }
 
 // Setter

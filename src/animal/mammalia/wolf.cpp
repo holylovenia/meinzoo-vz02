@@ -11,6 +11,7 @@ Wolf::Wolf(int _x, int _y, int _weight) : defID(1), defRatioMeat(50), defRatioPl
 	isWaterAnimal = false;
 	isAirAnimal = false;
 	weight = _weight;
+	isWild = false;
 	//omnivora
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
@@ -68,10 +69,6 @@ bool Wolf::isCarnivore() {
 }
 bool Wolf::isOmnivore() {
 	return (eatMeat && eatPlant);
-}
-
-void Wolf::setBehavior() {
-	isWild = false;
 }
 
 // Setter

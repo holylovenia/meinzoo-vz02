@@ -11,6 +11,7 @@ Monkey::Monkey(int _x, int _y, int _weight) : defID(5), defRatioMeat(10), defRat
 	isWaterAnimal = false;
 	isAirAnimal = false;
 	weight = _weight;
+	isWild = false;
 	//omnivora
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
@@ -68,10 +69,6 @@ bool Monkey::isCarnivore() {
 }
 bool Monkey::isOmnivore() {
 	return (eatMeat && eatPlant);
-}
-
-void Monkey::setBehavior() {
-	isWild = false;
 }
 
 // Setter

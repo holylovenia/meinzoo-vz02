@@ -11,6 +11,7 @@ Crocodile::Crocodile(int _x, int _y, int _weight) : defID(8), defRatioMeat(60), 
 	isWaterAnimal = true;
 	isAirAnimal = false;
 	weight = _weight;
+	isWild = false;
 	//carnivora
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
@@ -68,10 +69,6 @@ bool Crocodile::isCarnivore() {
 }
 bool Crocodile::isOmnivore() {
 	return (eatMeat && eatPlant);
-}
-
-void Crocodile::setBehavior() {
-	isWild = false;
 }
 
 // Setter

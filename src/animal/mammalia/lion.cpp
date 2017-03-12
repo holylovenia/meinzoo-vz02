@@ -11,6 +11,7 @@ Lion::Lion(int _x, int _y, int _weight) : defID(2), defRatioMeat(60), defRatioPl
 	isWaterAnimal = false;
 	isAirAnimal = false;
 	weight = _weight;
+	isWild = false;
 	//carnivora
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
@@ -68,10 +69,6 @@ bool Lion::isCarnivore() {
 }
 bool Lion::isOmnivore() {
 	return (eatMeat && eatPlant);
-}
-
-void Lion::setBehavior() {
-	isWild = false;
 }
 
 // Setter

@@ -11,6 +11,7 @@ Chameleon::Chameleon(int _x, int _y, int _weight) : defID(10), defRatioMeat(20),
 	isWaterAnimal = false;
 	isAirAnimal = false;
 	weight = _weight;
+	isWild = false;
 	//omnivora
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
@@ -69,10 +70,6 @@ bool Chameleon::isCarnivore() {
 }
 bool Chameleon::isOmnivore() {
 	return (eatMeat && eatPlant);
-}
-
-void Chameleon::setBehavior() {
-	isWild = false;
 }
 
 // Setter

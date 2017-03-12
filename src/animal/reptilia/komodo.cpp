@@ -11,6 +11,7 @@ Komodo::Komodo(int _x, int _y, int _weight) : defID(10), defRatioMeat(70), defRa
 	isWaterAnimal = false;
 	isAirAnimal = false;
 	weight = _weight;
+	isWild = false;
 	//carnivora
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
@@ -68,10 +69,6 @@ bool Komodo::isCarnivore() {
 }
 bool Komodo::isOmnivore() {
 	return (eatMeat && eatPlant);
-}
-
-void Komodo::setBehavior() {
-	isWild = false;
 }
 
 // Setter

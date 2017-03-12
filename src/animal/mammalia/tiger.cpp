@@ -11,6 +11,7 @@ Tiger::Tiger(int _x, int _y, int _weight) : defID(3), defRatioMeat(50), defRatio
 	isWaterAnimal = false;
 	isAirAnimal = false;
 	weight = _weight;
+	isWild = false;
 	//omnivora
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
@@ -68,10 +69,6 @@ bool Tiger::isCarnivore() {
 }
 bool Tiger::isOmnivore() {
 	return (eatMeat && eatPlant);
-}
-
-void Tiger::setBehavior() {
-	isWild = false;
 }
 
 // Setter

@@ -11,6 +11,7 @@ Owl::Owl(int _x, int _y, int _weight) : defID(19), defRatioMeat(60), defRatioPla
 	isWaterAnimal = false;
 	isAirAnimal = true;
 	weight = _weight;
+	isWild = false;
 	//herbivora
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
@@ -68,10 +69,6 @@ bool Owl::isCarnivore() {
 }
 bool Owl::isOmnivore() {
 	return (eatMeat && eatPlant);
-}
-
-void Owl::setBehavior() {
-	isWild = false;
 }
 
 // Setter

@@ -23,8 +23,6 @@ class Komodo {
 		int getReqMeat();
 		int getReqPlant();
 
-		//behaviortame
-		void setBehavior();
 		//point setter
 		void setLocation(int _x, int _y);
 		//point getter

@@ -11,6 +11,7 @@ Clownfish::Clownfish(int _x, int _y, int _weight) : defID(14), defRatioMeat(30),
 	isWaterAnimal = true;
 	isAirAnimal = false;
 	weight = _weight;
+	isWild = false;
 	//omnivora
 	eatMeat = defEatMeat;
 	eatPlant = defEatPlant;
@@ -69,10 +70,6 @@ bool Clownfish::isCarnivore() {
 }
 bool Clownfish::isOmnivore() {
 	return (eatMeat && eatPlant);
-}
-
-void Clownfish::setBehavior() {
-	isWild = false;
 }
 
 // Setter
