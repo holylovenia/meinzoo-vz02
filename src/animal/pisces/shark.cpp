@@ -61,6 +61,14 @@ bool Shark::IsAirAnimal() {
 	return(isAirAnimal);
 }
 
+bool Shark::getBehavior() {
+	return(isWild);
+}
+
+Point Shark::getPosition() {
+	return(Location);
+}
+
 bool Shark::isHerbivore() {
 	return (!eatMeat && eatPlant);
 }

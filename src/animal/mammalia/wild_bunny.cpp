@@ -64,6 +64,14 @@ bool WildBunny::IsAirAnimal() {
 	return(isAirAnimal);
 }
 
+bool WildBunny::getBehavior() {
+	return (isWild);
+}
+
+Point WildBunny::getPosition() {
+	return (Location);
+}
+
 bool WildBunny::isHerbivore() {
 	return (!eatMeat && eatPlant);
 }

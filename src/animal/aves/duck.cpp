@@ -41,12 +41,20 @@ void Duck::Move(int movement) {
 	}
 }
 
+bool Duck::getBehavior() {
+	return(isWild);
+}
+
 int Duck::getReqMeat() {
 	return(ratioMeat * weight / 100);
 }
 
 int Duck::getReqPlant() {
 	return(ratioPlant * weight / 100);
+}
+
+Point Duck::getPosition() {
+	return Location;
 }
 
 bool Duck::IsLandAnimal() {

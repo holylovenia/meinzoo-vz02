@@ -62,6 +62,14 @@ bool Zebra::IsAirAnimal() {
 	return(isAirAnimal);
 }
 
+bool Zebra::getBehavior() {
+	return (isWild);
+}
+
+Point Zebra::getPosition() {
+	return (Location);
+}
+
 bool Zebra::isHerbivore() {
 	return (!eatMeat && eatPlant);
 }

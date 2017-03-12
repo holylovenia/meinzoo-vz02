@@ -62,6 +62,14 @@ bool Chameleon::IsAirAnimal() {
 	return(isAirAnimal);
 }
 
+bool Chameleon::getBehavior() {
+	return(isWild);
+}
+
+Point Chameleon::getPosition() {
+	return(Location);
+}
+
 bool Chameleon::isHerbivore() {
 	return (!eatMeat && eatPlant);
 }

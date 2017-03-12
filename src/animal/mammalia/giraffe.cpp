@@ -61,6 +61,14 @@ bool Giraffe::IsAirAnimal() {
 	return(isAirAnimal);
 }
 
+bool Giraffe::getBehavior() {
+	return (isWild);
+}
+
+Point Giraffe::getPosition() {
+	return (Location);
+}
+
 bool Giraffe::isHerbivore() {
 	return (!eatMeat && eatPlant);
 }

@@ -61,6 +61,14 @@ bool Lion::IsAirAnimal() {
 	return(isAirAnimal);
 }
 
+bool Lion::getBehavior() {
+	return (isWild);
+}
+
+Point Lion::getPosition() {
+	return (Location);
+}
+
 bool Lion::isHerbivore() {
 	return (!eatMeat && eatPlant);
 }

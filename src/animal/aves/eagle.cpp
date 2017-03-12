@@ -41,12 +41,20 @@ void Eagle::Move(int movement) {
 	}
 }
 
+bool Eagle::getBehavior() {
+	return(isWild);
+}
+
 int Eagle::getReqMeat() {
 	return(ratioMeat * weight / 100);
 }
 
 int Eagle::getReqPlant() {
 	return(ratioPlant * weight / 100);
+}
+
+Point Eagle::getPosition() {
+	return Location;
 }
 
 bool Eagle::IsLandAnimal() {

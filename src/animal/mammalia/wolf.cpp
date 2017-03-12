@@ -61,6 +61,14 @@ bool Wolf::IsAirAnimal() {
 	return(isAirAnimal);
 }
 
+bool Wolf::getBehavior() {
+	return (isWild);
+}
+
+Point Wolf::getPosition() {
+	return (Location);
+}
+
 bool Wolf::isHerbivore() {
 	return (!eatMeat && eatPlant);
 }

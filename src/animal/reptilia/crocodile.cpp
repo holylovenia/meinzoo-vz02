@@ -61,6 +61,14 @@ bool Crocodile::IsAirAnimal() {
 	return(isAirAnimal);
 }
 
+bool Crocodile::getBehavior() {
+	return(isWild);
+}
+
+Point Crocodile::getPosition() {
+	return(Location);
+}
+
 bool Crocodile::isHerbivore() {
 	return (!eatMeat && eatPlant);
 }

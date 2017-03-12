@@ -22,6 +22,7 @@ class Duck {
 
 		int getReqMeat();
 		int getReqPlant();
+		Point getPosition();
 
 		//point setter
 		void setLocation(int _x, int _y);

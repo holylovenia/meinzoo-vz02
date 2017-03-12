@@ -45,12 +45,20 @@ void WildColibri::Move(int movement) {
 	}
 }
 
+bool WildColibri::getBehavior() {
+	return(isWild);
+}
+
 int WildColibri::getReqMeat() {
 	return(ratioMeat * weight / 100);
 }
 
 int WildColibri::getReqPlant() {
 	return(ratioPlant * weight / 100);
+}
+
+Point WildColibri::getPosition() {
+	return Location;
 }
 
 bool WildColibri::IsLandAnimal() {

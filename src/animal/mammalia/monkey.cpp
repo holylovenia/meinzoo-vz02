@@ -61,6 +61,14 @@ bool Monkey::IsAirAnimal() {
 	return(isAirAnimal);
 }
 
+bool Monkey::getBehavior() {
+	return (isWild);
+}
+
+Point Monkey::getPosition() {
+	return (Location);
+}
+
 bool Monkey::isHerbivore() {
 	return (!eatMeat && eatPlant);
 }

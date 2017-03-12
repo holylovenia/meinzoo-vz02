@@ -61,6 +61,14 @@ bool Barracuda::IsAirAnimal() {
 	return(isAirAnimal);
 }
 
+bool Barracuda::getBehavior() {
+	return(isWild);
+}
+
+Point Barracuda::getPosition() {
+	return(Location);
+}
+
 bool Barracuda::isHerbivore() {
 	return (!eatMeat && eatPlant);
 }

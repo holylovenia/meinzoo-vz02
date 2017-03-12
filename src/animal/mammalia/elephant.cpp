@@ -61,6 +61,14 @@ bool Elephant::IsAirAnimal() {
 	return(isAirAnimal);
 }
 
+bool Elephant::getBehavior() {
+	return (isWild);
+}
+
+Point Elephant::getPosition() {
+	return (Location);
+}
+
 bool Elephant::isHerbivore() {
 	return (!eatMeat && eatPlant);
 }

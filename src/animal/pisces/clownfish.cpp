@@ -62,6 +62,14 @@ bool Clownfish::IsAirAnimal() {
 	return(isAirAnimal);
 }
 
+bool Clownfish::getBehavior() {
+	return(isWild);
+}
+
+Point Clownfish::getPosition() {
+	return(Location);
+}
+
 bool Clownfish::isHerbivore() {
 	return (!eatMeat && eatPlant);
 }

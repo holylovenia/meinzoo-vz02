@@ -41,12 +41,20 @@ void Peacock::Move(int movement) {
 	}
 }
 
+bool Peacock::getBehavior() {
+	return(isWild);
+}
+
 int Peacock::getReqMeat() {
 	return(ratioMeat * weight / 100);
 }
 
 int Peacock::getReqPlant() {
 	return(ratioPlant * weight / 100);
+}
+
+Point Peacock::getPosition() {
+	return Location;
 }
 
 bool Peacock::IsLandAnimal() {

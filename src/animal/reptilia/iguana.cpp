@@ -62,6 +62,14 @@ bool Iguana::IsAirAnimal() {
 	return(isAirAnimal);
 }
 
+bool Iguana::getBehavior() {
+	return(isWild);
+}
+
+Point Iguana::getPosition() {
+	return(Location);
+}
+
 bool Iguana::isHerbivore() {
 	return (!eatMeat && eatPlant);
 }

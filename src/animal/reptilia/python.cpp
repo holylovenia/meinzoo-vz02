@@ -61,6 +61,14 @@ bool Python::IsAirAnimal() {
 	return(isAirAnimal);
 }
 
+bool Python::getBehavior() {
+	return(isWild);
+}
+
+Point Python::getPosition() {
+	return(Location);
+}
+
 bool Python::isHerbivore() {
 	return (!eatMeat && eatPlant);
 }

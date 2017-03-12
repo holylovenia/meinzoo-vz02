@@ -23,6 +23,7 @@ class WildBunny {
 
 		int getReqMeat();
 		int getReqPlant();
+		Point getPosition();
 
 		//behaviorwild
 		void addEnemy(int x);

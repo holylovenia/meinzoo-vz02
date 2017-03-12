@@ -61,6 +61,14 @@ bool Komodo::IsAirAnimal() {
 	return(isAirAnimal);
 }
 
+bool Komodo::getBehavior() {
+	return(isWild);
+}
+
+Point Komodo::getPosition() {
+	return(Location);
+}
+
 bool Komodo::isHerbivore() {
 	return (!eatMeat && eatPlant);
 }

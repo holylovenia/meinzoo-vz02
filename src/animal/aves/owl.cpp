@@ -41,12 +41,20 @@ void Owl::Move(int movement) {
 	}
 }
 
+bool Owl::getBehavior() {
+	return(isWild);
+}
+
 int Owl::getReqMeat() {
 	return(ratioMeat * weight / 100);
 }
 
 int Owl::getReqPlant() {
 	return(ratioPlant * weight / 100);
+}
+
+Point Owl::getPosition() {
+	return Location;
 }
 
 bool Owl::IsLandAnimal() {

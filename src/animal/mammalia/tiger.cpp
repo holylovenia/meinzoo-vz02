@@ -61,6 +61,14 @@ bool Tiger::IsAirAnimal() {
 	return(isAirAnimal);
 }
 
+bool Tiger::getBehavior() {
+	return (isWild);
+}
+
+Point Tiger::getPosition() {
+	return (Location);
+}
+
 bool Tiger::isHerbivore() {
 	return (!eatMeat && eatPlant);
 }
