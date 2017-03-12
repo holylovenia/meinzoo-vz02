@@ -1,9 +1,9 @@
 #ifndef ROAD_H
 #define ROAD_H
 
-#include "facility.h"
+#include <string>
 
-class Road: public Facility {
+class Road {
 	public:
 		// ctor
 		Road(bool Accessible);
@@ -16,6 +16,8 @@ class Road: public Facility {
 		bool isExit;
 
 	private:
+		std::string facilityType;
+		bool isAccessible;
 		const std::string defFacilityType;
 		const bool defRoad;
 };

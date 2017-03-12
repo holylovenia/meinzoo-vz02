@@ -1,9 +1,8 @@
 #ifndef PARK_H
 #define PARK_H
 
-#include "facility.h"
-
-class Park: public Facility {
+#include <string>
+class Park {
 	public:
 		// ctor with parameter
 		Park(bool Accessible, std::string _name);
@@ -16,8 +15,9 @@ class Park: public Facility {
 
 	private:
 		std::string name;
+		bool isAccessible;
+		std::string facilityType;
 		const std::string defFacilityType;
 };
-
 
 #endif

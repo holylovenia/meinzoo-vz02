@@ -1,9 +1,8 @@
 #ifndef RESTAURANT_H
 #define RESTAURANT_H
 
-#include "facility.h"
-
-class Restaurant: public Facility {
+#include <string>
+class Restaurant {
 	public:
 		// ctor with parameter
 		Restaurant(bool Accessible, std::string _name);
@@ -16,6 +15,8 @@ class Restaurant: public Facility {
 
 	private:
 		std::string name;
+		bool isAccessible;
+		std::string facilityType;
 		const std::string defFacilityType;
 };
 
