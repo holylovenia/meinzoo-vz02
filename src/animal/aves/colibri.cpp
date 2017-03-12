@@ -1,5 +1,5 @@
 #include "colibri.h"
-#include "animalfood.h"
+#include "../animalfood.h"
 
 Colibri::Colibri(int _weight) : defID(19), defRatioMeat(0), defRatioPlant(60), defLimbCount(2), defSkinType("Feather"), defEatMeat(false), defEatPlant(true) {
 	//colibri
