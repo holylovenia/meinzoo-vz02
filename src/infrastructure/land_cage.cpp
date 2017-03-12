@@ -18,82 +18,80 @@ void LandCage::RemovePoint(const Point& p) {
 
 void LandCage::AddAnimal(Colibri& A) {
 	if (nbAnimal < int(area.size() / 10 * 3)) {	
-		bool placeable;
-		if (A.isWild) {
-			if ((colibri[0] != NULL) && (A.isEnemy(colibri[i]->getID())))
+		bool placeable = true;
+		if (A.getBehavior()) {
+			if ((colibri[0] != NULL) && (A.isEnemy(colibri[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (duck[0] != NULL) && (A.isEnemy(duck[i]->getID())))
+			if ((placeable) && (duck[0] != NULL) && (A.isEnemy(duck[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (eagle[0] != NULL) && (A.isEnemy(eagle[i]->getID())))
+			if ((placeable) && (eagle[0] != NULL) && (A.isEnemy(eagle[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (peacock[0] != NULL) && (A.isEnemy(peacock[i]->getID())))
+			if ((placeable) && (peacock[0] != NULL) && (A.isEnemy(peacock[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wild_colibri[0] != NULL) && (A.isEnemy(wild_colibri[i]->getID())))
+			if ((placeable) && (wild_colibri[0] != NULL) && (A.isEnemy(wild_colibri[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (elephant[0] != NULL) && (A.isEnemy(elephant[i]->getID())))
+			if ((placeable) && (elephant[0] != NULL) && (A.isEnemy(elephant[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (giraffe[0] != NULL) && (A.isEnemy(giraffe[i]->getID())))
+			if ((placeable) && (giraffe[0] != NULL) && (A.isEnemy(giraffe[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (lion[0] != NULL) && (A.isEnemy(lion[i]->getID())))
+			if ((placeable) && (lion[0] != NULL) && (A.isEnemy(lion[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (monkey[0] != NULL) && (A.isEnemy(monkey[i]->getID())))
+			if ((placeable) && (monkey[0] != NULL) && (A.isEnemy(monkey[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (tiger[0] != NULL) && (A.isEnemy(tiger[i]->getID())))
+			if ((placeable) && (tiger[0] != NULL) && (A.isEnemy(tiger[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wolf[0] != NULL) && (A.isEnemy(wolf[i]->getID())))
+			if ((placeable) && (wolf[0] != NULL) && (A.isEnemy(wolf[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (zebra[0] != NULL) && (A.isEnemy(zebra[i]->getID())))
+			if ((placeable) && (zebra[0] != NULL) && (A.isEnemy(zebra[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wild_bunny[0] != NULL) && (A.isEnemy(wild_bunny[i]->getID())))
+			if ((placeable) && (wild_bunny[0] != NULL) && (A.isEnemy(wild_bunny[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (chameleon[0] != NULL) && (A.isEnemy(chameleon[i]->getID())))
+			if ((placeable) && (chameleon[0] != NULL) && (A.isEnemy(chameleon[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (crocodile[0] != NULL) && (A.isEnemy(crocodile[i]->getID())))
+			if ((placeable) && (crocodile[0] != NULL) && (A.isEnemy(crocodile[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (iguana[0] != NULL) && (A.isEnemy(iguana[i]->getID())))
+			if ((placeable) && (iguana[0] != NULL) && (A.isEnemy(iguana[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (komodo[0] != NULL) && (A.isEnemy(komodo[i]->getID())))
+			if ((placeable) && (komodo[0] != NULL) && (A.isEnemy(komodo[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (python[0] != NULL) && (A.isEnemy(python[i]->getID())))
+			if ((placeable) && (python[0] != NULL) && (A.isEnemy(python[0]->getID())))
 			{
 				placeable = false;
 			}
-		} else {
-			placeable = true;
 		}
 		if (placeable) {
 			colibri.push_back(&A);
@@ -105,76 +103,76 @@ void LandCage::AddAnimal(Colibri& A) {
 void LandCage::AddAnimal(Duck& A) {
 	if (nbAnimal < int(area.size() / 10 * 3)) {	
 		bool placeable;
-		if (isWild) {
-			if ((colibri[0] != NULL) && (A.isEnemy(colibri[i]->getID())))
+		if (A.getBehavior()) {
+			if ((colibri[0] != NULL) && (A.isEnemy(colibri[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (duck[0] != NULL) && (A.isEnemy(duck[i]->getID())))
+			if ((placeable) && (duck[0] != NULL) && (A.isEnemy(duck[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (eagle[0] != NULL) && (A.isEnemy(eagle[i]->getID())))
+			if ((placeable) && (eagle[0] != NULL) && (A.isEnemy(eagle[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (peacock[0] != NULL) && (A.isEnemy(peacock[i]->getID())))
+			if ((placeable) && (peacock[0] != NULL) && (A.isEnemy(peacock[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wild_colibri[0] != NULL) && (A.isEnemy(wild_colibri[i]->getID())))
+			if ((placeable) && (wild_colibri[0] != NULL) && (A.isEnemy(wild_colibri[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (elephant[0] != NULL) && (A.isEnemy(elephant[i]->getID())))
+			if ((placeable) && (elephant[0] != NULL) && (A.isEnemy(elephant[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (giraffe[0] != NULL) && (A.isEnemy(giraffe[i]->getID())))
+			if ((placeable) && (giraffe[0] != NULL) && (A.isEnemy(giraffe[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (lion[0] != NULL) && (A.isEnemy(lion[i]->getID())))
+			if ((placeable) && (lion[0] != NULL) && (A.isEnemy(lion[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (monkey[0] != NULL) && (A.isEnemy(monkey[i]->getID())))
+			if ((placeable) && (monkey[0] != NULL) && (A.isEnemy(monkey[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (tiger[0] != NULL) && (A.isEnemy(tiger[i]->getID())))
+			if ((placeable) && (tiger[0] != NULL) && (A.isEnemy(tiger[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wolf[0] != NULL) && (A.isEnemy(wolf[i]->getID())))
+			if ((placeable) && (wolf[0] != NULL) && (A.isEnemy(wolf[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (zebra[0] != NULL) && (A.isEnemy(zebra[i]->getID())))
+			if ((placeable) && (zebra[0] != NULL) && (A.isEnemy(zebra[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wild_bunny[0] != NULL) && (A.isEnemy(wild_bunny[i]->getID())))
+			if ((placeable) && (wild_bunny[0] != NULL) && (A.isEnemy(wild_bunny[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (chameleon[0] != NULL) && (A.isEnemy(chameleon[i]->getID())))
+			if ((placeable) && (chameleon[0] != NULL) && (A.isEnemy(chameleon[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (crocodile[0] != NULL) && (A.isEnemy(crocodile[i]->getID())))
+			if ((placeable) && (crocodile[0] != NULL) && (A.isEnemy(crocodile[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (iguana[0] != NULL) && (A.isEnemy(iguana[i]->getID())))
+			if ((placeable) && (iguana[0] != NULL) && (A.isEnemy(iguana[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (komodo[0] != NULL) && (A.isEnemy(komodo[i]->getID())))
+			if ((placeable) && (komodo[0] != NULL) && (A.isEnemy(komodo[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (python[0] != NULL) && (A.isEnemy(python[i]->getID())))
+			if ((placeable) && (python[0] != NULL) && (A.isEnemy(python[0]->getID())))
 			{
 				placeable = false;
 			}
@@ -191,76 +189,76 @@ void LandCage::AddAnimal(Duck& A) {
 void LandCage::AddAnimal(Eagle& A) {
 	if (nbAnimal < int(area.size() / 10 * 3)) {	
 		bool placeable;
-		if (isWild) {
-			if ((colibri[0] != NULL) && (A.isEnemy(colibri[i]->getID())))
+		if (A.getBehavior()) {
+			if ((colibri[0] != NULL) && (A.isEnemy(colibri[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (duck[0] != NULL) && (A.isEnemy(duck[i]->getID())))
+			if ((placeable) && (duck[0] != NULL) && (A.isEnemy(duck[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (eagle[0] != NULL) && (A.isEnemy(eagle[i]->getID())))
+			if ((placeable) && (eagle[0] != NULL) && (A.isEnemy(eagle[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (peacock[0] != NULL) && (A.isEnemy(peacock[i]->getID())))
+			if ((placeable) && (peacock[0] != NULL) && (A.isEnemy(peacock[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wild_colibri[0] != NULL) && (A.isEnemy(wild_colibri[i]->getID())))
+			if ((placeable) && (wild_colibri[0] != NULL) && (A.isEnemy(wild_colibri[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (elephant[0] != NULL) && (A.isEnemy(elephant[i]->getID())))
+			if ((placeable) && (elephant[0] != NULL) && (A.isEnemy(elephant[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (giraffe[0] != NULL) && (A.isEnemy(giraffe[i]->getID())))
+			if ((placeable) && (giraffe[0] != NULL) && (A.isEnemy(giraffe[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (lion[0] != NULL) && (A.isEnemy(lion[i]->getID())))
+			if ((placeable) && (lion[0] != NULL) && (A.isEnemy(lion[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (monkey[0] != NULL) && (A.isEnemy(monkey[i]->getID())))
+			if ((placeable) && (monkey[0] != NULL) && (A.isEnemy(monkey[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (tiger[0] != NULL) && (A.isEnemy(tiger[i]->getID())))
+			if ((placeable) && (tiger[0] != NULL) && (A.isEnemy(tiger[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wolf[0] != NULL) && (A.isEnemy(wolf[i]->getID())))
+			if ((placeable) && (wolf[0] != NULL) && (A.isEnemy(wolf[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (zebra[0] != NULL) && (A.isEnemy(zebra[i]->getID())))
+			if ((placeable) && (zebra[0] != NULL) && (A.isEnemy(zebra[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wild_bunny[0] != NULL) && (A.isEnemy(wild_bunny[i]->getID())))
+			if ((placeable) && (wild_bunny[0] != NULL) && (A.isEnemy(wild_bunny[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (chameleon[0] != NULL) && (A.isEnemy(chameleon[i]->getID())))
+			if ((placeable) && (chameleon[0] != NULL) && (A.isEnemy(chameleon[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (crocodile[0] != NULL) && (A.isEnemy(crocodile[i]->getID())))
+			if ((placeable) && (crocodile[0] != NULL) && (A.isEnemy(crocodile[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (iguana[0] != NULL) && (A.isEnemy(iguana[i]->getID())))
+			if ((placeable) && (iguana[0] != NULL) && (A.isEnemy(iguana[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (komodo[0] != NULL) && (A.isEnemy(komodo[i]->getID())))
+			if ((placeable) && (komodo[0] != NULL) && (A.isEnemy(komodo[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (python[0] != NULL) && (A.isEnemy(python[i]->getID())))
+			if ((placeable) && (python[0] != NULL) && (A.isEnemy(python[0]->getID())))
 			{
 				placeable = false;
 			}
@@ -277,76 +275,76 @@ void LandCage::AddAnimal(Eagle& A) {
 void LandCage::AddAnimal(Peacock& A) {
 	if (nbAnimal < int(area.size() / 10 * 3)) {	
 		bool placeable;
-		if (isWild) {
-			if ((colibri[0] != NULL) && (A.isEnemy(colibri[i]->getID())))
+		if (A.getBehavior()) {
+			if ((colibri[0] != NULL) && (A.isEnemy(colibri[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (duck[0] != NULL) && (A.isEnemy(duck[i]->getID())))
+			if ((placeable) && (duck[0] != NULL) && (A.isEnemy(duck[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (eagle[0] != NULL) && (A.isEnemy(eagle[i]->getID())))
+			if ((placeable) && (eagle[0] != NULL) && (A.isEnemy(eagle[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (peacock[0] != NULL) && (A.isEnemy(peacock[i]->getID())))
+			if ((placeable) && (peacock[0] != NULL) && (A.isEnemy(peacock[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wild_colibri[0] != NULL) && (A.isEnemy(wild_colibri[i]->getID())))
+			if ((placeable) && (wild_colibri[0] != NULL) && (A.isEnemy(wild_colibri[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (elephant[0] != NULL) && (A.isEnemy(elephant[i]->getID())))
+			if ((placeable) && (elephant[0] != NULL) && (A.isEnemy(elephant[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (giraffe[0] != NULL) && (A.isEnemy(giraffe[i]->getID())))
+			if ((placeable) && (giraffe[0] != NULL) && (A.isEnemy(giraffe[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (lion[0] != NULL) && (A.isEnemy(lion[i]->getID())))
+			if ((placeable) && (lion[0] != NULL) && (A.isEnemy(lion[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (monkey[0] != NULL) && (A.isEnemy(monkey[i]->getID())))
+			if ((placeable) && (monkey[0] != NULL) && (A.isEnemy(monkey[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (tiger[0] != NULL) && (A.isEnemy(tiger[i]->getID())))
+			if ((placeable) && (tiger[0] != NULL) && (A.isEnemy(tiger[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wolf[0] != NULL) && (A.isEnemy(wolf[i]->getID())))
+			if ((placeable) && (wolf[0] != NULL) && (A.isEnemy(wolf[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (zebra[0] != NULL) && (A.isEnemy(zebra[i]->getID())))
+			if ((placeable) && (zebra[0] != NULL) && (A.isEnemy(zebra[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wild_bunny[0] != NULL) && (A.isEnemy(wild_bunny[i]->getID())))
+			if ((placeable) && (wild_bunny[0] != NULL) && (A.isEnemy(wild_bunny[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (chameleon[0] != NULL) && (A.isEnemy(chameleon[i]->getID())))
+			if ((placeable) && (chameleon[0] != NULL) && (A.isEnemy(chameleon[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (crocodile[0] != NULL) && (A.isEnemy(crocodile[i]->getID())))
+			if ((placeable) && (crocodile[0] != NULL) && (A.isEnemy(crocodile[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (iguana[0] != NULL) && (A.isEnemy(iguana[i]->getID())))
+			if ((placeable) && (iguana[0] != NULL) && (A.isEnemy(iguana[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (komodo[0] != NULL) && (A.isEnemy(komodo[i]->getID())))
+			if ((placeable) && (komodo[0] != NULL) && (A.isEnemy(komodo[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (python[0] != NULL) && (A.isEnemy(python[i]->getID())))
+			if ((placeable) && (python[0] != NULL) && (A.isEnemy(python[0]->getID())))
 			{
 				placeable = false;
 			}
@@ -363,76 +361,76 @@ void LandCage::AddAnimal(Peacock& A) {
 void LandCage::AddAnimal(WildColibri& A) {
 	if (nbAnimal < int(area.size() / 10 * 3)) {	
 		bool placeable;
-		if (isWild) {
-			if ((colibri[0] != NULL) && (A.isEnemy(colibri[i]->getID())))
+		if (A.getBehavior()) {
+			if ((colibri[0] != NULL) && (A.isEnemy(colibri[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (duck[0] != NULL) && (A.isEnemy(duck[i]->getID())))
+			if ((placeable) && (duck[0] != NULL) && (A.isEnemy(duck[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (eagle[0] != NULL) && (A.isEnemy(eagle[i]->getID())))
+			if ((placeable) && (eagle[0] != NULL) && (A.isEnemy(eagle[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (peacock[0] != NULL) && (A.isEnemy(peacock[i]->getID())))
+			if ((placeable) && (peacock[0] != NULL) && (A.isEnemy(peacock[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wild_colibri[0] != NULL) && (A.isEnemy(wild_colibri[i]->getID())))
+			if ((placeable) && (wild_colibri[0] != NULL) && (A.isEnemy(wild_colibri[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (elephant[0] != NULL) && (A.isEnemy(elephant[i]->getID())))
+			if ((placeable) && (elephant[0] != NULL) && (A.isEnemy(elephant[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (giraffe[0] != NULL) && (A.isEnemy(giraffe[i]->getID())))
+			if ((placeable) && (giraffe[0] != NULL) && (A.isEnemy(giraffe[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (lion[0] != NULL) && (A.isEnemy(lion[i]->getID())))
+			if ((placeable) && (lion[0] != NULL) && (A.isEnemy(lion[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (monkey[0] != NULL) && (A.isEnemy(monkey[i]->getID())))
+			if ((placeable) && (monkey[0] != NULL) && (A.isEnemy(monkey[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (tiger[0] != NULL) && (A.isEnemy(tiger[i]->getID())))
+			if ((placeable) && (tiger[0] != NULL) && (A.isEnemy(tiger[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wolf[0] != NULL) && (A.isEnemy(wolf[i]->getID())))
+			if ((placeable) && (wolf[0] != NULL) && (A.isEnemy(wolf[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (zebra[0] != NULL) && (A.isEnemy(zebra[i]->getID())))
+			if ((placeable) && (zebra[0] != NULL) && (A.isEnemy(zebra[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wild_bunny[0] != NULL) && (A.isEnemy(wild_bunny[i]->getID())))
+			if ((placeable) && (wild_bunny[0] != NULL) && (A.isEnemy(wild_bunny[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (chameleon[0] != NULL) && (A.isEnemy(chameleon[i]->getID())))
+			if ((placeable) && (chameleon[0] != NULL) && (A.isEnemy(chameleon[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (crocodile[0] != NULL) && (A.isEnemy(crocodile[i]->getID())))
+			if ((placeable) && (crocodile[0] != NULL) && (A.isEnemy(crocodile[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (iguana[0] != NULL) && (A.isEnemy(iguana[i]->getID())))
+			if ((placeable) && (iguana[0] != NULL) && (A.isEnemy(iguana[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (komodo[0] != NULL) && (A.isEnemy(komodo[i]->getID())))
+			if ((placeable) && (komodo[0] != NULL) && (A.isEnemy(komodo[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (python[0] != NULL) && (A.isEnemy(python[i]->getID())))
+			if ((placeable) && (python[0] != NULL) && (A.isEnemy(python[0]->getID())))
 			{
 				placeable = false;
 			}
@@ -449,76 +447,76 @@ void LandCage::AddAnimal(WildColibri& A) {
 void LandCage::AddAnimal(Elephant& A) {
 	if (nbAnimal < int(area.size() / 10 * 3)) {	
 		bool placeable;
-		if (isWild) {
-			if ((colibri[0] != NULL) && (A.isEnemy(colibri[i]->getID())))
+		if (A.getBehavior()) {
+			if ((colibri[0] != NULL) && (A.isEnemy(colibri[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (duck[0] != NULL) && (A.isEnemy(duck[i]->getID())))
+			if ((placeable) && (duck[0] != NULL) && (A.isEnemy(duck[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (eagle[0] != NULL) && (A.isEnemy(eagle[i]->getID())))
+			if ((placeable) && (eagle[0] != NULL) && (A.isEnemy(eagle[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (peacock[0] != NULL) && (A.isEnemy(peacock[i]->getID())))
+			if ((placeable) && (peacock[0] != NULL) && (A.isEnemy(peacock[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wild_colibri[0] != NULL) && (A.isEnemy(wild_colibri[i]->getID())))
+			if ((placeable) && (wild_colibri[0] != NULL) && (A.isEnemy(wild_colibri[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (elephant[0] != NULL) && (A.isEnemy(elephant[i]->getID())))
+			if ((placeable) && (elephant[0] != NULL) && (A.isEnemy(elephant[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (giraffe[0] != NULL) && (A.isEnemy(giraffe[i]->getID())))
+			if ((placeable) && (giraffe[0] != NULL) && (A.isEnemy(giraffe[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (lion[0] != NULL) && (A.isEnemy(lion[i]->getID())))
+			if ((placeable) && (lion[0] != NULL) && (A.isEnemy(lion[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (monkey[0] != NULL) && (A.isEnemy(monkey[i]->getID())))
+			if ((placeable) && (monkey[0] != NULL) && (A.isEnemy(monkey[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (tiger[0] != NULL) && (A.isEnemy(tiger[i]->getID())))
+			if ((placeable) && (tiger[0] != NULL) && (A.isEnemy(tiger[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wolf[0] != NULL) && (A.isEnemy(wolf[i]->getID())))
+			if ((placeable) && (wolf[0] != NULL) && (A.isEnemy(wolf[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (zebra[0] != NULL) && (A.isEnemy(zebra[i]->getID())))
+			if ((placeable) && (zebra[0] != NULL) && (A.isEnemy(zebra[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wild_bunny[0] != NULL) && (A.isEnemy(wild_bunny[i]->getID())))
+			if ((placeable) && (wild_bunny[0] != NULL) && (A.isEnemy(wild_bunny[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (chameleon[0] != NULL) && (A.isEnemy(chameleon[i]->getID())))
+			if ((placeable) && (chameleon[0] != NULL) && (A.isEnemy(chameleon[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (crocodile[0] != NULL) && (A.isEnemy(crocodile[i]->getID())))
+			if ((placeable) && (crocodile[0] != NULL) && (A.isEnemy(crocodile[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (iguana[0] != NULL) && (A.isEnemy(iguana[i]->getID())))
+			if ((placeable) && (iguana[0] != NULL) && (A.isEnemy(iguana[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (komodo[0] != NULL) && (A.isEnemy(komodo[i]->getID())))
+			if ((placeable) && (komodo[0] != NULL) && (A.isEnemy(komodo[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (python[0] != NULL) && (A.isEnemy(python[i]->getID())))
+			if ((placeable) && (python[0] != NULL) && (A.isEnemy(python[0]->getID())))
 			{
 				placeable = false;
 			}
@@ -535,76 +533,76 @@ void LandCage::AddAnimal(Elephant& A) {
 void LandCage::AddAnimal(Giraffe& A) {
 	if (nbAnimal < int(area.size() / 10 * 3)) {	
 		bool placeable;
-		if (isWild) {
-			if ((colibri[0] != NULL) && (A.isEnemy(colibri[i]->getID())))
+		if (A.getBehavior()) {
+			if ((colibri[0] != NULL) && (A.isEnemy(colibri[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (duck[0] != NULL) && (A.isEnemy(duck[i]->getID())))
+			if ((placeable) && (duck[0] != NULL) && (A.isEnemy(duck[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (eagle[0] != NULL) && (A.isEnemy(eagle[i]->getID())))
+			if ((placeable) && (eagle[0] != NULL) && (A.isEnemy(eagle[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (peacock[0] != NULL) && (A.isEnemy(peacock[i]->getID())))
+			if ((placeable) && (peacock[0] != NULL) && (A.isEnemy(peacock[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wild_colibri[0] != NULL) && (A.isEnemy(wild_colibri[i]->getID())))
+			if ((placeable) && (wild_colibri[0] != NULL) && (A.isEnemy(wild_colibri[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (elephant[0] != NULL) && (A.isEnemy(elephant[i]->getID())))
+			if ((placeable) && (elephant[0] != NULL) && (A.isEnemy(elephant[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (giraffe[0] != NULL) && (A.isEnemy(giraffe[i]->getID())))
+			if ((placeable) && (giraffe[0] != NULL) && (A.isEnemy(giraffe[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (lion[0] != NULL) && (A.isEnemy(lion[i]->getID())))
+			if ((placeable) && (lion[0] != NULL) && (A.isEnemy(lion[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (monkey[0] != NULL) && (A.isEnemy(monkey[i]->getID())))
+			if ((placeable) && (monkey[0] != NULL) && (A.isEnemy(monkey[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (tiger[0] != NULL) && (A.isEnemy(tiger[i]->getID())))
+			if ((placeable) && (tiger[0] != NULL) && (A.isEnemy(tiger[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wolf[0] != NULL) && (A.isEnemy(wolf[i]->getID())))
+			if ((placeable) && (wolf[0] != NULL) && (A.isEnemy(wolf[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (zebra[0] != NULL) && (A.isEnemy(zebra[i]->getID())))
+			if ((placeable) && (zebra[0] != NULL) && (A.isEnemy(zebra[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wild_bunny[0] != NULL) && (A.isEnemy(wild_bunny[i]->getID())))
+			if ((placeable) && (wild_bunny[0] != NULL) && (A.isEnemy(wild_bunny[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (chameleon[0] != NULL) && (A.isEnemy(chameleon[i]->getID())))
+			if ((placeable) && (chameleon[0] != NULL) && (A.isEnemy(chameleon[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (crocodile[0] != NULL) && (A.isEnemy(crocodile[i]->getID())))
+			if ((placeable) && (crocodile[0] != NULL) && (A.isEnemy(crocodile[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (iguana[0] != NULL) && (A.isEnemy(iguana[i]->getID())))
+			if ((placeable) && (iguana[0] != NULL) && (A.isEnemy(iguana[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (komodo[0] != NULL) && (A.isEnemy(komodo[i]->getID())))
+			if ((placeable) && (komodo[0] != NULL) && (A.isEnemy(komodo[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (python[0] != NULL) && (A.isEnemy(python[i]->getID())))
+			if ((placeable) && (python[0] != NULL) && (A.isEnemy(python[0]->getID())))
 			{
 				placeable = false;
 			}
@@ -621,76 +619,76 @@ void LandCage::AddAnimal(Giraffe& A) {
 void LandCage::AddAnimal(Lion& A) {
 	if (nbAnimal < int(area.size() / 10 * 3)) {	
 		bool placeable;
-		if (isWild) {
-			if ((colibri[0] != NULL) && (A.isEnemy(colibri[i]->getID())))
+		if (A.getBehavior()) {
+			if ((colibri[0] != NULL) && (A.isEnemy(colibri[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (duck[0] != NULL) && (A.isEnemy(duck[i]->getID())))
+			if ((placeable) && (duck[0] != NULL) && (A.isEnemy(duck[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (eagle[0] != NULL) && (A.isEnemy(eagle[i]->getID())))
+			if ((placeable) && (eagle[0] != NULL) && (A.isEnemy(eagle[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (peacock[0] != NULL) && (A.isEnemy(peacock[i]->getID())))
+			if ((placeable) && (peacock[0] != NULL) && (A.isEnemy(peacock[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wild_colibri[0] != NULL) && (A.isEnemy(wild_colibri[i]->getID())))
+			if ((placeable) && (wild_colibri[0] != NULL) && (A.isEnemy(wild_colibri[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (elephant[0] != NULL) && (A.isEnemy(elephant[i]->getID())))
+			if ((placeable) && (elephant[0] != NULL) && (A.isEnemy(elephant[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (giraffe[0] != NULL) && (A.isEnemy(giraffe[i]->getID())))
+			if ((placeable) && (giraffe[0] != NULL) && (A.isEnemy(giraffe[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (lion[0] != NULL) && (A.isEnemy(lion[i]->getID())))
+			if ((placeable) && (lion[0] != NULL) && (A.isEnemy(lion[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (monkey[0] != NULL) && (A.isEnemy(monkey[i]->getID())))
+			if ((placeable) && (monkey[0] != NULL) && (A.isEnemy(monkey[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (tiger[0] != NULL) && (A.isEnemy(tiger[i]->getID())))
+			if ((placeable) && (tiger[0] != NULL) && (A.isEnemy(tiger[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wolf[0] != NULL) && (A.isEnemy(wolf[i]->getID())))
+			if ((placeable) && (wolf[0] != NULL) && (A.isEnemy(wolf[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (zebra[0] != NULL) && (A.isEnemy(zebra[i]->getID())))
+			if ((placeable) && (zebra[0] != NULL) && (A.isEnemy(zebra[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wild_bunny[0] != NULL) && (A.isEnemy(wild_bunny[i]->getID())))
+			if ((placeable) && (wild_bunny[0] != NULL) && (A.isEnemy(wild_bunny[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (chameleon[0] != NULL) && (A.isEnemy(chameleon[i]->getID())))
+			if ((placeable) && (chameleon[0] != NULL) && (A.isEnemy(chameleon[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (crocodile[0] != NULL) && (A.isEnemy(crocodile[i]->getID())))
+			if ((placeable) && (crocodile[0] != NULL) && (A.isEnemy(crocodile[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (iguana[0] != NULL) && (A.isEnemy(iguana[i]->getID())))
+			if ((placeable) && (iguana[0] != NULL) && (A.isEnemy(iguana[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (komodo[0] != NULL) && (A.isEnemy(komodo[i]->getID())))
+			if ((placeable) && (komodo[0] != NULL) && (A.isEnemy(komodo[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (python[0] != NULL) && (A.isEnemy(python[i]->getID())))
+			if ((placeable) && (python[0] != NULL) && (A.isEnemy(python[0]->getID())))
 			{
 				placeable = false;
 			}
@@ -707,76 +705,76 @@ void LandCage::AddAnimal(Lion& A) {
 void LandCage::AddAnimal(Monkey& A) {
 	if (nbAnimal < int(area.size() / 10 * 3)) {	
 		bool placeable;
-		if (isWild) {
-			if ((colibri[0] != NULL) && (A.isEnemy(colibri[i]->getID())))
+		if (A.getBehavior()) {
+			if ((colibri[0] != NULL) && (A.isEnemy(colibri[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (duck[0] != NULL) && (A.isEnemy(duck[i]->getID())))
+			if ((placeable) && (duck[0] != NULL) && (A.isEnemy(duck[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (eagle[0] != NULL) && (A.isEnemy(eagle[i]->getID())))
+			if ((placeable) && (eagle[0] != NULL) && (A.isEnemy(eagle[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (peacock[0] != NULL) && (A.isEnemy(peacock[i]->getID())))
+			if ((placeable) && (peacock[0] != NULL) && (A.isEnemy(peacock[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wild_colibri[0] != NULL) && (A.isEnemy(wild_colibri[i]->getID())))
+			if ((placeable) && (wild_colibri[0] != NULL) && (A.isEnemy(wild_colibri[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (elephant[0] != NULL) && (A.isEnemy(elephant[i]->getID())))
+			if ((placeable) && (elephant[0] != NULL) && (A.isEnemy(elephant[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (giraffe[0] != NULL) && (A.isEnemy(giraffe[i]->getID())))
+			if ((placeable) && (giraffe[0] != NULL) && (A.isEnemy(giraffe[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (lion[0] != NULL) && (A.isEnemy(lion[i]->getID())))
+			if ((placeable) && (lion[0] != NULL) && (A.isEnemy(lion[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (monkey[0] != NULL) && (A.isEnemy(monkey[i]->getID())))
+			if ((placeable) && (monkey[0] != NULL) && (A.isEnemy(monkey[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (tiger[0] != NULL) && (A.isEnemy(tiger[i]->getID())))
+			if ((placeable) && (tiger[0] != NULL) && (A.isEnemy(tiger[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wolf[0] != NULL) && (A.isEnemy(wolf[i]->getID())))
+			if ((placeable) && (wolf[0] != NULL) && (A.isEnemy(wolf[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (zebra[0] != NULL) && (A.isEnemy(zebra[i]->getID())))
+			if ((placeable) && (zebra[0] != NULL) && (A.isEnemy(zebra[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wild_bunny[0] != NULL) && (A.isEnemy(wild_bunny[i]->getID())))
+			if ((placeable) && (wild_bunny[0] != NULL) && (A.isEnemy(wild_bunny[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (chameleon[0] != NULL) && (A.isEnemy(chameleon[i]->getID())))
+			if ((placeable) && (chameleon[0] != NULL) && (A.isEnemy(chameleon[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (crocodile[0] != NULL) && (A.isEnemy(crocodile[i]->getID())))
+			if ((placeable) && (crocodile[0] != NULL) && (A.isEnemy(crocodile[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (iguana[0] != NULL) && (A.isEnemy(iguana[i]->getID())))
+			if ((placeable) && (iguana[0] != NULL) && (A.isEnemy(iguana[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (komodo[0] != NULL) && (A.isEnemy(komodo[i]->getID())))
+			if ((placeable) && (komodo[0] != NULL) && (A.isEnemy(komodo[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (python[0] != NULL) && (A.isEnemy(python[i]->getID())))
+			if ((placeable) && (python[0] != NULL) && (A.isEnemy(python[0]->getID())))
 			{
 				placeable = false;
 			}
@@ -793,76 +791,76 @@ void LandCage::AddAnimal(Monkey& A) {
 void LandCage::AddAnimal(Tiger& A) {
 	if (nbAnimal < int(area.size() / 10 * 3)) {	
 		bool placeable;
-		if (isWild) {
-			if ((colibri[0] != NULL) && (A.isEnemy(colibri[i]->getID())))
+		if (A.getBehavior()) {
+			if ((colibri[0] != NULL) && (A.isEnemy(colibri[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (duck[0] != NULL) && (A.isEnemy(duck[i]->getID())))
+			if ((placeable) && (duck[0] != NULL) && (A.isEnemy(duck[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (eagle[0] != NULL) && (A.isEnemy(eagle[i]->getID())))
+			if ((placeable) && (eagle[0] != NULL) && (A.isEnemy(eagle[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (peacock[0] != NULL) && (A.isEnemy(peacock[i]->getID())))
+			if ((placeable) && (peacock[0] != NULL) && (A.isEnemy(peacock[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wild_colibri[0] != NULL) && (A.isEnemy(wild_colibri[i]->getID())))
+			if ((placeable) && (wild_colibri[0] != NULL) && (A.isEnemy(wild_colibri[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (elephant[0] != NULL) && (A.isEnemy(elephant[i]->getID())))
+			if ((placeable) && (elephant[0] != NULL) && (A.isEnemy(elephant[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (giraffe[0] != NULL) && (A.isEnemy(giraffe[i]->getID())))
+			if ((placeable) && (giraffe[0] != NULL) && (A.isEnemy(giraffe[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (lion[0] != NULL) && (A.isEnemy(lion[i]->getID())))
+			if ((placeable) && (lion[0] != NULL) && (A.isEnemy(lion[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (monkey[0] != NULL) && (A.isEnemy(monkey[i]->getID())))
+			if ((placeable) && (monkey[0] != NULL) && (A.isEnemy(monkey[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (tiger[0] != NULL) && (A.isEnemy(tiger[i]->getID())))
+			if ((placeable) && (tiger[0] != NULL) && (A.isEnemy(tiger[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wolf[0] != NULL) && (A.isEnemy(wolf[i]->getID())))
+			if ((placeable) && (wolf[0] != NULL) && (A.isEnemy(wolf[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (zebra[0] != NULL) && (A.isEnemy(zebra[i]->getID())))
+			if ((placeable) && (zebra[0] != NULL) && (A.isEnemy(zebra[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wild_bunny[0] != NULL) && (A.isEnemy(wild_bunny[i]->getID())))
+			if ((placeable) && (wild_bunny[0] != NULL) && (A.isEnemy(wild_bunny[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (chameleon[0] != NULL) && (A.isEnemy(chameleon[i]->getID())))
+			if ((placeable) && (chameleon[0] != NULL) && (A.isEnemy(chameleon[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (crocodile[0] != NULL) && (A.isEnemy(crocodile[i]->getID())))
+			if ((placeable) && (crocodile[0] != NULL) && (A.isEnemy(crocodile[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (iguana[0] != NULL) && (A.isEnemy(iguana[i]->getID())))
+			if ((placeable) && (iguana[0] != NULL) && (A.isEnemy(iguana[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (komodo[0] != NULL) && (A.isEnemy(komodo[i]->getID())))
+			if ((placeable) && (komodo[0] != NULL) && (A.isEnemy(komodo[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (python[0] != NULL) && (A.isEnemy(python[i]->getID())))
+			if ((placeable) && (python[0] != NULL) && (A.isEnemy(python[0]->getID())))
 			{
 				placeable = false;
 			}
@@ -879,76 +877,76 @@ void LandCage::AddAnimal(Tiger& A) {
 void LandCage::AddAnimal(Wolf& A) {
 	if (nbAnimal < int(area.size() / 10 * 3)) {	
 		bool placeable;
-		if (isWild) {
-			if ((colibri[0] != NULL) && (A.isEnemy(colibri[i]->getID())))
+		if (A.getBehavior()) {
+			if ((colibri[0] != NULL) && (A.isEnemy(colibri[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (duck[0] != NULL) && (A.isEnemy(duck[i]->getID())))
+			if ((placeable) && (duck[0] != NULL) && (A.isEnemy(duck[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (eagle[0] != NULL) && (A.isEnemy(eagle[i]->getID())))
+			if ((placeable) && (eagle[0] != NULL) && (A.isEnemy(eagle[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (peacock[0] != NULL) && (A.isEnemy(peacock[i]->getID())))
+			if ((placeable) && (peacock[0] != NULL) && (A.isEnemy(peacock[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wild_colibri[0] != NULL) && (A.isEnemy(wild_colibri[i]->getID())))
+			if ((placeable) && (wild_colibri[0] != NULL) && (A.isEnemy(wild_colibri[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (elephant[0] != NULL) && (A.isEnemy(elephant[i]->getID())))
+			if ((placeable) && (elephant[0] != NULL) && (A.isEnemy(elephant[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (giraffe[0] != NULL) && (A.isEnemy(giraffe[i]->getID())))
+			if ((placeable) && (giraffe[0] != NULL) && (A.isEnemy(giraffe[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (lion[0] != NULL) && (A.isEnemy(lion[i]->getID())))
+			if ((placeable) && (lion[0] != NULL) && (A.isEnemy(lion[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (monkey[0] != NULL) && (A.isEnemy(monkey[i]->getID())))
+			if ((placeable) && (monkey[0] != NULL) && (A.isEnemy(monkey[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (tiger[0] != NULL) && (A.isEnemy(tiger[i]->getID())))
+			if ((placeable) && (tiger[0] != NULL) && (A.isEnemy(tiger[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wolf[0] != NULL) && (A.isEnemy(wolf[i]->getID())))
+			if ((placeable) && (wolf[0] != NULL) && (A.isEnemy(wolf[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (zebra[0] != NULL) && (A.isEnemy(zebra[i]->getID())))
+			if ((placeable) && (zebra[0] != NULL) && (A.isEnemy(zebra[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wild_bunny[0] != NULL) && (A.isEnemy(wild_bunny[i]->getID())))
+			if ((placeable) && (wild_bunny[0] != NULL) && (A.isEnemy(wild_bunny[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (chameleon[0] != NULL) && (A.isEnemy(chameleon[i]->getID())))
+			if ((placeable) && (chameleon[0] != NULL) && (A.isEnemy(chameleon[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (crocodile[0] != NULL) && (A.isEnemy(crocodile[i]->getID())))
+			if ((placeable) && (crocodile[0] != NULL) && (A.isEnemy(crocodile[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (iguana[0] != NULL) && (A.isEnemy(iguana[i]->getID())))
+			if ((placeable) && (iguana[0] != NULL) && (A.isEnemy(iguana[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (komodo[0] != NULL) && (A.isEnemy(komodo[i]->getID())))
+			if ((placeable) && (komodo[0] != NULL) && (A.isEnemy(komodo[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (python[0] != NULL) && (A.isEnemy(python[i]->getID())))
+			if ((placeable) && (python[0] != NULL) && (A.isEnemy(python[0]->getID())))
 			{
 				placeable = false;
 			}
@@ -965,76 +963,76 @@ void LandCage::AddAnimal(Wolf& A) {
 void LandCage::AddAnimal(Zebra& A) {
 	if (nbAnimal < int(area.size() / 10 * 3)) {	
 		bool placeable;
-		if (isWild) {
-			if ((colibri[0] != NULL) && (A.isEnemy(colibri[i]->getID())))
+		if (A.getBehavior()) {
+			if ((colibri[0] != NULL) && (A.isEnemy(colibri[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (duck[0] != NULL) && (A.isEnemy(duck[i]->getID())))
+			if ((placeable) && (duck[0] != NULL) && (A.isEnemy(duck[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (eagle[0] != NULL) && (A.isEnemy(eagle[i]->getID())))
+			if ((placeable) && (eagle[0] != NULL) && (A.isEnemy(eagle[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (peacock[0] != NULL) && (A.isEnemy(peacock[i]->getID())))
+			if ((placeable) && (peacock[0] != NULL) && (A.isEnemy(peacock[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wild_colibri[0] != NULL) && (A.isEnemy(wild_colibri[i]->getID())))
+			if ((placeable) && (wild_colibri[0] != NULL) && (A.isEnemy(wild_colibri[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (elephant[0] != NULL) && (A.isEnemy(elephant[i]->getID())))
+			if ((placeable) && (elephant[0] != NULL) && (A.isEnemy(elephant[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (giraffe[0] != NULL) && (A.isEnemy(giraffe[i]->getID())))
+			if ((placeable) && (giraffe[0] != NULL) && (A.isEnemy(giraffe[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (lion[0] != NULL) && (A.isEnemy(lion[i]->getID())))
+			if ((placeable) && (lion[0] != NULL) && (A.isEnemy(lion[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (monkey[0] != NULL) && (A.isEnemy(monkey[i]->getID())))
+			if ((placeable) && (monkey[0] != NULL) && (A.isEnemy(monkey[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (tiger[0] != NULL) && (A.isEnemy(tiger[i]->getID())))
+			if ((placeable) && (tiger[0] != NULL) && (A.isEnemy(tiger[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wolf[0] != NULL) && (A.isEnemy(wolf[i]->getID())))
+			if ((placeable) && (wolf[0] != NULL) && (A.isEnemy(wolf[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (zebra[0] != NULL) && (A.isEnemy(zebra[i]->getID())))
+			if ((placeable) && (zebra[0] != NULL) && (A.isEnemy(zebra[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wild_bunny[0] != NULL) && (A.isEnemy(wild_bunny[i]->getID())))
+			if ((placeable) && (wild_bunny[0] != NULL) && (A.isEnemy(wild_bunny[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (chameleon[0] != NULL) && (A.isEnemy(chameleon[i]->getID())))
+			if ((placeable) && (chameleon[0] != NULL) && (A.isEnemy(chameleon[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (crocodile[0] != NULL) && (A.isEnemy(crocodile[i]->getID())))
+			if ((placeable) && (crocodile[0] != NULL) && (A.isEnemy(crocodile[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (iguana[0] != NULL) && (A.isEnemy(iguana[i]->getID())))
+			if ((placeable) && (iguana[0] != NULL) && (A.isEnemy(iguana[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (komodo[0] != NULL) && (A.isEnemy(komodo[i]->getID())))
+			if ((placeable) && (komodo[0] != NULL) && (A.isEnemy(komodo[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (python[0] != NULL) && (A.isEnemy(python[i]->getID())))
+			if ((placeable) && (python[0] != NULL) && (A.isEnemy(python[0]->getID())))
 			{
 				placeable = false;
 			}
@@ -1051,76 +1049,76 @@ void LandCage::AddAnimal(Zebra& A) {
 void LandCage::AddAnimal(WildBunny& A) {
 	if (nbAnimal < int(area.size() / 10 * 3)) {	
 		bool placeable;
-		if (isWild) {
-			if ((colibri[0] != NULL) && (A.isEnemy(colibri[i]->getID())))
+		if (A.getBehavior()) {
+			if ((colibri[0] != NULL) && (A.isEnemy(colibri[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (duck[0] != NULL) && (A.isEnemy(duck[i]->getID())))
+			if ((placeable) && (duck[0] != NULL) && (A.isEnemy(duck[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (eagle[0] != NULL) && (A.isEnemy(eagle[i]->getID())))
+			if ((placeable) && (eagle[0] != NULL) && (A.isEnemy(eagle[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (peacock[0] != NULL) && (A.isEnemy(peacock[i]->getID())))
+			if ((placeable) && (peacock[0] != NULL) && (A.isEnemy(peacock[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wild_colibri[0] != NULL) && (A.isEnemy(wild_colibri[i]->getID())))
+			if ((placeable) && (wild_colibri[0] != NULL) && (A.isEnemy(wild_colibri[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (elephant[0] != NULL) && (A.isEnemy(elephant[i]->getID())))
+			if ((placeable) && (elephant[0] != NULL) && (A.isEnemy(elephant[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (giraffe[0] != NULL) && (A.isEnemy(giraffe[i]->getID())))
+			if ((placeable) && (giraffe[0] != NULL) && (A.isEnemy(giraffe[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (lion[0] != NULL) && (A.isEnemy(lion[i]->getID())))
+			if ((placeable) && (lion[0] != NULL) && (A.isEnemy(lion[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (monkey[0] != NULL) && (A.isEnemy(monkey[i]->getID())))
+			if ((placeable) && (monkey[0] != NULL) && (A.isEnemy(monkey[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (tiger[0] != NULL) && (A.isEnemy(tiger[i]->getID())))
+			if ((placeable) && (tiger[0] != NULL) && (A.isEnemy(tiger[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wolf[0] != NULL) && (A.isEnemy(wolf[i]->getID())))
+			if ((placeable) && (wolf[0] != NULL) && (A.isEnemy(wolf[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (zebra[0] != NULL) && (A.isEnemy(zebra[i]->getID())))
+			if ((placeable) && (zebra[0] != NULL) && (A.isEnemy(zebra[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wild_bunny[0] != NULL) && (A.isEnemy(wild_bunny[i]->getID())))
+			if ((placeable) && (wild_bunny[0] != NULL) && (A.isEnemy(wild_bunny[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (chameleon[0] != NULL) && (A.isEnemy(chameleon[i]->getID())))
+			if ((placeable) && (chameleon[0] != NULL) && (A.isEnemy(chameleon[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (crocodile[0] != NULL) && (A.isEnemy(crocodile[i]->getID())))
+			if ((placeable) && (crocodile[0] != NULL) && (A.isEnemy(crocodile[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (iguana[0] != NULL) && (A.isEnemy(iguana[i]->getID())))
+			if ((placeable) && (iguana[0] != NULL) && (A.isEnemy(iguana[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (komodo[0] != NULL) && (A.isEnemy(komodo[i]->getID())))
+			if ((placeable) && (komodo[0] != NULL) && (A.isEnemy(komodo[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (python[0] != NULL) && (A.isEnemy(python[i]->getID())))
+			if ((placeable) && (python[0] != NULL) && (A.isEnemy(python[0]->getID())))
 			{
 				placeable = false;
 			}
@@ -1137,76 +1135,76 @@ void LandCage::AddAnimal(WildBunny& A) {
 void LandCage::AddAnimal(Chameleon& A) {
 	if (nbAnimal < int(area.size() / 10 * 3)) {	
 		bool placeable;
-		if (isWild) {
-			if ((colibri[0] != NULL) && (A.isEnemy(colibri[i]->getID())))
+		if (A.getBehavior()) {
+			if ((colibri[0] != NULL) && (A.isEnemy(colibri[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (duck[0] != NULL) && (A.isEnemy(duck[i]->getID())))
+			if ((placeable) && (duck[0] != NULL) && (A.isEnemy(duck[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (eagle[0] != NULL) && (A.isEnemy(eagle[i]->getID())))
+			if ((placeable) && (eagle[0] != NULL) && (A.isEnemy(eagle[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (peacock[0] != NULL) && (A.isEnemy(peacock[i]->getID())))
+			if ((placeable) && (peacock[0] != NULL) && (A.isEnemy(peacock[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wild_colibri[0] != NULL) && (A.isEnemy(wild_colibri[i]->getID())))
+			if ((placeable) && (wild_colibri[0] != NULL) && (A.isEnemy(wild_colibri[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (elephant[0] != NULL) && (A.isEnemy(elephant[i]->getID())))
+			if ((placeable) && (elephant[0] != NULL) && (A.isEnemy(elephant[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (giraffe[0] != NULL) && (A.isEnemy(giraffe[i]->getID())))
+			if ((placeable) && (giraffe[0] != NULL) && (A.isEnemy(giraffe[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (lion[0] != NULL) && (A.isEnemy(lion[i]->getID())))
+			if ((placeable) && (lion[0] != NULL) && (A.isEnemy(lion[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (monkey[0] != NULL) && (A.isEnemy(monkey[i]->getID())))
+			if ((placeable) && (monkey[0] != NULL) && (A.isEnemy(monkey[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (tiger[0] != NULL) && (A.isEnemy(tiger[i]->getID())))
+			if ((placeable) && (tiger[0] != NULL) && (A.isEnemy(tiger[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wolf[0] != NULL) && (A.isEnemy(wolf[i]->getID())))
+			if ((placeable) && (wolf[0] != NULL) && (A.isEnemy(wolf[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (zebra[0] != NULL) && (A.isEnemy(zebra[i]->getID())))
+			if ((placeable) && (zebra[0] != NULL) && (A.isEnemy(zebra[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wild_bunny[0] != NULL) && (A.isEnemy(wild_bunny[i]->getID())))
+			if ((placeable) && (wild_bunny[0] != NULL) && (A.isEnemy(wild_bunny[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (chameleon[0] != NULL) && (A.isEnemy(chameleon[i]->getID())))
+			if ((placeable) && (chameleon[0] != NULL) && (A.isEnemy(chameleon[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (crocodile[0] != NULL) && (A.isEnemy(crocodile[i]->getID())))
+			if ((placeable) && (crocodile[0] != NULL) && (A.isEnemy(crocodile[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (iguana[0] != NULL) && (A.isEnemy(iguana[i]->getID())))
+			if ((placeable) && (iguana[0] != NULL) && (A.isEnemy(iguana[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (komodo[0] != NULL) && (A.isEnemy(komodo[i]->getID())))
+			if ((placeable) && (komodo[0] != NULL) && (A.isEnemy(komodo[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (python[0] != NULL) && (A.isEnemy(python[i]->getID())))
+			if ((placeable) && (python[0] != NULL) && (A.isEnemy(python[0]->getID())))
 			{
 				placeable = false;
 			}
@@ -1223,76 +1221,76 @@ void LandCage::AddAnimal(Chameleon& A) {
 void LandCage::AddAnimal(Crocodile& A) {
 	if (nbAnimal < int(area.size() / 10 * 3)) {	
 		bool placeable;
-		if (isWild) {
-			if ((colibri[0] != NULL) && (A.isEnemy(colibri[i]->getID())))
+		if (A.getBehavior()) {
+			if ((colibri[0] != NULL) && (A.isEnemy(colibri[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (duck[0] != NULL) && (A.isEnemy(duck[i]->getID())))
+			if ((placeable) && (duck[0] != NULL) && (A.isEnemy(duck[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (eagle[0] != NULL) && (A.isEnemy(eagle[i]->getID())))
+			if ((placeable) && (eagle[0] != NULL) && (A.isEnemy(eagle[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (peacock[0] != NULL) && (A.isEnemy(peacock[i]->getID())))
+			if ((placeable) && (peacock[0] != NULL) && (A.isEnemy(peacock[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wild_colibri[0] != NULL) && (A.isEnemy(wild_colibri[i]->getID())))
+			if ((placeable) && (wild_colibri[0] != NULL) && (A.isEnemy(wild_colibri[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (elephant[0] != NULL) && (A.isEnemy(elephant[i]->getID())))
+			if ((placeable) && (elephant[0] != NULL) && (A.isEnemy(elephant[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (giraffe[0] != NULL) && (A.isEnemy(giraffe[i]->getID())))
+			if ((placeable) && (giraffe[0] != NULL) && (A.isEnemy(giraffe[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (lion[0] != NULL) && (A.isEnemy(lion[i]->getID())))
+			if ((placeable) && (lion[0] != NULL) && (A.isEnemy(lion[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (monkey[0] != NULL) && (A.isEnemy(monkey[i]->getID())))
+			if ((placeable) && (monkey[0] != NULL) && (A.isEnemy(monkey[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (tiger[0] != NULL) && (A.isEnemy(tiger[i]->getID())))
+			if ((placeable) && (tiger[0] != NULL) && (A.isEnemy(tiger[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wolf[0] != NULL) && (A.isEnemy(wolf[i]->getID())))
+			if ((placeable) && (wolf[0] != NULL) && (A.isEnemy(wolf[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (zebra[0] != NULL) && (A.isEnemy(zebra[i]->getID())))
+			if ((placeable) && (zebra[0] != NULL) && (A.isEnemy(zebra[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wild_bunny[0] != NULL) && (A.isEnemy(wild_bunny[i]->getID())))
+			if ((placeable) && (wild_bunny[0] != NULL) && (A.isEnemy(wild_bunny[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (chameleon[0] != NULL) && (A.isEnemy(chameleon[i]->getID())))
+			if ((placeable) && (chameleon[0] != NULL) && (A.isEnemy(chameleon[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (crocodile[0] != NULL) && (A.isEnemy(crocodile[i]->getID())))
+			if ((placeable) && (crocodile[0] != NULL) && (A.isEnemy(crocodile[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (iguana[0] != NULL) && (A.isEnemy(iguana[i]->getID())))
+			if ((placeable) && (iguana[0] != NULL) && (A.isEnemy(iguana[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (komodo[0] != NULL) && (A.isEnemy(komodo[i]->getID())))
+			if ((placeable) && (komodo[0] != NULL) && (A.isEnemy(komodo[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (python[0] != NULL) && (A.isEnemy(python[i]->getID())))
+			if ((placeable) && (python[0] != NULL) && (A.isEnemy(python[0]->getID())))
 			{
 				placeable = false;
 			}
@@ -1309,76 +1307,76 @@ void LandCage::AddAnimal(Crocodile& A) {
 void LandCage::AddAnimal(Iguana& A) {
 	if (nbAnimal < int(area.size() / 10 * 3)) {	
 		bool placeable;
-		if (isWild) {
-			if ((colibri[0] != NULL) && (A.isEnemy(colibri[i]->getID())))
+		if (A.getBehavior()) {
+			if ((colibri[0] != NULL) && (A.isEnemy(colibri[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (duck[0] != NULL) && (A.isEnemy(duck[i]->getID())))
+			if ((placeable) && (duck[0] != NULL) && (A.isEnemy(duck[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (eagle[0] != NULL) && (A.isEnemy(eagle[i]->getID())))
+			if ((placeable) && (eagle[0] != NULL) && (A.isEnemy(eagle[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (peacock[0] != NULL) && (A.isEnemy(peacock[i]->getID())))
+			if ((placeable) && (peacock[0] != NULL) && (A.isEnemy(peacock[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wild_colibri[0] != NULL) && (A.isEnemy(wild_colibri[i]->getID())))
+			if ((placeable) && (wild_colibri[0] != NULL) && (A.isEnemy(wild_colibri[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (elephant[0] != NULL) && (A.isEnemy(elephant[i]->getID())))
+			if ((placeable) && (elephant[0] != NULL) && (A.isEnemy(elephant[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (giraffe[0] != NULL) && (A.isEnemy(giraffe[i]->getID())))
+			if ((placeable) && (giraffe[0] != NULL) && (A.isEnemy(giraffe[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (lion[0] != NULL) && (A.isEnemy(lion[i]->getID())))
+			if ((placeable) && (lion[0] != NULL) && (A.isEnemy(lion[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (monkey[0] != NULL) && (A.isEnemy(monkey[i]->getID())))
+			if ((placeable) && (monkey[0] != NULL) && (A.isEnemy(monkey[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (tiger[0] != NULL) && (A.isEnemy(tiger[i]->getID())))
+			if ((placeable) && (tiger[0] != NULL) && (A.isEnemy(tiger[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wolf[0] != NULL) && (A.isEnemy(wolf[i]->getID())))
+			if ((placeable) && (wolf[0] != NULL) && (A.isEnemy(wolf[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (zebra[0] != NULL) && (A.isEnemy(zebra[i]->getID())))
+			if ((placeable) && (zebra[0] != NULL) && (A.isEnemy(zebra[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wild_bunny[0] != NULL) && (A.isEnemy(wild_bunny[i]->getID())))
+			if ((placeable) && (wild_bunny[0] != NULL) && (A.isEnemy(wild_bunny[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (chameleon[0] != NULL) && (A.isEnemy(chameleon[i]->getID())))
+			if ((placeable) && (chameleon[0] != NULL) && (A.isEnemy(chameleon[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (crocodile[0] != NULL) && (A.isEnemy(crocodile[i]->getID())))
+			if ((placeable) && (crocodile[0] != NULL) && (A.isEnemy(crocodile[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (iguana[0] != NULL) && (A.isEnemy(iguana[i]->getID())))
+			if ((placeable) && (iguana[0] != NULL) && (A.isEnemy(iguana[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (komodo[0] != NULL) && (A.isEnemy(komodo[i]->getID())))
+			if ((placeable) && (komodo[0] != NULL) && (A.isEnemy(komodo[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (python[0] != NULL) && (A.isEnemy(python[i]->getID())))
+			if ((placeable) && (python[0] != NULL) && (A.isEnemy(python[0]->getID())))
 			{
 				placeable = false;
 			}
@@ -1395,76 +1393,76 @@ void LandCage::AddAnimal(Iguana& A) {
 void LandCage::AddAnimal(Komodo& A) {
 	if (nbAnimal < int(area.size() / 10 * 3)) {	
 		bool placeable;
-		if (isWild) {
-			if ((colibri[0] != NULL) && (A.isEnemy(colibri[i]->getID())))
+		if (A.getBehavior()) {
+			if ((colibri[0] != NULL) && (A.isEnemy(colibri[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (duck[0] != NULL) && (A.isEnemy(duck[i]->getID())))
+			if ((placeable) && (duck[0] != NULL) && (A.isEnemy(duck[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (eagle[0] != NULL) && (A.isEnemy(eagle[i]->getID())))
+			if ((placeable) && (eagle[0] != NULL) && (A.isEnemy(eagle[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (peacock[0] != NULL) && (A.isEnemy(peacock[i]->getID())))
+			if ((placeable) && (peacock[0] != NULL) && (A.isEnemy(peacock[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wild_colibri[0] != NULL) && (A.isEnemy(wild_colibri[i]->getID())))
+			if ((placeable) && (wild_colibri[0] != NULL) && (A.isEnemy(wild_colibri[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (elephant[0] != NULL) && (A.isEnemy(elephant[i]->getID())))
+			if ((placeable) && (elephant[0] != NULL) && (A.isEnemy(elephant[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (giraffe[0] != NULL) && (A.isEnemy(giraffe[i]->getID())))
+			if ((placeable) && (giraffe[0] != NULL) && (A.isEnemy(giraffe[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (lion[0] != NULL) && (A.isEnemy(lion[i]->getID())))
+			if ((placeable) && (lion[0] != NULL) && (A.isEnemy(lion[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (monkey[0] != NULL) && (A.isEnemy(monkey[i]->getID())))
+			if ((placeable) && (monkey[0] != NULL) && (A.isEnemy(monkey[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (tiger[0] != NULL) && (A.isEnemy(tiger[i]->getID())))
+			if ((placeable) && (tiger[0] != NULL) && (A.isEnemy(tiger[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wolf[0] != NULL) && (A.isEnemy(wolf[i]->getID())))
+			if ((placeable) && (wolf[0] != NULL) && (A.isEnemy(wolf[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (zebra[0] != NULL) && (A.isEnemy(zebra[i]->getID())))
+			if ((placeable) && (zebra[0] != NULL) && (A.isEnemy(zebra[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wild_bunny[0] != NULL) && (A.isEnemy(wild_bunny[i]->getID())))
+			if ((placeable) && (wild_bunny[0] != NULL) && (A.isEnemy(wild_bunny[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (chameleon[0] != NULL) && (A.isEnemy(chameleon[i]->getID())))
+			if ((placeable) && (chameleon[0] != NULL) && (A.isEnemy(chameleon[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (crocodile[0] != NULL) && (A.isEnemy(crocodile[i]->getID())))
+			if ((placeable) && (crocodile[0] != NULL) && (A.isEnemy(crocodile[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (iguana[0] != NULL) && (A.isEnemy(iguana[i]->getID())))
+			if ((placeable) && (iguana[0] != NULL) && (A.isEnemy(iguana[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (komodo[0] != NULL) && (A.isEnemy(komodo[i]->getID())))
+			if ((placeable) && (komodo[0] != NULL) && (A.isEnemy(komodo[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (python[0] != NULL) && (A.isEnemy(python[i]->getID())))
+			if ((placeable) && (python[0] != NULL) && (A.isEnemy(python[0]->getID())))
 			{
 				placeable = false;
 			}
@@ -1481,76 +1479,76 @@ void LandCage::AddAnimal(Komodo& A) {
 void LandCage::AddAnimal(Python& A) {
 	if (nbAnimal < int(area.size() / 10 * 3)) {	
 		bool placeable;
-		if (isWild) {
-			if ((colibri[0] != NULL) && (A.isEnemy(colibri[i]->getID())))
+		if (A.getBehavior()) {
+			if ((colibri[0] != NULL) && (A.isEnemy(colibri[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (duck[0] != NULL) && (A.isEnemy(duck[i]->getID())))
+			if ((placeable) && (duck[0] != NULL) && (A.isEnemy(duck[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (eagle[0] != NULL) && (A.isEnemy(eagle[i]->getID())))
+			if ((placeable) && (eagle[0] != NULL) && (A.isEnemy(eagle[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (peacock[0] != NULL) && (A.isEnemy(peacock[i]->getID())))
+			if ((placeable) && (peacock[0] != NULL) && (A.isEnemy(peacock[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wild_colibri[0] != NULL) && (A.isEnemy(wild_colibri[i]->getID())))
+			if ((placeable) && (wild_colibri[0] != NULL) && (A.isEnemy(wild_colibri[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (elephant[0] != NULL) && (A.isEnemy(elephant[i]->getID())))
+			if ((placeable) && (elephant[0] != NULL) && (A.isEnemy(elephant[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (giraffe[0] != NULL) && (A.isEnemy(giraffe[i]->getID())))
+			if ((placeable) && (giraffe[0] != NULL) && (A.isEnemy(giraffe[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (lion[0] != NULL) && (A.isEnemy(lion[i]->getID())))
+			if ((placeable) && (lion[0] != NULL) && (A.isEnemy(lion[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (monkey[0] != NULL) && (A.isEnemy(monkey[i]->getID())))
+			if ((placeable) && (monkey[0] != NULL) && (A.isEnemy(monkey[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (tiger[0] != NULL) && (A.isEnemy(tiger[i]->getID())))
+			if ((placeable) && (tiger[0] != NULL) && (A.isEnemy(tiger[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wolf[0] != NULL) && (A.isEnemy(wolf[i]->getID())))
+			if ((placeable) && (wolf[0] != NULL) && (A.isEnemy(wolf[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (zebra[0] != NULL) && (A.isEnemy(zebra[i]->getID())))
+			if ((placeable) && (zebra[0] != NULL) && (A.isEnemy(zebra[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (wild_bunny[0] != NULL) && (A.isEnemy(wild_bunny[i]->getID())))
+			if ((placeable) && (wild_bunny[0] != NULL) && (A.isEnemy(wild_bunny[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (chameleon[0] != NULL) && (A.isEnemy(chameleon[i]->getID())))
+			if ((placeable) && (chameleon[0] != NULL) && (A.isEnemy(chameleon[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (crocodile[0] != NULL) && (A.isEnemy(crocodile[i]->getID())))
+			if ((placeable) && (crocodile[0] != NULL) && (A.isEnemy(crocodile[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (iguana[0] != NULL) && (A.isEnemy(iguana[i]->getID())))
+			if ((placeable) && (iguana[0] != NULL) && (A.isEnemy(iguana[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (komodo[0] != NULL) && (A.isEnemy(komodo[i]->getID())))
+			if ((placeable) && (komodo[0] != NULL) && (A.isEnemy(komodo[0]->getID())))
 			{
 				placeable = false;
 			}
-			if ((placeable) && (python[0] != NULL) && (A.isEnemy(python[i]->getID())))
+			if ((placeable) && (python[0] != NULL) && (A.isEnemy(python[0]->getID())))
 			{
 				placeable = false;
 			}
