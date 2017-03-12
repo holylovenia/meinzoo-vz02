@@ -1,8 +1,10 @@
 #include "peacock.h"
 
-Peacock::Peacock(int _weight) : defID(20), defRatioMeat(20), defRatioPlant(40), defLimbCount(2), defSkinType("Feather"), defEatMeat(true), defEatPlant(false) {
+Peacock::Peacock(int _x, int _y, int _weight) : defID(20), defRatioMeat(20), defRatioPlant(40), defLimbCount(2), defSkinType("Feather"), defEatMeat(true), defEatPlant(false) {
 	//peacock
 	ID = defID;
+	Location.setX(_x);
+	Location.setY(_y);
 	ratioMeat = defRatioMeat;
 	ratioPlant = defRatioPlant;
 	isLandAnimal = true;

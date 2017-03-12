@@ -8,7 +8,7 @@
 
 class Chameleon {
 	public :
-		Chameleon(int _weight);
+		Chameleon(int _x, int _y, int _weight);
 		//animal
 		void Interact();
 		void Move(int movement);

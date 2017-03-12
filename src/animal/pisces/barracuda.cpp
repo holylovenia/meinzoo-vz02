@@ -1,8 +1,10 @@
 #include "barracuda.h"
 
-Barracuda::Barracuda(int _weight) : defID(15), defRatioMeat(60), defRatioPlant(0), defLimbCount(0), defSkinType("Scale"), defEatMeat(true), defEatPlant(false) {
+Barracuda::Barracuda(int _x, int _y, int _weight) : defID(15), defRatioMeat(60), defRatioPlant(0), defLimbCount(0), defSkinType("Scale"), defEatMeat(true), defEatPlant(false) {
 	//Barracuda
 	ID = defID;
+	Location.setX(_x);
+	Location.setY(_y);
 	ratioMeat = defRatioMeat;
 	ratioPlant = defRatioPlant;
 	isLandAnimal = false;

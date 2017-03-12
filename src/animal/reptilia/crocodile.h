@@ -8,7 +8,7 @@
 
 class Crocodile {
 	public :
-		Crocodile(int _weight);
+		Crocodile(int _x, int _y, int _weight);
 		//animal
 		void Interact();
 		void Move(int movement);

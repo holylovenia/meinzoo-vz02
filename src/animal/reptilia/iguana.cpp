@@ -1,8 +1,10 @@
 #include "iguana.h"
 
-Iguana::Iguana(int _weight) : defID(10), defRatioMeat(20), defRatioPlant(40), defLimbCount(4), defSkinType("Scute"), defEatMeat(true), defEatPlant(true) {
+Iguana::Iguana(int _x, int _y, int _weight) : defID(10), defRatioMeat(20), defRatioPlant(40), defLimbCount(4), defSkinType("Scute"), defEatMeat(true), defEatPlant(true) {
 	//Iguana
 	ID = defID;
+	Location.setX(_x);
+	Location.setY(_y);
 	ratioMeat = defRatioMeat;
 	ratioPlant = defRatioPlant;
 	isLandAnimal = true;

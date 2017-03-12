@@ -1,8 +1,10 @@
 #include "wolf.h"
 
-Wolf::Wolf(int _weight) : defID(1), defRatioMeat(50), defRatioPlant(0), defLimbCount(4), defSkinType("Hairy"), defEatMeat(true), defEatPlant(true)  {
+Wolf::Wolf(int _x, int _y, int _weight) : defID(1), defRatioMeat(50), defRatioPlant(0), defLimbCount(4), defSkinType("Hairy"), defEatMeat(true), defEatPlant(true)  {
 	//wolf
 	ID = defID;
+	Location.setX(_x);
+	Location.setY(_y);
 	ratioMeat = defRatioMeat;
 	ratioPlant = defRatioPlant;
 	isLandAnimal = true;

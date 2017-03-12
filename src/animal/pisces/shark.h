@@ -8,7 +8,7 @@
 
 class Shark {
 	public :
-		Shark(int _weight);
+		Shark(int _x, int _y, int _weight);
 		//animal
 		void Interact();
 		void Move(int movement);

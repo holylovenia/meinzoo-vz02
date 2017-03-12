@@ -1,8 +1,10 @@
 #include "komodo.h"
 
-Komodo::Komodo(int _weight) : defID(10), defRatioMeat(70), defRatioPlant(0), defLimbCount(4), defSkinType("Scute"), defEatMeat(true), defEatPlant(false) {
+Komodo::Komodo(int _x, int _y, int _weight) : defID(10), defRatioMeat(70), defRatioPlant(0), defLimbCount(4), defSkinType("Scute"), defEatMeat(true), defEatPlant(false) {
 	//Komodo
 	ID = defID;
+	Location.setX(_x);
+	Location.setY(_y);
 	ratioMeat = defRatioMeat;
 	ratioPlant = defRatioPlant;
 	isLandAnimal = true;

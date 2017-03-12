@@ -8,7 +8,7 @@
 
 class Zebra {
 	public :
-		Zebra(int _weight);
+		Zebra(int _x, int _y, int _weight);
 		//animal
 		void Interact();
 		void Move(int movement);

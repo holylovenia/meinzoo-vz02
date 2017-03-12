@@ -1,8 +1,10 @@
 #include "crocodile.h"
 
-Crocodile::Crocodile(int _weight) : defID(8), defRatioMeat(60), defRatioPlant(0), defLimbCount(4), defSkinType("Scute"), defEatMeat(true), defEatPlant(false) {
+Crocodile::Crocodile(int _x, int _y, int _weight) : defID(8), defRatioMeat(60), defRatioPlant(0), defLimbCount(4), defSkinType("Scute"), defEatMeat(true), defEatPlant(false) {
 	//Crocodile
 	ID = defID;
+	Location.setX(_x);
+	Location.setY(_y);
 	ratioMeat = defRatioMeat;
 	ratioPlant = defRatioPlant;
 	isLandAnimal = true;

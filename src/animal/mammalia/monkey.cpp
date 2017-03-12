@@ -1,8 +1,10 @@
 #include "monkey.h"
 
-Monkey::Monkey(int _weight) : defID(5), defRatioMeat(10), defRatioPlant(40), defLimbCount(4), defSkinType("Hairy"), defEatMeat(true), defEatPlant(true)  {
+Monkey::Monkey(int _x, int _y, int _weight) : defID(5), defRatioMeat(10), defRatioPlant(40), defLimbCount(4), defSkinType("Hairy"), defEatMeat(true), defEatPlant(true)  {
 	//monkey
 	ID = defID;
+	Location.setX(_x);
+	Location.setY(_y);
 	ratioMeat = defRatioMeat;
 	ratioPlant = defRatioPlant;
 	isLandAnimal = true;

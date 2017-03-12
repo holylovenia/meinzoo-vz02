@@ -1,8 +1,10 @@
 #include "colibri.h"
 
-Colibri::Colibri(int _weight) : defID(19), defRatioMeat(0), defRatioPlant(60), defLimbCount(2), defSkinType("Feather"), defEatMeat(false), defEatPlant(true) {
+Colibri::Colibri(int _x, int _y, int _weight) : defID(19), defRatioMeat(0), defRatioPlant(60), defLimbCount(2), defSkinType("Feather"), defEatMeat(false), defEatPlant(true) {
 	//colibri
 	ID = defID;
+	Location.setX(_x);
+	Location.setY(_y);
 	ratioMeat = defRatioMeat;
 	ratioPlant = defRatioPlant;
 	isLandAnimal = true;

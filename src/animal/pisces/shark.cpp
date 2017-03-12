@@ -1,8 +1,10 @@
-#include "Shark.h"
+#include "shark.h"
 
-Shark::Shark(int _weight) : defID(13), defRatioMeat(70), defRatioPlant(0), defLimbCount(0), defSkinType("Scale"), defEatMeat(true), defEatPlant(false) {
+Shark::Shark(int _x, int _y, int _weight) : defID(13), defRatioMeat(70), defRatioPlant(0), defLimbCount(0), defSkinType("Scale"), defEatMeat(true), defEatPlant(false) {
 	//Shark
 	ID = defID;
+	Location.setX(_x);
+	Location.setY(_y);
 	ratioMeat = defRatioMeat;
 	ratioPlant = defRatioPlant;
 	isLandAnimal = false;

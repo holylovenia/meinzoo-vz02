@@ -8,7 +8,7 @@
 
 class Colibri {
 	public :
-		Colibri(int _weight);
+		Colibri(int _x, int _y, int _weight);
 		//animal
 		void Interact();
 		void Move(int movement);

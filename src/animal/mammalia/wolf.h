@@ -8,7 +8,7 @@
 
 class Wolf {
 	public :
-		Wolf(int _weight);
+		Wolf(int _x, int _y, int _weight);
 		//animal
 		void Interact();
 		void Move(int movement);

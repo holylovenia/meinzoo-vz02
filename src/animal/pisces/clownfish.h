@@ -8,7 +8,7 @@
 
 class Clownfish {
 	public :
-		Clownfish(int _weight);
+		Clownfish(int _x, int _y, int _weight);
 		//animal
 		void Interact();
 		void Move(int movement);

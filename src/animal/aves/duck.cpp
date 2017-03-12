@@ -1,8 +1,10 @@
 #include "duck.h"
 
-Duck::Duck(int _weight) : defID(16), defRatioMeat(30), defRatioPlant(30), defLimbCount(2), defSkinType("Feather"), defEatMeat(true), defEatPlant(true) {
+Duck::Duck(int _x, int _y, int _weight) : defID(16), defRatioMeat(30), defRatioPlant(30), defLimbCount(2), defSkinType("Feather"), defEatMeat(true), defEatPlant(true) {
 	//duck
 	ID = defID;
+	Location.setX(_x);
+	Location.setY(_y);
 	ratioMeat = defRatioMeat;
 	ratioPlant = defRatioPlant;
 	isLandAnimal = true;

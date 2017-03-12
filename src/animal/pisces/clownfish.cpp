@@ -1,8 +1,10 @@
 #include "clownfish.h"
 
-Clownfish::Clownfish(int _weight) : defID(14), defRatioMeat(30), defRatioPlant(40), defLimbCount(0), defSkinType("Scale"), defEatMeat(true), defEatPlant(true) {
+Clownfish::Clownfish(int _x, int _y, int _weight) : defID(14), defRatioMeat(30), defRatioPlant(40), defLimbCount(0), defSkinType("Scale"), defEatMeat(true), defEatPlant(true) {
 	//Clownfish
 	ID = defID;
+	Location.setX(_x);
+	Location.setY(_y);
 	ratioMeat = defRatioMeat;
 	ratioPlant = defRatioPlant;
 	isLandAnimal = false;
