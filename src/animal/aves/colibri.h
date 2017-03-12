@@ -3,6 +3,8 @@
 
 #include <string>
 #include <iostream>
+#include "../animalfood.h"
+#include "../../misc/point.h"
 
 class Colibri {
 	public :
@@ -24,8 +26,7 @@ class Colibri {
 		//behaviortame
 		void setBehavior();
 		//point setter
-		void setX(int _x);
-		void setY(int _y);
+		void setLocation(int _x, int _y);
 		//point getter
 		int getX() const;
 		int getY() const;
@@ -33,8 +34,7 @@ class Colibri {
 		bool getBehavior();
 	private:
 		//point
-		unsigned int x;
-		unsigned int y;
+		Point Location;
 		//animal
 		int ID;
 		int limbCount;

@@ -1,5 +1,4 @@
 #include "colibri.h"
-#include "../animalfood.h"
 
 Colibri::Colibri(int _weight) : defID(19), defRatioMeat(0), defRatioPlant(60), defLimbCount(2), defSkinType("Feather"), defEatMeat(false), defEatPlant(true) {
 	//colibri
@@ -23,19 +22,19 @@ void Colibri::Interact() {
 void Colibri::Move(int movement) {
 	if (movement == 1) // Move up
 	{
-		y -= 1;
+		Location.setY(Location.getY()-1);
 	}
 	else if (movement == 2) // Move right
 	{
-		x += 1;
+		Location.setX(Location.getX()+1);
 	}
 	else if (movement == 3) // Move down
 	{
-		y += 1;
+		Location.setY(Location.getY()+1);
 	}
 	else // Move left
 	{
-		x -= 1;
+		Location.setX(Location.getX()-1);
 	}
 }
 
@@ -74,17 +73,15 @@ void Colibri::setBehavior() {
 }
 
 // Setter
-void Colibri::setX(int _x) {
-	x = _x;
-}
-void Colibri::setY(int _y) {
-	y = _y;
+void Colibri::setLocation(int _x, int _y) {
+	Location.setX(_x);
+	Location.setY(_y);
 }
 
 // Getter
 int Colibri::getX() const {
-	return x;
+	return Location.getX();
 }
 int Colibri::getY() const {
-	return y;
+	return Location.getY();
 }
