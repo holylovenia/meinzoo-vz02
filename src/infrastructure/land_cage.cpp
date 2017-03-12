@@ -1564,13 +1564,13 @@ void LandCage::AddAnimal(Python& A) {
 
 void LandCage::MoveAnimal() {
 	srand(time(NULL));
-	i = rand() % TOTAL_LAND_ANIMAL;
+	int i = rand() % TOTAL_LAND_ANIMAL;
 
 	unsigned int seed = time(NULL);
 	subtract_with_carry_engine<unsigned,24,10,24> generator (seed);	
 	
 	if (i == 0) {
-		for (auto iter = animal.begin(); iter < animal.end(); ++iter) {
+		for (auto iter = wild_bunny.begin(); iter < wild_bunny.end(); ++iter) {
 			char movement = generator() % 4;
 			bool movement_in_LandCage = false;
 			int no_of_tries = 0;
