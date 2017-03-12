@@ -79,6 +79,14 @@ bool Python::isOmnivore() {
 	return (eatMeat && eatPlant);
 }
 
+bool Python::isEnemy() {
+	return (false);
+}
+
+int Python::getID() {
+	return (ID);
+}
+
 // Setter
 void Python::setLocation(int _x, int _y) {
 	Location.setX(_x);

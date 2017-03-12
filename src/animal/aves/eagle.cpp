@@ -79,6 +79,14 @@ bool Eagle::isOmnivore() {
 	return (eatMeat && eatPlant);
 }
 
+bool Eagle::isEnemy(int x) {
+	return(false);
+}
+
+int Eagle::getID() {
+	return(ID);
+}
+
 // Setter
 void Eagle::setLocation(int _x, int _y) {
 	Location.setX(_x);

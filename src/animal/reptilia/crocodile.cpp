@@ -79,6 +79,13 @@ bool Crocodile::isOmnivore() {
 	return (eatMeat && eatPlant);
 }
 
+bool Crocodile::isEnemy() {
+	return (false);
+}
+
+int Crocodile::getID() {
+	return (ID);
+}
 // Setter
 void Crocodile::setLocation(int _x, int _y) {
 	Location.setX(_x);

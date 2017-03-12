@@ -24,6 +24,9 @@ class Iguana {
 		int getReqPlant();
 		Point getPosition();
 
+		bool isEnemy();
+		int getID();
+
 		//point setter
 		void setLocation(int _x, int _y);
 		//point getter

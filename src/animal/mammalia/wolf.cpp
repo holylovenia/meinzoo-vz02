@@ -79,6 +79,14 @@ bool Wolf::isOmnivore() {
 	return (eatMeat && eatPlant);
 }
 
+bool Wolf::isEnemy() {
+	return (false);
+}
+
+int Wolf::getID() {
+	return (ID);
+}
+
 // Setter
 void Wolf::setLocation(int _x, int _y) {
 	Location.setX(_x);

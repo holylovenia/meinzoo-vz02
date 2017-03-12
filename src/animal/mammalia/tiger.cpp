@@ -79,6 +79,14 @@ bool Tiger::isOmnivore() {
 	return (eatMeat && eatPlant);
 }
 
+bool Tiger::isEnemy() {
+	return (false);
+}
+
+int Tiger::getID() {
+	return (ID);
+}
+
 // Setter
 void Tiger::setLocation(int _x, int _y) {
 	Location.setX(_x);

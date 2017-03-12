@@ -79,6 +79,14 @@ bool Elephant::isOmnivore() {
 	return (eatMeat && eatPlant);
 }
 
+bool Elephant::isEnemy() {
+	return (false);
+}
+
+int Elephant::getID() {
+	return (ID);
+}
+
 // Setter
 void Elephant::setLocation(int _x, int _y) {
 	Location.setX(_x);

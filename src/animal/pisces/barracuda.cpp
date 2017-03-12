@@ -79,6 +79,14 @@ bool Barracuda::isOmnivore() {
 	return (eatMeat && eatPlant);
 }
 
+bool Barracuda::isEnemy() {
+	return (false);
+}
+
+int Barracuda::getID() {
+	return (ID);
+}
+
 // Setter
 void Barracuda::setLocation(int _x, int _y) {
 	Location.setX(_x);

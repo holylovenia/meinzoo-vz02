@@ -79,6 +79,14 @@ bool Colibri::isOmnivore() {
 	return (eatMeat && eatPlant);
 }
 
+bool Colibri::isEnemy(int x) {
+	return(false);
+}
+
+int Colibri::getID() {
+	return(ID);
+}
+
 // Setter
 void Colibri::setLocation(int _x, int _y) {
 	Location.setX(_x);

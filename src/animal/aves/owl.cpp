@@ -79,6 +79,14 @@ bool Owl::isOmnivore() {
 	return (eatMeat && eatPlant);
 }
 
+bool Owl::isEnemy(int x) {
+	return(false);
+}
+
+int Owl::getID() {
+	return(ID);
+}
+
 // Setter
 void Owl::setLocation(int _x, int _y) {
 	Location.setX(_x);

@@ -80,6 +80,14 @@ bool Chameleon::isOmnivore() {
 	return (eatMeat && eatPlant);
 }
 
+bool Chameleon::isEnemy() {
+	return (false);
+}
+
+int Chameleon::getID() {
+	return (ID);
+}
+
 // Setter
 void Chameleon::setLocation(int _x, int _y) {
 	Location.setX(_x);

@@ -79,6 +79,14 @@ bool Monkey::isOmnivore() {
 	return (eatMeat && eatPlant);
 }
 
+bool Monkey::isEnemy() {
+	return (false);
+}
+
+int Monkey::getID() {
+	return (ID);
+}
+
 // Setter
 void Monkey::setLocation(int _x, int _y) {
 	Location.setX(_x);

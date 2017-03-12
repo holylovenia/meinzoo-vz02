@@ -80,6 +80,14 @@ bool Iguana::isOmnivore() {
 	return (eatMeat && eatPlant);
 }
 
+bool Iguana::isEnemy() {
+	return (false);
+}
+
+int Iguana::getID() {
+	return (ID);
+}
+
 // Setter
 void Iguana::setLocation(int _x, int _y) {
 	Location.setX(_x);

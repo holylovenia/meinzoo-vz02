@@ -80,6 +80,14 @@ bool Zebra::isOmnivore() {
 	return (eatMeat && eatPlant);
 }
 
+bool Zebra::isEnemy() {
+	return (false);
+}
+
+int Zebra::getID() {
+	return (ID);
+}
+
 // Setter
 void Zebra::setLocation(int _x, int _y) {
 	Location.setX(_x);

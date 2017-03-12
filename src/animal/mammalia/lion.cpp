@@ -79,6 +79,14 @@ bool Lion::isOmnivore() {
 	return (eatMeat && eatPlant);
 }
 
+bool Lion::isEnemy() {
+	return (false);
+}
+
+int Lion::getID() {
+	return (ID);
+}
+
 // Setter
 void Lion::setLocation(int _x, int _y) {
 	Location.setX(_x);

@@ -24,6 +24,9 @@ class Owl {
 		int getReqPlant();
 		Point getPosition();
 
+		bool isEnemy(int x);
+		int getID();
+
 		//point setter
 		void setLocation(int _x, int _y);
 		//point getter

@@ -79,6 +79,14 @@ bool Komodo::isOmnivore() {
 	return (eatMeat && eatPlant);
 }
 
+bool Komodo::isEnemy() {
+	return (false);
+}
+
+int Komodo::getID() {
+	return (ID);
+}
+
 // Setter
 void Komodo::setLocation(int _x, int _y) {
 	Location.setX(_x);

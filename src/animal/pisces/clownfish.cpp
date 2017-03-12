@@ -80,6 +80,14 @@ bool Clownfish::isOmnivore() {
 	return (eatMeat && eatPlant);
 }
 
+bool Clownfish::isEnemy() {
+	return (false);
+}
+
+int Clownfish::getID() {
+	return (ID);
+}
+
 // Setter
 void Clownfish::setLocation(int _x, int _y) {
 	Location.setX(_x);

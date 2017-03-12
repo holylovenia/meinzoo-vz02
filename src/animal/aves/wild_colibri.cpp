@@ -95,6 +95,10 @@ bool WildColibri::isEnemy(int x) {
 	return(enemy.find(x) != enemy.end());
 }
 
+int WildColibri::getID() {
+	return(ID);
+}
+
 // Setter
 void WildColibri::setLocation(int _x, int _y) {
 	Location.setX(_x);

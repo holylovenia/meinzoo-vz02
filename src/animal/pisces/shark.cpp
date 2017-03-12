@@ -79,6 +79,14 @@ bool Shark::isOmnivore() {
 	return (eatMeat && eatPlant);
 }
 
+bool Shark::isEnemy() {
+	return (false);
+}
+
+int Shark::getID() {
+	return (ID);
+}
+
 // Setter
 void Shark::setLocation(int _x, int _y) {
 	Location.setX(_x);

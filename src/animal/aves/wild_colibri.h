@@ -29,6 +29,7 @@ class WildColibri {
 		void addEnemy(int x);
 		void removeEnemy(int x);
 		bool isEnemy(int x);
+		int getID();
 
 		//point setter
 		void setLocation(int _x, int _y);

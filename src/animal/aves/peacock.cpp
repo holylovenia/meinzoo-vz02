@@ -79,6 +79,14 @@ bool Peacock::isOmnivore() {
 	return (eatMeat && eatPlant);
 }
 
+bool Peacock::isEnemy(int x) {
+	return(false);
+}
+
+int Peacock::getID() {
+	return(ID);
+}
+
 // Setter
 void Peacock::setLocation(int _x, int _y) {
 	Location.setX(_x);

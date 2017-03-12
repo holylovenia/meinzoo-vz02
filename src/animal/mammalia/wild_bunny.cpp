@@ -82,6 +82,27 @@ bool WildBunny::isOmnivore() {
 	return (eatMeat && eatPlant);
 }
 
+
+void WildBunny::addEnemy(int x) {
+	enemy.insert(x);
+}
+
+void WildBunny::removeEnemy(int x) {
+	enemy.erase(x);
+}
+
+bool WildBunny::isEnemy(int x) {
+	return(enemy.find(x) != enemy.end());
+}
+
+bool WildBunny::isEnemy() {
+	return (false);
+}
+
+int WildBunny::getID() {
+	return (ID);
+}
+
 // Setter
 void WildBunny::setLocation(int _x, int _y) {
 	Location.setX(_x);

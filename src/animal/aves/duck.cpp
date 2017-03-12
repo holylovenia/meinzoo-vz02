@@ -79,6 +79,14 @@ bool Duck::isOmnivore() {
 	return (eatMeat && eatPlant);
 }
 
+bool Duck::isEnemy(int x) {
+	return(false);
+}
+
+int Duck::getID() {
+	return(ID);
+}
+
 // Setter
 void Duck::setLocation(int _x, int _y) {
 	Location.setX(_x);

@@ -79,6 +79,14 @@ bool Giraffe::isOmnivore() {
 	return (eatMeat && eatPlant);
 }
 
+bool Giraffe::isEnemy() {
+	return (false);
+}
+
+int Giraffe::getID() {
+	return (ID);
+}
+
 // Setter
 void Giraffe::setLocation(int _x, int _y) {
 	Location.setX(_x);
