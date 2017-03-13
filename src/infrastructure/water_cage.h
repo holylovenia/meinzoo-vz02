@@ -4,6 +4,7 @@
 #include <set>
 #include <vector>
 #include "../misc/point.h"
+#include "../animal/aves/duck.h"
 #include "../animal/pisces/shark.h"
 #include "../animal/pisces/barracuda.h"
 #include "../animal/pisces/clownfish.h"
@@ -72,6 +73,7 @@ class WaterCage {
     
   private:
     set<Point> area;
+    vector<Duck*> duck;
     vector<Shark*> shark;
     vector<Barracuda*> barracuda;
     vector<Clownfish*> clownfish;

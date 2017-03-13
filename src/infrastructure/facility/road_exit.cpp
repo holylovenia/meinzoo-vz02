@@ -15,5 +15,5 @@ bool RoadExit::IsExit() {
   return(is_exit);
 }
 char RoadExit::Render() {
-  return '.';
+  return '<';
 }

@@ -11,9 +11,32 @@ void WaterCage::AddPoint(const Point& p) {
 void WaterCage::RemovePoint(const Point& p) {
   area.erase(p);
 }
-/////////// IMPLEMENT ALERT ///////////////
-void AddAnimal(Duck& A) {}  // TODO: Add Duck, tambahin Duck di prosedur AddAnimal lain juga
-///////////////////////////////////////////
+void WaterCage::AddAnimal(Duck& A) {
+  if (nb_animal < int(area.size() / 10 * 3)) { 
+    bool placeable = true;
+    if (A.GetBehavior()) {
+      if ((shark[0] != NULL) && (A.IsEnemy(shark[0]->GetID()))) {
+        placeable = false;
+      }
+      if ((placeable) && (barracuda[0] != NULL) && (A.IsEnemy(barracuda[0]->GetID()))) {
+        placeable = false;
+      }
+      if ((placeable) && (clownfish[0] != NULL) && (A.IsEnemy(clownfish[0]->GetID()))) {
+        placeable = false;
+      }
+      if ((placeable) && (crocodile[0] != NULL) && (A.IsEnemy(crocodile[0]->GetID()))) {
+        placeable = false;
+      }
+      if ((placeable) && (duck[0] != NULL) && (A.IsEnemy(duck[0]->GetID()))) {
+        placeable = false;
+      }
+    }
+    if (placeable) {
+      duck.push_back(&A);
+      nb_animal++;
+    }
+  }
+}
 void WaterCage::AddAnimal(Shark& A) {
   if (nb_animal < int(area.size() / 10 * 3)) { 
     bool placeable = true;
@@ -28,6 +51,9 @@ void WaterCage::AddAnimal(Shark& A) {
         placeable = false;
       }
       if ((placeable) && (crocodile[0] != NULL) && (A.IsEnemy(crocodile[0]->GetID()))) {
+        placeable = false;
+      }
+      if ((placeable) && (duck[0] != NULL) && (A.IsEnemy(duck[0]->GetID()))) {
         placeable = false;
       }
     }
@@ -51,6 +77,9 @@ void WaterCage::AddAnimal(Barracuda& A) {
         placeable = false;
       }
       if ((placeable) && (crocodile[0] != NULL) && (A.IsEnemy(crocodile[0]->GetID()))) {
+        placeable = false;
+      }
+      if ((placeable) && (duck[0] != NULL) && (A.IsEnemy(duck[0]->GetID()))) {
         placeable = false;
       }
     } else {
@@ -78,6 +107,9 @@ void WaterCage::AddAnimal(Clownfish& A) {
       if ((placeable) && (crocodile[0] != NULL) && (A.IsEnemy(crocodile[0]->GetID()))) {
         placeable = false;
       }
+      if ((placeable) && (duck[0] != NULL) && (A.IsEnemy(duck[0]->GetID()))) {
+        placeable = false;
+      }
     } else {
       placeable = true;
     }
@@ -101,6 +133,9 @@ void WaterCage::AddAnimal(Crocodile& A) {
         placeable = false;
       }
       if ((placeable) && (crocodile[0] != NULL) && (A.IsEnemy(crocodile[0]->GetID()))) {
+        placeable = false;
+      }
+      if ((placeable) && (duck[0] != NULL) && (A.IsEnemy(duck[0]->GetID()))) {
         placeable = false;
       }
     } else {
@@ -169,8 +204,25 @@ void WaterCage::MoveAnimal() {
         }
       } while (!movement_in_water_cage && no_of_tries < 4);
     }
+  } else if (i == 3) {
+    for (auto iter = duck.begin(); iter < duck.end(); ++iter) {
+      char movement = generator() % 4;
+      bool movement_in_water_cage = false;
+      int no_of_tries = 0;
+      do {      
+        (*iter)->Move(movement);
+        
+        movement_in_water_cage = area.find((*iter)->GetPosition()) != area.end();
+        if (!movement_in_water_cage) {
+          movement = (movement + 2) % 4;
+          (*iter)->Move(movement);
+          movement = (movement + 3) % 4;
+          no_of_tries++;
+        }
+      } while (!movement_in_water_cage && no_of_tries < 4);
+    }
   } else {
-    for (auto iter = crocodile.begin(); iter < crocodile.end(); ++iter) {
+    for (auto iter = duck.begin(); iter < duck.end(); ++iter) {
       char movement = generator() % 4;
       bool movement_in_water_cage = false;
       int no_of_tries = 0;
@@ -188,8 +240,8 @@ void WaterCage::MoveAnimal() {
     }
   }
 }
-vector<Point> WaterCage::GetArea() {
-  return vector<Point>(area.begin(), area.end());
+set<Point> WaterCage::GetArea() {
+  return area;
 }
 char WaterCage::Render() {
   return 'w';
