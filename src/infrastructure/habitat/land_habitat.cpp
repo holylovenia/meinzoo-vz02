@@ -1,10 +1,8 @@
 // File: land_habitat.cpp
 
-
 #include "land_habitat.h"
 
-
-LandHabitat::LandHabitat(): defType('L'), defAccessible(false) {
-	type = defType;
-	isAccessible = defAccessible;
+LandHabitat::LandHabitat(): def_type('L'), def_accessible(false) {
+  type = def_type;
+  is_accessible = def_accessible;
 }

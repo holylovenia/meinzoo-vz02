@@ -4,16 +4,16 @@
 #include "habitat.h"
 
 class LandHabitat: {
-	public:
-		// ctor
-		LandHabitat();
+  public:
+    // ctor
+    LandHabitat();
 
-	protected:
-		char type;
-		bool isAccessible;
-		
-	private:
-		const char defType;
+  protected:
+    char type;
+    bool is_accessible;
+    
+  private:
+    const char def_type;
 };
 
 #endif

@@ -2,16 +2,16 @@
 #define WATER_HABITAT_H
 
 class WaterHabitat {
-	public:
-		// ctor
-		WaterHabitat();
+  public:
+    // ctor
+    WaterHabitat();
 
-	protected:
-		char type;
-		bool isAccessible;
+  protected:
+    char type;
+    bool is_accessible;
 
-	private:
-		const char defType;
+  private:
+    const char def_type;
 };
 
 #endif

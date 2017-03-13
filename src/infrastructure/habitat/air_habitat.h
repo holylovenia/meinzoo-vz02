@@ -2,17 +2,17 @@
 #define AIR_HABITAT_H
 
 class AirHabitat {
-	public:
-		// ctor
-		AirHabitat();
+  public:
+    // ctor
+    AirHabitat();
 
-	protected:
-		char type;
-		bool isAccessible;
-		
-	private:
-		const bool defAccessible;
-		const char defType;
+  protected:
+    char type;
+    bool is_accessible;
+    
+  private:
+    const bool def_accessible;
+    const char def_type;
 };
 
 #endif
