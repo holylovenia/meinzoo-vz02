@@ -272,11 +272,10 @@
 	"buffers":
 	[
 		{
-			"file": "infrastructure/air_cage.h",
+			"file": "zoo.h",
 			"settings":
 			{
-				"buffer_size": 2402,
-				"encoding": "UTF-8",
+				"buffer_size": 832,
 				"line_ending": "Unix"
 			}
 		}
@@ -507,24 +506,31 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/aves",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/mammalia",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/pisces",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/reptilia",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure/facility"
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src"
 	],
 	"file_history":
 	[
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure/facility/restaurant.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure/facility/road.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure/facility/road_entrance.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure/facility/road_exit.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure/facility/park.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure/habitat/air_habitat.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure/habitat/land_habitat.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure/habitat/water_habitat.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/road_exit.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/road_entrance.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/park.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/road.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/restaurant.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure/air_cage.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure/habitat/air_habitat.cpp",
 		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure/land_cage.cpp",
 		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure/water_cage.h",
 		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure/water_cage.cpp",
 		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure/land_cage.h",
 		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure/cage.cpp",
 		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/facility.cpp",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/park.h",
 		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure/air_cage.cpp",
 		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/cell.h",
 		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/habitat/air_habitat.cpp",
@@ -563,7 +569,6 @@
 		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/misc/point.cpp",
 		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/misc/point.h",
 		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/cell.cpp",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/restaurant.h",
 		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/park.cpp",
 		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/pisces/pisces.h",
 		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/pisces/shark.h",
@@ -632,20 +637,7 @@
 		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_KU/Stack of Generic Point/driver.cpp",
 		"/C/Users/Rionaldi Chandraseta/AppData/Local/Temp/Rar$DIa0.984/hello.cpp",
 		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_KU/Generic_Stack/stack.cpp",
-		"/C/Users/Rionaldi Chandraseta/Desktop/listdp.c",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_KU/stack.cpp",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/ITB - Informatika/Semester 4/IF2240 - Basis Data/Notes.txt",
-		"/C/Users/Rionaldi Chandraseta/Desktop/Test3.cpp",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_KU/point.cpp",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_KU/Generic_Stack/stack.h",
-		"/C/Users/Rionaldi Chandraseta/Desktop/Stima.txt",
-		"/C/Users/Rionaldi Chandraseta/Desktop/Test2.cpp",
-		"/C/Users/Rionaldi Chandraseta/Desktop/thread.c",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/DRPL_Tugas IV/todo.txt",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/sorter.cpp",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/1000_quick_sort.txt",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/1000_data.txt",
-		"/C/Users/Rionaldi Chandraseta/Desktop/Test.cpp"
+		"/C/Users/Rionaldi Chandraseta/Desktop/listdp.c"
 	],
 	"find":
 	{
@@ -666,6 +658,9 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"diRender.",
+			"kelas render.",
+			"kelas Render.",
 			"AirCage",
 			"duck",
 			"Duck",
@@ -790,10 +785,7 @@
 			"j",
 			"-",
 			"safe",
-			"\"SAFE",
-			"SAFE PATH",
-			"bomb_radius",
-			"200"
+			"\"SAFE"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -801,6 +793,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"dirender.",
+			"proses render.",
 			"bool placeable = true;",
 			"placeable = true;",
 			"proses render.",
@@ -842,29 +836,29 @@
 			[
 				{
 					"buffer": 0,
-					"file": "infrastructure/air_cage.h",
-					"semi_transient": false,
+					"file": "zoo.h",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 2402,
+						"buffer_size": 832,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2175,
-								2065
+								504,
+								504
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/C++/C++.sublime-syntax",
-							"tab_size": 2,
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 867.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -962,7 +956,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
