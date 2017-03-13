@@ -21,11 +21,9 @@ Barracuda::Barracuda(int _x, int _y, int _weight) : def_ID(15),
   eat_plant = def_eat_plant;
   AnimalFood::AddTotalMeat(ratio_meat * weight / 100);
 }
-
 void Barracuda::Interact() {
   std::cout << "The barracuda completely ignores you" << std::endl;
 }
-
 void Barracuda::Move(int movement) {
   if (movement == 1) {
     position.SetY(position.GetY()-1);
@@ -40,64 +38,49 @@ void Barracuda::Move(int movement) {
     position.SetX(position.GetX()-1);
   }
 }
-
 bool Barracuda::GetBehavior() {
   return is_wild;
 }
-
 int Barracuda::GetReqMeat() {
   return ratio_meat * weight / 100;
 }
-
 int Barracuda::GetReqPlant() {
   return ratio_plant * weight / 100;
 }
-
 Point Barracuda::GetPosition() {
   return position;
 }
-
 bool Barracuda::IsLandAnimal() {
   return is_land_animal;
 }
-
 bool Barracuda::IsWaterAnimal() {
   return is_water_animal;
 }
-
 bool Barracuda::IsAirAnimal() {
   return is_air_animal;
 }
-
 bool Barracuda::IsHerbivore() {
   return !eat_meat && eat_plant;
 }
-
 bool Barracuda::IsCarnivore() {
   return eat_meat && !eat_plant;
 }
-
 bool Barracuda::IsOmnivore() {
   return eat_meat && eat_plant;
 }
-
 bool Barracuda::IsEnemy(int x) {
   return false;
 }
-
 int Barracuda::GetID() {
   return ID;
 }
-
 void Barracuda::SetLocation(int _x, int _y) {
   position.SetX(_x);
   position.SetY(_y);
 }
-
 int Barracuda::GetX() const {
   return position.GetX();
 }
-
 int Barracuda::GetY() const {
   return position.GetY();
 }

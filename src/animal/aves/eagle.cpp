@@ -21,11 +21,9 @@ Eagle::Eagle(int _x, int _y, int _weight) : def_ID(18),
   eat_plant = def_eat_plant;
   AnimalFood::AddTotalMeat(ratio_plant * weight / 100);
 }
-
 void Eagle::Interact() {
   std::cout << "The eagle is roosting majestically on a tree" << std::endl;
 }
-
 void Eagle::Move(int movement) {
   if (movement == 1) {
     position.SetY(position.GetY()-1);
@@ -40,35 +38,27 @@ void Eagle::Move(int movement) {
     position.SetX(position.GetX()-1);
   }
 }
-
 bool Eagle::GetBehavior() {
   return is_wild;
 }
-
 int Eagle::GetReqMeat() {
   return ratio_meat * weight / 100;
 }
-
 int Eagle::GetReqPlant() {
   return ratio_plant * weight / 100;
 }
-
 Point Eagle::GetPosition() {
   return position;
 }
-
 bool Eagle::IsLandAnimal() {
   return is_land_animal;
 }
-
 bool Eagle::IsWaterAnimal() {
   return is_water_animal;
 }
-
 bool Eagle::IsAirAnimal() {
   return is_air_animal;
 }
-
 bool Eagle::IsHerbivore() {
   return !eat_meat && eat_plant;
 }
@@ -78,20 +68,16 @@ bool Eagle::IsCarnivore() {
 bool Eagle::IsOmnivore() {
   return eat_meat && eat_plant;
 }
-
 bool Eagle::IsEnemy(int x) {
   return false;
 }
-
 int Eagle::GetID() {
   return ID;
 }
-
 void Eagle::SetLocation(int _x, int _y) {
   position.SetX(_x);
   position.SetY(_y);
 }
-
 int Eagle::GetX() const {
   return position.GetX();
 }

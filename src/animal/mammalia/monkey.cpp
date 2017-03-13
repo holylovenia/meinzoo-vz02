@@ -22,11 +22,9 @@ Monkey::Monkey(int _x, int _y, int _weight) : def_ID(5),
   AnimalFood::AddTotalMeat(ratio_meat * weight / 100);
   AnimalFood::AddTotalPlant(ratio_plant * weight / 100);
 }
-
 void Monkey::Interact() {
   std::cout << "The monkey is peeling a banana" << std::endl;
 }
-
 void Monkey::Move(int movement) {
   if (movement == 1) {
     position.SetY(position.GetY()-1);
@@ -41,64 +39,49 @@ void Monkey::Move(int movement) {
     position.SetX(position.GetX()-1);
   }
 }
-
 bool Monkey::GetBehavior() {
   return is_wild;
 }
-
 int Monkey::GetReqMeat() {
   return ratio_meat * weight / 100;
 }
-
 int Monkey::GetReqPlant() {
   return ratio_plant * weight / 100;
 }
-
 Point Monkey::GetPosition() {
   return position;
 }
-
 bool Monkey::IsLandAnimal() {
   return is_land_animal;
 }
-
 bool Monkey::IsWaterAnimal() {
   return is_water_animal;
 }
-
 bool Monkey::IsAirAnimal() {
   return is_air_animal;
 }
-
 bool Monkey::IsHerbivore() {
   return !eat_meat && eat_plant;
 }
-
 bool Monkey::IsCarnivore() {
   return eat_meat && !eat_plant;
 }
-
 bool Monkey::IsOmnivore() {
   return eat_meat && eat_plant;
 }
-
 bool Monkey::IsEnemy(int x) {
   return false;
 }
-
 int Monkey::GetID() {
   return ID;
 }
-
 void Monkey::SetLocation(int _x, int _y) {
   position.SetX(_x);
   position.SetY(_y);
 }
-
 int Monkey::GetX() const {
   return position.GetX();
 }
-
 int Monkey::GetY() const {
   return position.GetY();
 }

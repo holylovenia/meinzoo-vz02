@@ -22,11 +22,9 @@ Clownfish::Clownfish(int _x, int _y, int _weight) : def_ID(14),
   AnimalFood::AddTotalMeat(ratio_meat * weight / 100);
   AnimalFood::AddTotalPlant(ratio_plant * weight / 100);
 }
-
 void Clownfish::Interact() {
   std::cout << "The clownfish is not as funny as its name..." << std::endl;
 }
-
 void Clownfish::Move(int movement) {
   if (movement == 1) {
     position.SetY(position.GetY()-1);
@@ -41,64 +39,49 @@ void Clownfish::Move(int movement) {
     position.SetX(position.GetX()-1);
   }
 }
-
 bool Clownfish::GetBehavior() {
   return is_wild;
 }
-
 int Clownfish::GetReqMeat() {
   return ratio_meat * weight / 100;
 }
-
 int Clownfish::GetReqPlant() {
   return ratio_plant * weight / 100;
 }
-
 Point Clownfish::GetPosition() {
   return position;
 }
-
 bool Clownfish::IsLandAnimal() {
   return is_land_animal;
 }
-
 bool Clownfish::IsWaterAnimal() {
   return is_water_animal;
 }
-
 bool Clownfish::IsAirAnimal() {
   return is_air_animal;
 }
-
 bool Clownfish::IsHerbivore() {
   return !eat_meat && eat_plant;
 }
-
 bool Clownfish::IsCarnivore() {
   return eat_meat && !eat_plant;
 }
-
 bool Clownfish::IsOmnivore() {
   return eat_meat && eat_plant;
 }
-
 bool Clownfish::IsEnemy(int x) {
   return false;
 }
-
 int Clownfish::GetID() {
   return ID;
 }
-
 void Clownfish::SetLocation(int _x, int _y) {
   position.SetX(_x);
   position.SetY(_y);
 }
-
 int Clownfish::GetX() const {
   return position.GetX();
 }
-
 int Clownfish::GetY() const {
   return position.GetY();
 }

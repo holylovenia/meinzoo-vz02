@@ -21,11 +21,9 @@ Python::Python(int _x, int _y, int _weight) : def_ID(9),
   eat_plant = def_eat_plant;
   AnimalFood::AddTotalMeat(ratio_meat * weight / 100);
 }
-
 void Python::Interact() {
   std::cout << "The python is slithering across the ground" << std::endl;
 }
-
 void Python::Move(int movement) {
   if (movement == 1) {
     position.SetY(position.GetY()-1);
@@ -40,64 +38,49 @@ void Python::Move(int movement) {
     position.SetX(position.GetX()-1);
   }
 }
-
 bool Python::GetBehavior() {
   return is_wild;
 }
-
 int Python::GetReqMeat() {
   return ratio_meat * weight / 100;
 }
-
 int Python::GetReqPlant() {
   return ratio_plant * weight / 100;
 }
-
 Point Python::GetPosition() {
   return position;
 }
-
 bool Python::IsLandAnimal() {
   return is_land_animal;
 }
-
 bool Python::IsWaterAnimal() {
   return is_water_animal;
 }
-
 bool Python::IsAirAnimal() {
   return is_air_animal;
 }
-
 bool Python::IsHerbivore() {
   return !eat_meat && eat_plant;
 }
-
 bool Python::IsCarnivore() {
   return eat_meat && !eat_plant;
 }
-
 bool Python::IsOmnivore() {
   return eat_meat && eat_plant;
 }
-
 bool Python::IsEnemy(int x) {
   return false;
 }
-
 int Python::GetID() {
   return ID;
 }
-
 void Python::SetLocation(int _x, int _y) {
   position.SetX(_x);
   position.SetY(_y);
 }
-
 int Python::GetX() const {
   return position.GetX();
 }
-
 int Python::GetY() const {
   return position.GetY();
 }

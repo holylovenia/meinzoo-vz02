@@ -26,6 +26,7 @@ class Clownfish {
     int GetX() const;
     int GetY() const;
     bool GetBehavior();
+    
   private:
     int ID;
     bool is_wild;

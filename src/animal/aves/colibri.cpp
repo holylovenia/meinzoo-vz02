@@ -21,11 +21,9 @@ Colibri::Colibri(int _x, int _y, int _weight) : def_ID(19),
   eat_plant = def_eat_plant;
   AnimalFood::AddTotalPlant(ratio_plant * weight / 100);
 }
-
 void Colibri::Interact() {
   std::cout << "The colibri is looking at you, apparently confused" << std::endl;
 }
-
 void Colibri::Move(int movement) {
   if (movement == 1) {
     position.SetY(position.GetY()-1);
@@ -40,35 +38,27 @@ void Colibri::Move(int movement) {
     position.SetX(position.GetX()-1);
   }
 }
-
 bool Colibri::GetBehavior() {
   return is_wild;
 }
-
 int Colibri::GetReqMeat() {
   return ratio_meat * weight / 100;
 }
-
 int Colibri::GetReqPlant() {
   return ratio_plant * weight / 100;
 }
-
 Point Colibri::GetPosition() {
   return position;
 }
-
 bool Colibri::IsLandAnimal() {
   return is_land_animal;
 }
-
 bool Colibri::IsWaterAnimal() {
   return is_water_animal;
 }
-
 bool Colibri::IsAirAnimal() {
   return is_air_animal;
 }
-
 bool Colibri::IsHerbivore() {
   return !eat_meat && eat_plant;
 }
@@ -78,20 +68,16 @@ bool Colibri::IsCarnivore() {
 bool Colibri::IsOmnivore() {
   return eat_meat && eat_plant;
 }
-
 bool Colibri::IsEnemy(int x) {
   return false;
 }
-
 int Colibri::GetID() {
   return ID;
 }
-
 void Colibri::SetLocation(int _x, int _y) {
   position.SetX(_x);
   position.SetY(_y);
 }
-
 int Colibri::GetX() const {
   return position.GetX();
 }

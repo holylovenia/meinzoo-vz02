@@ -24,12 +24,10 @@ WildBunny::WildBunny(int _x, int _y, int _weight) : def_ID(0),
     AddEnemy(id);
   }
 }
-
 void WildBunny::Interact() {
   std::cout << "The wild bunny is looking at you ";
   std::cout << "with murderous intent" << std::endl;
 }
-
 void WildBunny::Move(int movement) {
   if (movement == 1) {
     position.SetY(position.GetY()-1);
@@ -44,72 +42,55 @@ void WildBunny::Move(int movement) {
     position.SetX(position.GetX()-1);
   }
 }
-
 bool WildBunny::GetBehavior() {
   return is_wild;
 }
-
 int WildBunny::GetReqMeat() {
   return ratio_meat * weight / 100;
 }
-
 int WildBunny::GetReqPlant() {
   return ratio_plant * weight / 100;
 }
-
 Point WildBunny::GetPosition() {
   return position;
 }
-
 bool WildBunny::IsLandAnimal() {
   return is_land_animal;
 }
-
 bool WildBunny::IsWaterAnimal() {
   return is_water_animal;
 }
-
 bool WildBunny::IsAirAnimal() {
   return is_air_animal;
 }
-
 bool WildBunny::IsHerbivore() {
   return !eat_meat && eat_plant;
 }
-
 bool WildBunny::IsCarnivore() {
   return eat_meat && !eat_plant;
 }
-
 bool WildBunny::IsOmnivore() {
   return eat_meat && eat_plant;
 }
-
 void WildBunny::AddEnemy(int x) {
   enemy.insert(x);
 }
-
 void WildBunny::RemoveEnemy(int x) {
   enemy.erase(x);
 }
-
 bool WildBunny::IsEnemy(int x) {
   return false;
 }
-
 int WildBunny::GetID() {
   return ID;
 }
-
 void WildBunny::SetLocation(int _x, int _y) {
   position.SetX(_x);
   position.SetY(_y);
 }
-
 int WildBunny::GetX() const {
   return position.GetX();
 }
-
 int WildBunny::GetY() const {
   return position.GetY();
 }

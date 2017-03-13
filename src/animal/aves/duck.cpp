@@ -22,11 +22,9 @@ Duck::Duck(int _x, int _y, int _weight) : def_ID(16),
   AnimalFood::AddTotalMeat(ratio_meat * weight / 100);
   AnimalFood::AddTotalPlant(ratio_plant * weight / 100);
 }
-
 void Duck::Interact() {
   std::cout << "The duck just quacked loudly" << std::endl;
 }
-
 void Duck::Move(int movement) {
   if (movement == 1) {
     position.SetY(position.GetY()-1);
@@ -41,35 +39,27 @@ void Duck::Move(int movement) {
     position.SetX(position.GetX()-1);
   }
 }
-
 bool Duck::GetBehavior() {
   return is_wild;
 }
-
 int Duck::GetReqMeat() {
   return ratio_meat * weight / 100;
 }
-
 int Duck::GetReqPlant() {
   return ratio_plant * weight / 100;
 }
-
 Point Duck::GetPosition() {
   return position;
 }
-
 bool Duck::IsLandAnimal() {
   return is_land_animal;
 }
-
 bool Duck::IsWaterAnimal() {
   return is_water_animal;
 }
-
 bool Duck::IsAirAnimal() {
   return is_air_animal;
 }
-
 bool Duck::IsHerbivore() {
   return !eat_meat && eat_plant;
 }
@@ -79,20 +69,16 @@ bool Duck::IsCarnivore() {
 bool Duck::IsOmnivore() {
   return eat_meat && eat_plant;
 }
-
 bool Duck::IsEnemy(int x) {
   return false;
 }
-
 int Duck::GetID() {
   return ID;
 }
-
 void Duck::SetLocation(int _x, int _y) {
   position.SetX(_x);
   position.SetY(_y);
 }
-
 int Duck::GetX() const {
   return position.GetX();
 }

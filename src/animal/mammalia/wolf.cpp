@@ -21,11 +21,9 @@ Wolf::Wolf(int _x, int _y, int _weight) : def_ID(1),
   eat_plant = def_eat_plant;
   AnimalFood::AddTotalMeat(ratio_meat * weight / 100);
 }
-
 void Wolf::Interact() {
   std::cout << "The wolf is howling" << std::endl;
 }
-
 void Wolf::Move(int movement) {
   if (movement == 1) {
     position.SetY(position.GetY()-1);
@@ -40,64 +38,49 @@ void Wolf::Move(int movement) {
     position.SetX(position.GetX()-1);
   }
 }
-
 bool Wolf::GetBehavior() {
   return is_wild;
 }
-
 int Wolf::GetReqMeat() {
   return ratio_meat * weight / 100;
 }
-
 int Wolf::GetReqPlant() {
   return ratio_plant * weight / 100;
 }
-
 Point Wolf::GetPosition() {
   return position;
 }
-
 bool Wolf::IsLandAnimal() {
   return is_land_animal;
 }
-
 bool Wolf::IsWaterAnimal() {
   return is_water_animal;
 }
-
 bool Wolf::IsAirAnimal() {
   return is_air_animal;
 }
-
 bool Wolf::IsHerbivore() {
   return !eat_meat && eat_plant;
 }
-
 bool Wolf::IsCarnivore() {
   return eat_meat && !eat_plant;
 }
-
 bool Wolf::IsOmnivore() {
   return eat_meat && eat_plant;
 }
-
 bool Wolf::IsEnemy(int x) {
   return false;
 }
-
 int Wolf::GetID() {
   return ID;
 }
-
 void Wolf::SetLocation(int _x, int _y) {
   position.SetX(_x);
   position.SetY(_y);
 }
-
 int Wolf::GetX() const {
   return position.GetX();
 }
-
 int Wolf::GetY() const {
   return position.GetY();
 }

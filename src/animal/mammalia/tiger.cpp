@@ -21,11 +21,9 @@ Tiger::Tiger(int _x, int _y, int _weight) : def_ID(3),
   eat_plant = def_eat_plant;
   AnimalFood::AddTotalMeat(ratio_meat * weight / 100);
 }
-
 void Tiger::Interact() {
   std::cout << "The tiger is graciously lying on the grass" << std::endl;
 }
-
 void Tiger::Move(int movement) {
   if (movement == 1) {
     position.SetY(position.GetY()-1);
@@ -40,64 +38,49 @@ void Tiger::Move(int movement) {
     position.SetX(position.GetX()-1);
   }
 }
-
 bool Tiger::GetBehavior() {
   return is_wild;
 }
-
 int Tiger::GetReqMeat() {
   return ratio_meat * weight / 100;
 }
-
 int Tiger::GetReqPlant() {
   return ratio_plant * weight / 100;
 }
-
 Point Tiger::GetPosition() {
   return position;
 }
-
 bool Tiger::IsLandAnimal() {
   return is_land_animal;
 }
-
 bool Tiger::IsWaterAnimal() {
   return is_water_animal;
 }
-
 bool Tiger::IsAirAnimal() {
   return is_air_animal;
 }
-
 bool Tiger::IsHerbivore() {
   return !eat_meat && eat_plant;
 }
-
 bool Tiger::IsCarnivore() {
   return eat_meat && !eat_plant;
 }
-
 bool Tiger::IsOmnivore() {
   return eat_meat && eat_plant;
 }
-
 bool Tiger::IsEnemy(int x) {
   return false;
 }
-
 int Tiger::GetID() {
   return ID;
 }
-
 void Tiger::SetLocation(int _x, int _y) {
   position.SetX(_x);
   position.SetY(_y);
 }
-
 int Tiger::GetX() const {
   return position.GetX();
 }
-
 int Tiger::GetY() const {
   return position.GetY();
 }
