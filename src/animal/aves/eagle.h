@@ -90,7 +90,7 @@ class Eagle {
       * @return Nilai is_wild.
       */
     bool GetBehavior();
-    /** @brief Mengembalikan character untuk kelas render.
+    /** @brief Mengembalikan character untuk proses render.
       * @return Karakter untuk dirender.
       */
     char Render();

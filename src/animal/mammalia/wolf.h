@@ -6,26 +6,93 @@
 #include "../animalfood.h"
 #include "../../misc/point.h"
 
+/** @class Wolf
+  * Kelas Wolf yang mendefinisikan hewan wolf.
+  */
 class Wolf {
   public :
+    /** @brief Constructor
+      * Menciptakan wolf dengan posisi (x,y) dan berat _weight.
+      * @param _x Nilai posisi absis.
+      * @param _y Nilai posisi ordinat.
+      * @param _weight Nilai berat untuk wolf.
+      */
     Wolf(int _x, int _y, int _weight);
+    /** @brief Menampilkan interaksi dengan wolf.
+      * Menuliskan interaksi ke layar.
+      */
     void Interact();
+    /** @brief Menggerakkan wolf dengan mengubah posisi.
+      * @param movement Nilai menentukan arah gerak wolf.
+      */
     void Move(int movement);
+    /** @brief Getter nilai is_land_animal.
+      * @return Nilai is_land_animal.
+      */
     bool IsLandAnimal();
+    /** @brief Getter nilai is_water_animal.
+      * @return Nilai is_water_animal.
+      */
     bool IsWaterAnimal();
+    /** @brief Getter nilai is_air_animal.
+      * @return Nilai is_air_animal.
+      */
     bool IsAirAnimal();
+    /** @brief Menentukan apakah wolf merupakan herbivora.
+      * @return Nilai true/false wolf merupakan herbivora. 
+      */
     bool IsHerbivore();
+    /** @brief Menentukan apakah wolf merupakan carnivora.
+      * @return Nilai true/false wolf merupakan carnivora. 
+      */
     bool IsCarnivore();
+    /** @brief Menentukan apakah wolf merupakan omnivora.
+      * @return Nilai true/false wolf merupakan omnivora. 
+      */
     bool IsOmnivore();
+    /** @brief Getter nilai kebutuhan makanan wolf dalam bentuk daging.
+      * @return Jumlah daging yang dibutuhkan untuk wolf tertentu.
+      */
     int GetReqMeat();
+    /** @brief Getter nilai kebutuhan makanan wolf dalam bentuk tumbuhan.
+      * @return Jumlah tumbuhan yang dibutuhkan untuk wolf tertentu.
+      */
     int GetReqPlant();
+    /** @brief Getter nilai point position.
+      * @return Nilai position.
+      */
     Point GetPosition();
+    /** @brief Mengecek status wolf.
+      * Memeriksa apakah wolf dengan ID x merupakan musuh.
+      * @param x ID wolf yang ingin diperiksa.
+      * @return Nilai true/false apakah merupakan musuh.
+      */
     bool IsEnemy(int x);
+    /** @brief Getter nilai ID.
+      * @return Nilai ID.
+      */
     int GetID();
+    /** @brief Menentukan lokasi wolf.
+      * Mengubah lokasi wolf menjadi di posisi (_x,_y).
+      * @param _x Nilai posisi absis.
+      * @param _y Nilai posisi ordinat.
+      */
     void SetLocation(int _x, int _y);
+    /** @brief Getter nilai absis
+      * @return Nilai absis.
+      */
     int GetX() const;
+    /** @brief Getter nilai ordinat
+      * @return Nilai ordinat.
+      */
     int GetY() const;
+    /** @brief Getter nilai is_wild. 
+      * @return Nilai is_wild.
+      */
     bool GetBehavior();
+    /** @brief Mengembalikan character untuk proses render.
+      * @return Karakter untuk dirender.
+      */
     char Render();
     
   private:
