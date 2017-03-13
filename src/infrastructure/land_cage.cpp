@@ -5,15 +5,12 @@
 LandCage::LandCage() {
   nb_animal = 0;
 }
-
 void LandCage::AddPoint(const Point& p) {
   area.insert(p);
 }
-
 void LandCage::RemovePoint(const Point& p) {
   area.erase(p);
 }
-
 void LandCage::AddAnimal(Colibri& A) {
   if (nb_animal < int(area.size() / 10 * 3)) { 
     bool placeable = true;
@@ -79,7 +76,6 @@ void LandCage::AddAnimal(Colibri& A) {
     }
   }
 }
-
 void LandCage::AddAnimal(Duck& A) {
   if (nb_animal < int(area.size() / 10 * 3)) { 
     bool placeable;
@@ -147,7 +143,6 @@ void LandCage::AddAnimal(Duck& A) {
     }
   }
 }
-
 void LandCage::AddAnimal(Eagle& A) {
   if (nb_animal < int(area.size() / 10 * 3)) { 
     bool placeable;
@@ -215,7 +210,6 @@ void LandCage::AddAnimal(Eagle& A) {
     }
   }
 }
-
 void LandCage::AddAnimal(Peacock& A) {
   if (nb_animal < int(area.size() / 10 * 3)) { 
     bool placeable;
@@ -283,7 +277,6 @@ void LandCage::AddAnimal(Peacock& A) {
     }
   }
 }
-
 void LandCage::AddAnimal(WildColibri& A) {
   if (nb_animal < int(area.size() / 10 * 3)) { 
     bool placeable;
@@ -351,7 +344,6 @@ void LandCage::AddAnimal(WildColibri& A) {
     }
   }
 }
-
 void LandCage::AddAnimal(Elephant& A) {
   if (nb_animal < int(area.size() / 10 * 3)) { 
     bool placeable;
@@ -419,7 +411,6 @@ void LandCage::AddAnimal(Elephant& A) {
     }
   }
 }
-
 void LandCage::AddAnimal(Giraffe& A) {
   if (nb_animal < int(area.size() / 10 * 3)) { 
     bool placeable;
@@ -487,7 +478,6 @@ void LandCage::AddAnimal(Giraffe& A) {
     }
   }
 }
-
 void LandCage::AddAnimal(Lion& A) {
   if (nb_animal < int(area.size() / 10 * 3)) { 
     bool placeable;
@@ -555,7 +545,6 @@ void LandCage::AddAnimal(Lion& A) {
     }
   }
 }
-
 void LandCage::AddAnimal(Monkey& A) {
   if (nb_animal < int(area.size() / 10 * 3)) { 
     bool placeable;
@@ -623,7 +612,6 @@ void LandCage::AddAnimal(Monkey& A) {
     }
   }
 }
-
 void LandCage::AddAnimal(Tiger& A) {
   if (nb_animal < int(area.size() / 10 * 3)) { 
     bool placeable;
@@ -691,7 +679,6 @@ void LandCage::AddAnimal(Tiger& A) {
     }
   }
 }
-
 void LandCage::AddAnimal(Wolf& A) {
   if (nb_animal < int(area.size() / 10 * 3)) { 
     bool placeable;
@@ -759,7 +746,6 @@ void LandCage::AddAnimal(Wolf& A) {
     }
   }
 }
-
 void LandCage::AddAnimal(Zebra& A) {
   if (nb_animal < int(area.size() / 10 * 3)) { 
     bool placeable;
@@ -827,7 +813,6 @@ void LandCage::AddAnimal(Zebra& A) {
     }
   }
 }
-
 void LandCage::AddAnimal(WildBunny& A) {
   if (nb_animal < int(area.size() / 10 * 3)) { 
     bool placeable;
@@ -895,7 +880,6 @@ void LandCage::AddAnimal(WildBunny& A) {
     }
   }
 }
-
 void LandCage::AddAnimal(Chameleon& A) {
   if (nb_animal < int(area.size() / 10 * 3)) { 
     bool placeable;
@@ -963,7 +947,6 @@ void LandCage::AddAnimal(Chameleon& A) {
     }
   }
 }
-
 void LandCage::AddAnimal(Crocodile& A) {
   if (nb_animal < int(area.size() / 10 * 3)) { 
     bool placeable;
@@ -1031,7 +1014,6 @@ void LandCage::AddAnimal(Crocodile& A) {
     }
   }
 }
-
 void LandCage::AddAnimal(Iguana& A) {
   if (nb_animal < int(area.size() / 10 * 3)) { 
     bool placeable;
@@ -1099,7 +1081,6 @@ void LandCage::AddAnimal(Iguana& A) {
     }
   }
 }
-
 void LandCage::AddAnimal(Komodo& A) {
   if (nb_animal < int(area.size() / 10 * 3)) { 
     bool placeable;
@@ -1167,7 +1148,6 @@ void LandCage::AddAnimal(Komodo& A) {
     }
   }
 }
-
 void LandCage::AddAnimal(Python& A) {
   if (nb_animal < int(area.size() / 10 * 3)) { 
     bool placeable;
@@ -1235,12 +1215,10 @@ void LandCage::AddAnimal(Python& A) {
     }
   }
 }
-
 void LandCage::MoveAnimal() {
   srand(time(NULL));
   int i = rand() % TOTAL_LAND_ANIMAL;
-
-  unsigned int seed = time(NULL);
+    unsigned int seed = time(NULL);
   subtract_with_carry_engine<unsigned,24,10,24> generator (seed); 
   
   if (i == 0) {
@@ -1568,7 +1546,6 @@ void LandCage::MoveAnimal() {
     }
   }
 }
-
 vector<Point> LandCage::GetArea() {
   return vector<Point>(area.begin(), area.end());
 }

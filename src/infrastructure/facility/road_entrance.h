@@ -5,9 +5,7 @@
 
 class RoadEntrance {
   public:
-    // ctor
     RoadEntrance(bool accessible);
-
     bool IsEntrance();
     bool IsExit();
 

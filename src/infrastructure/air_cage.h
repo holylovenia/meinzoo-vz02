@@ -26,6 +26,7 @@ class AirCage {
     void AddAnimal(WildColibri& A);
     void MoveAnimal();
     vector<Point> GetArea();
+    
   private:
     set<Point> area;
     vector<Colibri*> colibri;

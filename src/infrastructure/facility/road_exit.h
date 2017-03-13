@@ -4,9 +4,8 @@
 #include <string>
 
 class RoadExit {
-    // ctor
+  public:
     RoadExit(bool accessible);
-
     bool IsEntrance();
     bool IsExit();
 

@@ -5,13 +5,9 @@
 
 class Restaurant {
   public:
-    // ctor with parameter
     Restaurant(bool accessible, std::string _name);
-    // cctor
     Restaurant(const Restaurant& R);
-    // operator=
     Restaurant& operator=(const Restaurant& R);
-    // dtor
     std::string GetRestaurantName();
 
   private:

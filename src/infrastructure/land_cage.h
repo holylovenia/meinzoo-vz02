@@ -52,6 +52,7 @@ class LandCage {
     void AddAnimal(Python& A);
     void MoveAnimal();
     vector<Point> GetArea();
+    
   private:
     set<Point> area;
     vector<Colibri*> colibri;

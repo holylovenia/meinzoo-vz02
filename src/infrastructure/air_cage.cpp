@@ -5,15 +5,12 @@
 AirCage::AirCage() {
   nb_animal = 0;
 }
-
 void AirCage::AddPoint(const Point& p) {
   area.insert(p);
 }
-
 void AirCage::RemovePoint(const Point& p) {
   area.erase(p);
 }
-
 void AirCage::AddAnimal(Colibri& A) {
   if (nb_animal < int(area.size() / 10 * 3)) { 
     bool placeable = true;
@@ -40,7 +37,6 @@ void AirCage::AddAnimal(Colibri& A) {
     }
   }
 }
-
 void AirCage::AddAnimal(Duck& A) {
   if (nb_animal < int(area.size() / 10 * 3)) { 
     bool placeable = true;
@@ -67,7 +63,6 @@ void AirCage::AddAnimal(Duck& A) {
     }
   }
 }
-
 void AirCage::AddAnimal(Eagle& A) {
   if (nb_animal < int(area.size() / 10 * 3)) { 
     bool placeable = true;
@@ -94,7 +89,6 @@ void AirCage::AddAnimal(Eagle& A) {
     }
   }
 }
-
 void AirCage::AddAnimal(Owl& A) {
   if (nb_animal < int(area.size() / 10 * 3)) { 
     bool placeable = true;
@@ -121,7 +115,6 @@ void AirCage::AddAnimal(Owl& A) {
     }
   }
 }
-
 void AirCage::AddAnimal(WildColibri& A) {
   if (nb_animal < int(area.size() / 10 * 3)) { 
     bool placeable = true;
@@ -148,12 +141,10 @@ void AirCage::AddAnimal(WildColibri& A) {
     }
   }
 }
-
 void AirCage::MoveAnimal() {
   srand(time(NULL));
   int i = rand() % TOTAL_AIR_ANIMAL;
-
-  unsigned int seed = time(NULL);
+    unsigned int seed = time(NULL);
   subtract_with_carry_engine<unsigned,24,10,24> generator (seed); 
   
   if (i == 0) {
@@ -243,7 +234,6 @@ void AirCage::MoveAnimal() {
     }
   }
 }
-
 vector<Point> AirCage::GetArea() {
   return vector<Point>(area.begin(), area.end());
 }

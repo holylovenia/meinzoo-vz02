@@ -24,6 +24,7 @@ class WaterCage {
     void AddAnimal(Crocodile& A);
     void MoveAnimal();
     vector<Point> GetArea();
+    
   private:
     set<Point> area;
     vector<Shark*> shark;

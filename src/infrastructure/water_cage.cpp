@@ -5,15 +5,12 @@
 WaterCage::WaterCage() {
   nb_animal = 0;
 }
-
 void WaterCage::AddPoint(const Point& p) {
   area.insert(p);
 }
-
 void WaterCage::RemovePoint(const Point& p) {
   area.erase(p);
 }
-
 void WaterCage::AddAnimal(Shark& A) {
   if (nb_animal < int(area.size() / 10 * 3)) { 
     bool placeable = true;
@@ -37,7 +34,6 @@ void WaterCage::AddAnimal(Shark& A) {
     }
   }
 }
-
 void WaterCage::AddAnimal(Barracuda& A) {
   if (nb_animal < int(area.size() / 10 * 3)) { 
     bool placeable;
@@ -63,7 +59,6 @@ void WaterCage::AddAnimal(Barracuda& A) {
     }
   }
 }
-
 void WaterCage::AddAnimal(Clownfish& A) {
   if (nb_animal < int(area.size() / 10 * 3)) { 
     bool placeable;
@@ -89,7 +84,6 @@ void WaterCage::AddAnimal(Clownfish& A) {
     }
   }
 }
-
 void WaterCage::AddAnimal(Crocodile& A) {
   if (nb_animal < int(area.size() / 10 * 3)) { 
     bool placeable;
@@ -115,12 +109,10 @@ void WaterCage::AddAnimal(Crocodile& A) {
     }
   }
 }
-
 void WaterCage::MoveAnimal() {
   srand(time(NULL));
   int i = rand() % TOTAL_WATER_ANIMAL;
-
-  unsigned int seed = time(NULL);
+    unsigned int seed = time(NULL);
   subtract_with_carry_engine<unsigned,24,10,24> generator (seed); 
   
   if (i == 0) {
@@ -193,7 +185,6 @@ void WaterCage::MoveAnimal() {
     }
   }
 }
-
 vector<Point> WaterCage::GetArea() {
   return vector<Point>(area.begin(), area.end());
 }
