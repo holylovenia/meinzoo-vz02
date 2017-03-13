@@ -1,103 +1,104 @@
 #include "iguana.h"
 
-Iguana::Iguana(int _x, int _y, int _weight) : defID(10), defRatioMeat(20), defRatioPlant(40), defLimbCount(4), defSkinType("Scute"), defEatMeat(true), defEatPlant(true) {
-	//Iguana
-	ID = defID;
-	Location.setX(_x);
-	Location.setY(_y);
-	ratioMeat = defRatioMeat;
-	ratioPlant = defRatioPlant;
-	isLandAnimal = true;
-	isWaterAnimal = false;
-	isAirAnimal = false;
-	weight = _weight;
-	isWild = false;
-	//omnivora
-	eatMeat = defEatMeat;
-	eatPlant = defEatPlant;
-	AnimalFood::AddTotalMeat(ratioMeat * weight / 100);
-	AnimalFood::AddTotalPlant(ratioPlant * weight / 100);
+Iguana::Iguana(int _x, int _y, int _weight) : def_ID(11),
+                                              def_ratio_meat(20),
+                                              def_ratio_plant(40),
+                                              def_limb_count(4),
+                                              def_skin_type("Scute"),
+                                              def_eat_meat(true),
+                                              def_eat_plant(true) {
+  ID = def_ID;
+  position.SetX(_x);
+  position.SetY(_y);
+  ratio_meat = def_ratio_meat;
+  ratio_plant = def_ratio_plant;
+  is_land_animal = true;
+  is_water_animal = false;
+  is_air_animal = false;
+  weight = _weight;
+  is_wild = false;
+  eat_meat = def_eat_meat;
+  eat_plant = def_eat_plant;
+  AnimalFood::AddTotalMeat(ratio_meat * weight / 100);
+  AnimalFood::AddTotalPlant(ratio_plant * weight / 100);
 }
 
 void Iguana::Interact() {
-	std::cout << "The iguana is calmly sleeping on a tree" << std::endl;
+  std::cout << "The iguana is calmly sleeping on a tree" << std::endl;
 }
 
 void Iguana::Move(int movement) {
-	if (movement == 1) // Move up
-	{
-		Location.setY(Location.getY()-1);
-	}
-	else if (movement == 2) // Move right
-	{
-		Location.setX(Location.getX()+1);
-	}
-	else if (movement == 3) // Move down
-	{
-		Location.setY(Location.getY()+1);
-	}
-	else // Move left
-	{
-		Location.setX(Location.getX()-1);
-	}
+  if (movement == 1) {
+    position.SetY(position.GetY()-1);
+  }
+  else if (movement == 2) {
+    position.SetX(position.GetX()+1);
+  }
+  else if (movement == 3) {
+    position.SetY(position.GetY()+1);
+  }
+  else {
+    position.SetX(position.GetX()-1);
+  }
 }
 
-int Iguana::getReqMeat() {
-	return(ratioMeat * weight / 100);
+bool Iguana::GetBehavior() {
+  return is_wild;
 }
 
-int Iguana::getReqPlant() {
-	return(ratioPlant * weight / 100);
+int Iguana::GetReqMeat() {
+  return ratio_meat * weight / 100;
+}
+
+int Iguana::GetReqPlant() {
+  return ratio_plant * weight / 100;
+}
+
+Point Iguana::GetPosition() {
+  return position;
 }
 
 bool Iguana::IsLandAnimal() {
-	return(isLandAnimal);
+  return is_land_animal;
 }
 
 bool Iguana::IsWaterAnimal() {
-	return(isWaterAnimal);
+  return is_water_animal;
 }
 
 bool Iguana::IsAirAnimal() {
-	return(isAirAnimal);
+  return is_air_animal;
 }
 
-bool Iguana::getBehavior() {
-	return(isWild);
+bool Iguana::IsHerbivore() {
+  return !eat_meat && eat_plant;
 }
 
-Point Iguana::getPosition() {
-	return(Location);
+bool Iguana::IsCarnivore() {
+  return eat_meat && !eat_plant;
 }
 
-bool Iguana::isHerbivore() {
-	return (!eatMeat && eatPlant);
-}
-bool Iguana::isCarnivore() {
-	return (eatMeat && !eatPlant);
-}
-bool Iguana::isOmnivore() {
-	return (eatMeat && eatPlant);
+bool Iguana::IsOmnivore() {
+  return eat_meat && eat_plant;
 }
 
-bool Iguana::isEnemy(int x) {
-	return (false);
+bool Iguana::IsEnemy(int x) {
+  return false;
 }
 
-int Iguana::getID() {
-	return (ID);
+int Iguana::GetID() {
+  return ID;
 }
 
-// Setter
-void Iguana::setLocation(int _x, int _y) {
-	Location.setX(_x);
-	Location.setY(_y);
+void Iguana::SetLocation(int _x, int _y) {
+  position.SetX(_x);
+  position.SetY(_y);
 }
 
-// Getter
-int Iguana::getX() const {
-	return Location.getX();
+int Iguana::GetX() const {
+  return position.GetX();
 }
-int Iguana::getY() const {
-	return Location.getY();
+
+int Iguana::GetY() const {
+  return position.GetY();
 }

@@ -1,102 +1,100 @@
 #include "colibri.h"
 
-Colibri::Colibri(int _x, int _y, int _weight) : defID(19), defRatioMeat(0), defRatioPlant(60), defLimbCount(2), defSkinType("Feather"), defEatMeat(false), defEatPlant(true) {
-	//colibri
-	ID = defID;
-	Location.setX(_x);
-	Location.setY(_y);
-	ratioMeat = defRatioMeat;
-	ratioPlant = defRatioPlant;
-	isLandAnimal = true;
-	isWaterAnimal = false;
-	isAirAnimal = true;
-	weight = _weight;
-	isWild = false;
-	//herbivora
-	eatMeat = defEatMeat;
-	eatPlant = defEatPlant;
-	AnimalFood::AddTotalPlant(ratioPlant * weight / 100);
+Colibri::Colibri(int _x, int _y, int _weight) : def_ID(19),
+                                                def_ratio_meat(0),
+                                                def_ratio_plant(60),
+                                                def_limb_count(2),
+                                                def_skin_type("Feather"),
+                                                def_eat_meat(false),
+                                                def_eat_plant(true) {
+  ID = def_ID;
+  position.SetX(_x);
+  position.SetY(_y);
+  ratio_meat = def_ratio_meat;
+  ratio_plant = def_ratio_plant;
+  is_land_animal = true;
+  is_water_animal = false;
+  is_air_animal = true;
+  weight = _weight;
+  is_wild = false;
+  eat_meat = def_eat_meat;
+  eat_plant = def_eat_plant;
+  AnimalFood::AddTotalPlant(ratio_plant * weight / 100);
 }
 
 void Colibri::Interact() {
-	std::cout << "The colibri is looking at you, apparently confused" << std::endl;
+  std::cout << "The colibri is looking at you, apparently confused" << std::endl;
 }
 
 void Colibri::Move(int movement) {
-	if (movement == 1) // Move up
-	{
-		Location.setY(Location.getY()-1);
-	}
-	else if (movement == 2) // Move right
-	{
-		Location.setX(Location.getX()+1);
-	}
-	else if (movement == 3) // Move down
-	{
-		Location.setY(Location.getY()+1);
-	}
-	else // Move left
-	{
-		Location.setX(Location.getX()-1);
-	}
+  if (movement == 1) {
+    position.SetY(position.GetY()-1);
+  }
+  else if (movement == 2) {
+    position.SetX(position.GetX()+1);
+  }
+  else if (movement == 3) {
+    position.SetY(position.GetY()+1);
+  }
+  else {
+    position.SetX(position.GetX()-1);
+  }
 }
 
-bool Colibri::getBehavior() {
-	return(isWild);
+bool Colibri::GetBehavior() {
+  return is_wild;
 }
 
-int Colibri::getReqMeat() {
-	return(ratioMeat * weight / 100);
+int Colibri::GetReqMeat() {
+  return ratio_meat * weight / 100;
 }
 
-int Colibri::getReqPlant() {
-	return(ratioPlant * weight / 100);
+int Colibri::GetReqPlant() {
+  return ratio_plant * weight / 100;
 }
 
-Point Colibri::getPosition() {
-	return Location;
+Point Colibri::GetPosition() {
+  return position;
 }
 
 bool Colibri::IsLandAnimal() {
-	return(isLandAnimal);
+  return is_land_animal;
 }
 
 bool Colibri::IsWaterAnimal() {
-	return(isWaterAnimal);
+  return is_water_animal;
 }
 
 bool Colibri::IsAirAnimal() {
-	return(isAirAnimal);
+  return is_air_animal;
 }
 
-bool Colibri::isHerbivore() {
-	return (!eatMeat && eatPlant);
+bool Colibri::IsHerbivore() {
+  return !eat_meat && eat_plant;
 }
-bool Colibri::isCarnivore() {
-	return (eatMeat && !eatPlant);
+bool Colibri::IsCarnivore() {
+  return eat_meat && !eat_plant;
 }
-bool Colibri::isOmnivore() {
-	return (eatMeat && eatPlant);
-}
-
-bool Colibri::isEnemy(int x) {
-	return(false);
+bool Colibri::IsOmnivore() {
+  return eat_meat && eat_plant;
 }
 
-int Colibri::getID() {
-	return(ID);
+bool Colibri::IsEnemy(int x) {
+  return false;
 }
 
-// Setter
-void Colibri::setLocation(int _x, int _y) {
-	Location.setX(_x);
-	Location.setY(_y);
+int Colibri::GetID() {
+  return ID;
 }
 
-// Getter
-int Colibri::getX() const {
-	return Location.getX();
+void Colibri::SetLocation(int _x, int _y) {
+  position.SetX(_x);
+  position.SetY(_y);
 }
-int Colibri::getY() const {
-	return Location.getY();
+
+int Colibri::GetX() const {
+  return position.GetX();
+}
+int Colibri::GetY() const {
+  return position.GetY();
 }

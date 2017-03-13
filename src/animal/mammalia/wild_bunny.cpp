@@ -1,114 +1,115 @@
 #include "wild_bunny.h"
 
-WildBunny::WildBunny(int _x, int _y, int _weight) : defID(0), defRatioMeat(0), defRatioPlant(90), defLimbCount(4), defSkinType("Hairy"), defEatMeat(false), defEatPlant(true) {
-	//wildbunny
-	ID = defID;
-	Location.setX(_x);
-	Location.setY(_y);
-	ratioMeat = defRatioMeat;
-	ratioPlant = defRatioPlant;
-	isLandAnimal = true;
-	isWaterAnimal = false;
-	isAirAnimal = false;
-	weight = _weight;
-	isWild = true;
-	//herbivora
-	eatMeat = defEatMeat;
-	eatPlant = defEatPlant;
-	AnimalFood::AddTotalPlant(ratioPlant * weight / 100);
-	for (int id = defID; id <= 21; id++) {
-		addEnemy(id);
-	}
+WildBunny::WildBunny(int _x, int _y, int _weight) : def_ID(0),
+                                                    def_ratio_meat(0),
+                                                    def_ratio_plant(90),
+                                                    def_limb_count(4),
+                                                    def_skin_type("Hairy"),
+                                                    def_eat_meat(false),
+                                                    def_eat_plant(true) {
+  ID = def_ID;
+  position.SetX(_x);
+  position.SetY(_y);
+  ratio_meat = def_ratio_meat;
+  ratio_plant = def_ratio_plant;
+  is_land_animal = true;
+  is_water_animal = false;
+  is_air_animal = false;
+  weight = _weight;
+  is_wild = false;
+  eat_meat = def_eat_meat;
+  eat_plant = def_eat_plant;
+  AnimalFood::AddTotalPlant(ratio_plant * weight / 100);
+  for (int id = def_ID; id <= 21; id++) {
+    AddEnemy(id);
+  }
 }
 
 void WildBunny::Interact() {
-	std::cout << "The wild bunny is looking at you with murderous intent" << std::endl;
+  std::cout << "The wild bunny is looking at you ";
+  std::cout << "with murderous intent" << std::endl;
 }
 
 void WildBunny::Move(int movement) {
-	if (movement == 1) // Move up
-	{
-		Location.setY(Location.getY()-1);
-	}
-	else if (movement == 2) // Move right
-	{
-		Location.setX(Location.getX()+1);
-	}
-	else if (movement == 3) // Move down
-	{
-		Location.setY(Location.getY()+1);
-	}
-	else // Move left
-	{
-		Location.setX(Location.getX()-1);
-	}
+  if (movement == 1) {
+    position.SetY(position.GetY()-1);
+  }
+  else if (movement == 2) {
+    position.SetX(position.GetX()+1);
+  }
+  else if (movement == 3) {
+    position.SetY(position.GetY()+1);
+  }
+  else {
+    position.SetX(position.GetX()-1);
+  }
 }
 
-int WildBunny::getReqMeat() {
-	return(ratioMeat * weight / 100);
+bool WildBunny::GetBehavior() {
+  return is_wild;
 }
 
-int WildBunny::getReqPlant() {
-	return(ratioPlant * weight / 100);
+int WildBunny::GetReqMeat() {
+  return ratio_meat * weight / 100;
+}
+
+int WildBunny::GetReqPlant() {
+  return ratio_plant * weight / 100;
+}
+
+Point WildBunny::GetPosition() {
+  return position;
 }
 
 bool WildBunny::IsLandAnimal() {
-	return(isLandAnimal);
+  return is_land_animal;
 }
 
 bool WildBunny::IsWaterAnimal() {
-	return(isWaterAnimal);
+  return is_water_animal;
 }
 
 bool WildBunny::IsAirAnimal() {
-	return(isAirAnimal);
+  return is_air_animal;
 }
 
-bool WildBunny::getBehavior() {
-	return (isWild);
+bool WildBunny::IsHerbivore() {
+  return !eat_meat && eat_plant;
 }
 
-Point WildBunny::getPosition() {
-	return (Location);
+bool WildBunny::IsCarnivore() {
+  return eat_meat && !eat_plant;
 }
 
-bool WildBunny::isHerbivore() {
-	return (!eatMeat && eatPlant);
-}
-bool WildBunny::isCarnivore() {
-	return (eatMeat && !eatPlant);
-}
-bool WildBunny::isOmnivore() {
-	return (eatMeat && eatPlant);
+bool WildBunny::IsOmnivore() {
+  return eat_meat && eat_plant;
 }
 
-
-void WildBunny::addEnemy(int x) {
-	enemy.insert(x);
+void WildBunny::AddEnemy(int x) {
+  enemy.insert(x);
 }
 
-void WildBunny::removeEnemy(int x) {
-	enemy.erase(x);
+void WildBunny::RemoveEnemy(int x) {
+  enemy.erase(x);
 }
 
-bool WildBunny::isEnemy(int x) {
-	return(enemy.find(x) != enemy.end());
+bool WildBunny::IsEnemy(int x) {
+  return false;
 }
 
-int WildBunny::getID() {
-	return (ID);
+int WildBunny::GetID() {
+  return ID;
 }
 
-// Setter
-void WildBunny::setLocation(int _x, int _y) {
-	Location.setX(_x);
-	Location.setY(_y);
+void WildBunny::SetLocation(int _x, int _y) {
+  position.SetX(_x);
+  position.SetY(_y);
 }
 
-// Getter
-int WildBunny::getX() const {
-	return Location.getX();
+int WildBunny::GetX() const {
+  return position.GetX();
 }
-int WildBunny::getY() const {
-	return Location.getY();
+
+int WildBunny::GetY() const {
+  return position.GetY();
 }

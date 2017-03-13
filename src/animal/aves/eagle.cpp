@@ -1,102 +1,100 @@
 #include "eagle.h"
 
-Eagle::Eagle(int _x, int _y, int _weight) : defID(18), defRatioMeat(60), defRatioPlant(0), defLimbCount(2), defSkinType("Feather"), defEatMeat(true), defEatPlant(false) {
-	//eagle
-	ID = defID;
-	Location.setX(_x);
-	Location.setY(_y);
-	ratioMeat = defRatioMeat;
-	ratioPlant = defRatioPlant;
-	isLandAnimal = true;
-	isWaterAnimal = false;
-	isAirAnimal = true;
-	weight = _weight;
-	isWild = false;
-	//herbivora
-	eatMeat = defEatMeat;
-	eatPlant = defEatPlant;
-	AnimalFood::AddTotalPlant(ratioPlant * weight / 100);
+Eagle::Eagle(int _x, int _y, int _weight) : def_ID(18),
+                                            def_ratio_meat(60),
+                                            def_ratio_plant(0),
+                                            def_limb_count(2),
+                                            def_skin_type("Feather"),
+                                            def_eat_meat(true),
+                                            def_eat_plant(false) {
+  ID = def_ID;
+  position.SetX(_x);
+  position.SetY(_y);
+  ratio_meat = def_ratio_meat;
+  ratio_plant = def_ratio_plant;
+  is_land_animal = true;
+  is_water_animal = false;
+  is_air_animal = true;
+  weight = _weight;
+  is_wild = false;
+  eat_meat = def_eat_meat;
+  eat_plant = def_eat_plant;
+  AnimalFood::AddTotalMeat(ratio_plant * weight / 100);
 }
 
 void Eagle::Interact() {
-	std::cout << "The eagle is roosting majestically on a tree" << std::endl;
+  std::cout << "The eagle is roosting majestically on a tree" << std::endl;
 }
 
 void Eagle::Move(int movement) {
-	if (movement == 1) // Move up
-	{
-		Location.setY(Location.getY()-1);
-	}
-	else if (movement == 2) // Move right
-	{
-		Location.setX(Location.getX()+1);
-	}
-	else if (movement == 3) // Move down
-	{
-		Location.setY(Location.getY()+1);
-	}
-	else // Move left
-	{
-		Location.setX(Location.getX()-1);
-	}
+  if (movement == 1) {
+    position.SetY(position.GetY()-1);
+  }
+  else if (movement == 2) {
+    position.SetX(position.GetX()+1);
+  }
+  else if (movement == 3) {
+    position.SetY(position.GetY()+1);
+  }
+  else {
+    position.SetX(position.GetX()-1);
+  }
 }
 
-bool Eagle::getBehavior() {
-	return(isWild);
+bool Eagle::GetBehavior() {
+  return is_wild;
 }
 
-int Eagle::getReqMeat() {
-	return(ratioMeat * weight / 100);
+int Eagle::GetReqMeat() {
+  return ratio_meat * weight / 100;
 }
 
-int Eagle::getReqPlant() {
-	return(ratioPlant * weight / 100);
+int Eagle::GetReqPlant() {
+  return ratio_plant * weight / 100;
 }
 
-Point Eagle::getPosition() {
-	return Location;
+Point Eagle::GetPosition() {
+  return position;
 }
 
 bool Eagle::IsLandAnimal() {
-	return(isLandAnimal);
+  return is_land_animal;
 }
 
 bool Eagle::IsWaterAnimal() {
-	return(isWaterAnimal);
+  return is_water_animal;
 }
 
 bool Eagle::IsAirAnimal() {
-	return(isAirAnimal);
+  return is_air_animal;
 }
 
-bool Eagle::isHerbivore() {
-	return (!eatMeat && eatPlant);
+bool Eagle::IsHerbivore() {
+  return !eat_meat && eat_plant;
 }
-bool Eagle::isCarnivore() {
-	return (eatMeat && !eatPlant);
+bool Eagle::IsCarnivore() {
+  return eat_meat && !eat_plant;
 }
-bool Eagle::isOmnivore() {
-	return (eatMeat && eatPlant);
-}
-
-bool Eagle::isEnemy(int x) {
-	return(false);
+bool Eagle::IsOmnivore() {
+  return eat_meat && eat_plant;
 }
 
-int Eagle::getID() {
-	return(ID);
+bool Eagle::IsEnemy(int x) {
+  return false;
 }
 
-// Setter
-void Eagle::setLocation(int _x, int _y) {
-	Location.setX(_x);
-	Location.setY(_y);
+int Eagle::GetID() {
+  return ID;
 }
 
-// Getter
-int Eagle::getX() const {
-	return Location.getX();
+void Eagle::SetLocation(int _x, int _y) {
+  position.SetX(_x);
+  position.SetY(_y);
 }
-int Eagle::getY() const {
-	return Location.getY();
+
+int Eagle::GetX() const {
+  return position.GetX();
+}
+int Eagle::GetY() const {
+  return position.GetY();
 }

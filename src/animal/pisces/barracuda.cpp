@@ -1,102 +1,103 @@
 #include "barracuda.h"
 
-Barracuda::Barracuda(int _x, int _y, int _weight) : defID(15), defRatioMeat(60), defRatioPlant(0), defLimbCount(0), defSkinType("Scale"), defEatMeat(true), defEatPlant(false) {
-	//Barracuda
-	ID = defID;
-	Location.setX(_x);
-	Location.setY(_y);
-	ratioMeat = defRatioMeat;
-	ratioPlant = defRatioPlant;
-	isLandAnimal = false;
-	isWaterAnimal = true;
-	isAirAnimal = false;
-	weight = _weight;
-	isWild = false;
-	//carnivora
-	eatMeat = defEatMeat;
-	eatPlant = defEatPlant;
-	AnimalFood::AddTotalMeat(ratioMeat * weight / 100);
+Barracuda::Barracuda(int _x, int _y, int _weight) : def_ID(15),
+                                                    def_ratio_meat(60),
+                                                    def_ratio_plant(0),
+                                                    def_limb_count(0),
+                                                    def_skin_type("Scale"),
+                                                    def_eat_meat(true),
+                                                    def_eat_plant(false) {
+  ID = def_ID;
+  position.SetX(_x);
+  position.SetY(_y);
+  ratio_meat = def_ratio_meat;
+  ratio_plant = def_ratio_plant;
+  is_land_animal = false;
+  is_water_animal = true;
+  is_air_animal = false;
+  weight = _weight;
+  is_wild = false;
+  eat_meat = def_eat_meat;
+  eat_plant = def_eat_plant;
+  AnimalFood::AddTotalMeat(ratio_meat * weight / 100);
 }
 
 void Barracuda::Interact() {
-	std::cout << "The barracuda completely ignores you" << std::endl;
+  std::cout << "The barracuda completely ignores you" << std::endl;
 }
 
 void Barracuda::Move(int movement) {
-	if (movement == 1) // Move up
-	{
-		Location.setY(Location.getY()-1);
-	}
-	else if (movement == 2) // Move right
-	{
-		Location.setX(Location.getX()+1);
-	}
-	else if (movement == 3) // Move down
-	{
-		Location.setY(Location.getY()+1);
-	}
-	else // Move left
-	{
-		Location.setX(Location.getX()-1);
-	}
+  if (movement == 1) {
+    position.SetY(position.GetY()-1);
+  }
+  else if (movement == 2) {
+    position.SetX(position.GetX()+1);
+  }
+  else if (movement == 3) {
+    position.SetY(position.GetY()+1);
+  }
+  else {
+    position.SetX(position.GetX()-1);
+  }
 }
 
-int Barracuda::getReqMeat() {
-	return(ratioMeat * weight / 100);
+bool Barracuda::GetBehavior() {
+  return is_wild;
 }
 
-int Barracuda::getReqPlant() {
-	return(ratioPlant * weight / 100);
+int Barracuda::GetReqMeat() {
+  return ratio_meat * weight / 100;
+}
+
+int Barracuda::GetReqPlant() {
+  return ratio_plant * weight / 100;
+}
+
+Point Barracuda::GetPosition() {
+  return position;
 }
 
 bool Barracuda::IsLandAnimal() {
-	return(isLandAnimal);
+  return is_land_animal;
 }
 
 bool Barracuda::IsWaterAnimal() {
-	return(isWaterAnimal);
+  return is_water_animal;
 }
 
 bool Barracuda::IsAirAnimal() {
-	return(isAirAnimal);
+  return is_air_animal;
 }
 
-bool Barracuda::getBehavior() {
-	return(isWild);
+bool Barracuda::IsHerbivore() {
+  return !eat_meat && eat_plant;
 }
 
-Point Barracuda::getPosition() {
-	return(Location);
+bool Barracuda::IsCarnivore() {
+  return eat_meat && !eat_plant;
 }
 
-bool Barracuda::isHerbivore() {
-	return (!eatMeat && eatPlant);
-}
-bool Barracuda::isCarnivore() {
-	return (eatMeat && !eatPlant);
-}
-bool Barracuda::isOmnivore() {
-	return (eatMeat && eatPlant);
+bool Barracuda::IsOmnivore() {
+  return eat_meat && eat_plant;
 }
 
-bool Barracuda::isEnemy(int x) {
-	return (false);
+bool Barracuda::IsEnemy(int x) {
+  return false;
 }
 
-int Barracuda::getID() {
-	return (ID);
+int Barracuda::GetID() {
+  return ID;
 }
 
-// Setter
-void Barracuda::setLocation(int _x, int _y) {
-	Location.setX(_x);
-	Location.setY(_y);
+void Barracuda::SetLocation(int _x, int _y) {
+  position.SetX(_x);
+  position.SetY(_y);
 }
 
-// Getter
-int Barracuda::getX() const {
-	return Location.getX();
+int Barracuda::GetX() const {
+  return position.GetX();
 }
-int Barracuda::getY() const {
-	return Location.getY();
+
+int Barracuda::GetY() const {
+  return position.GetY();
 }

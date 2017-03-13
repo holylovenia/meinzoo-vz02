@@ -7,61 +7,46 @@
 #include "../../misc/point.h"
 
 class Python {
-	public :
-		Python(int _x, int _y, int _weight);
-		//animal
-		void Interact();
-		void Move(int movement);
-		bool IsLandAnimal();
-		bool IsWaterAnimal();
-		bool IsAirAnimal();
-		//animaldiet
-		bool isHerbivore();
-		bool isCarnivore();
-		bool isOmnivore();
-
-		int getReqMeat();
-		int getReqPlant();
-		Point getPosition();
-
-		bool isEnemy(int x);
-		int getID();
-		
-		//point setter
-		void setLocation(int _x, int _y);
-		//point getter
-		int getX() const;
-		int getY() const;
-		//behavior
-		bool getBehavior();
-	private:
-		//point
-		Point Location;
-		//animal
-		int ID;
-		int limbCount;
-		std::string skinType;
-		bool isLandAnimal;
-		bool isWaterAnimal;
-		bool isAirAnimal;
-		//animaldiet
-		int weight;
-		bool eatMeat;
-		bool eatPlant;
-		int ratioMeat;
-		int ratioPlant;
-		//herbivora
-		const bool defEatMeat;
-		const bool defEatPlant;
-		//aves
-		const int defLimbCount;
-		const std::string defSkinType;
-		//colibri
-		const int defID;
-        const int defRatioMeat;
-        const int defRatioPlant;
-        //behavior
-        bool isWild;
+  public :
+    Python(int _x, int _y, int _weight);
+    void Interact();
+    void Move(int movement);
+    bool IsLandAnimal();
+    bool IsWaterAnimal();
+    bool IsAirAnimal();
+    bool IsHerbivore();
+    bool IsCarnivore();
+    bool IsOmnivore();
+    int GetReqMeat();
+    int GetReqPlant();
+    Point GetPosition();
+    bool IsEnemy(int x);
+    int GetID();
+    void SetLocation(int _x, int _y);
+    int GetX() const;
+    int GetY() const;
+    bool GetBehavior();
+  private:
+    int ID;
+    bool is_wild;
+    Point position;
+    int limb_count;
+    std::string skin_type;
+    bool is_land_animal;
+    bool is_water_animal;
+    bool is_air_animal;
+    int weight;
+    bool eat_meat;
+    bool eat_plant;
+    int ratio_meat;
+    int ratio_plant;
+    const int def_ID;
+    const int def_limb_count;
+    const std::string def_skin_type;
+    const bool def_eat_meat;
+    const bool def_eat_plant;
+    const int def_ratio_meat;
+    const int def_ratio_plant;
 };
 
 #endif

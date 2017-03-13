@@ -1,21 +1,25 @@
 #include "elephant.h"
 
-Elephant::Elephant(int _x, int _y, int _weight) : defID(3), defRatioMeat(0), defRatioPlant(80), defLimbCount(4), defSkinType("Hairy"), defEatMeat(false), defEatPlant(true) {
-	//elephant
-	ID = defID;
-	Location.setX(_x);
-	Location.setY(_y);
-	ratioMeat = defRatioMeat;
-	ratioPlant = defRatioPlant;
-	isLandAnimal = true;
-	isWaterAnimal = false;
-	isAirAnimal = false;
-	weight = _weight;
-	isWild = false;
-	//herbivora
-	eatMeat = defEatMeat;
-	eatPlant = defEatPlant;
-	AnimalFood::AddTotalPlant(ratioPlant * weight / 100);
+Elephant::Elephant(int _x, int _y, int _weight) : def_ID(7),
+                                                  def_ratio_meat(0),
+                                                  def_ratio_plant(80),
+                                                  def_limb_count(4),
+                                                  def_skin_type("Hairy"),
+                                                  def_eat_meat(false),
+                                                  def_eat_plant(true) {
+  ID = def_ID;
+  position.SetX(_x);
+  position.SetY(_y);
+  ratio_meat = def_ratio_meat;
+  ratio_plant = def_ratio_plant;
+  is_land_animal = true;
+  is_water_animal = false;
+  is_air_animal = false;
+  weight = _weight;
+  is_wild = false;
+  eat_meat = def_eat_meat;
+  eat_plant = def_eat_plant;
+  AnimalFood::AddTotalPlant(ratio_plant * weight / 100);
 }
 
 void Elephant::Interact() {
@@ -23,80 +27,77 @@ void Elephant::Interact() {
 }
 
 void Elephant::Move(int movement) {
-	if (movement == 1) // Move up
-	{
-		Location.setY(Location.getY()-1);
-	}
-	else if (movement == 2) // Move right
-	{
-		Location.setX(Location.getX()+1);
-	}
-	else if (movement == 3) // Move down
-	{
-		Location.setY(Location.getY()+1);
-	}
-	else // Move left
-	{
-		Location.setX(Location.getX()-1);
-	}
+  if (movement == 1) {
+    position.SetY(position.GetY()-1);
+  }
+  else if (movement == 2) {
+    position.SetX(position.GetX()+1);
+  }
+  else if (movement == 3) {
+    position.SetY(position.GetY()+1);
+  }
+  else {
+    position.SetX(position.GetX()-1);
+  }
 }
 
-int Elephant::getReqMeat() {
-	return(ratioMeat * weight / 100);
+bool Elephant::GetBehavior() {
+  return is_wild;
 }
 
-int Elephant::getReqPlant() {
-	return(ratioPlant * weight / 100);
+int Elephant::GetReqMeat() {
+  return ratio_meat * weight / 100;
+}
+
+int Elephant::GetReqPlant() {
+  return ratio_plant * weight / 100;
+}
+
+Point Elephant::GetPosition() {
+  return position;
 }
 
 bool Elephant::IsLandAnimal() {
-	return(isLandAnimal);
+  return is_land_animal;
 }
 
 bool Elephant::IsWaterAnimal() {
-	return(isWaterAnimal);
+  return is_water_animal;
 }
 
 bool Elephant::IsAirAnimal() {
-	return(isAirAnimal);
+  return is_air_animal;
 }
 
-bool Elephant::getBehavior() {
-	return (isWild);
+bool Elephant::IsHerbivore() {
+  return !eat_meat && eat_plant;
 }
 
-Point Elephant::getPosition() {
-	return (Location);
+bool Elephant::IsCarnivore() {
+  return eat_meat && !eat_plant;
 }
 
-bool Elephant::isHerbivore() {
-	return (!eatMeat && eatPlant);
-}
-bool Elephant::isCarnivore() {
-	return (eatMeat && !eatPlant);
-}
-bool Elephant::isOmnivore() {
-	return (eatMeat && eatPlant);
+bool Elephant::IsOmnivore() {
+  return eat_meat && eat_plant;
 }
 
-bool Elephant::isEnemy(int x) {
-	return (false);
+bool Elephant::IsEnemy(int x) {
+  return false;
 }
 
-int Elephant::getID() {
-	return (ID);
+int Elephant::GetID() {
+  return ID;
 }
 
-// Setter
-void Elephant::setLocation(int _x, int _y) {
-	Location.setX(_x);
-	Location.setY(_y);
+void Elephant::SetLocation(int _x, int _y) {
+  position.SetX(_x);
+  position.SetY(_y);
 }
 
-// Getter
-int Elephant::getX() const {
-	return Location.getX();
+int Elephant::GetX() const {
+  return position.GetX();
 }
-int Elephant::getY() const {
-	return Location.getY();
+
+int Elephant::GetY() const {
+  return position.GetY();
 }

@@ -1,103 +1,104 @@
 #include "chameleon.h"
 
-Chameleon::Chameleon(int _x, int _y, int _weight) : defID(10), defRatioMeat(20), defRatioPlant(50), defLimbCount(4), defSkinType("Scute"), defEatMeat(true), defEatPlant(true) {
-	//Chameleon
-	ID = defID;
-	Location.setX(_x);
-	Location.setY(_y);
-	ratioMeat = defRatioMeat;
-	ratioPlant = defRatioPlant;
-	isLandAnimal = true;
-	isWaterAnimal = false;
-	isAirAnimal = false;
-	weight = _weight;
-	isWild = false;
-	//omnivora
-	eatMeat = defEatMeat;
-	eatPlant = defEatPlant;
-	AnimalFood::AddTotalMeat(ratioMeat * weight / 100);
-	AnimalFood::AddTotalPlant(ratioPlant * weight / 100);
+Chameleon::Chameleon(int _x, int _y, int _weight) : def_ID(12),
+                                                    def_ratio_meat(20),
+                                                    def_ratio_plant(50),
+                                                    def_limb_count(4),
+                                                    def_skin_type("Scute"),
+                                                    def_eat_meat(true),
+                                                    def_eat_plant(true) {
+  ID = def_ID;
+  position.SetX(_x);
+  position.SetY(_y);
+  ratio_meat = def_ratio_meat;
+  ratio_plant = def_ratio_plant;
+  is_land_animal = true;
+  is_water_animal = false;
+  is_air_animal = false;
+  weight = _weight;
+  is_wild = false;
+  eat_meat = def_eat_meat;
+  eat_plant = def_eat_plant;
+  AnimalFood::AddTotalMeat(ratio_meat * weight / 100);
+  AnimalFood::AddTotalPlant(ratio_plant * weight / 100);
 }
 
 void Chameleon::Interact() {
-	std::cout << "The chameleon is almost perfectly disguised with the leaves around him" << std::endl;
+  std::cout << "The chameleon can be barely seen" << std::endl;
 }
 
 void Chameleon::Move(int movement) {
-	if (movement == 1) // Move up
-	{
-		Location.setY(Location.getY()-1);
-	}
-	else if (movement == 2) // Move right
-	{
-		Location.setX(Location.getX()+1);
-	}
-	else if (movement == 3) // Move down
-	{
-		Location.setY(Location.getY()+1);
-	}
-	else // Move left
-	{
-		Location.setX(Location.getX()-1);
-	}
+  if (movement == 1) {
+    position.SetY(position.GetY()-1);
+  }
+  else if (movement == 2) {
+    position.SetX(position.GetX()+1);
+  }
+  else if (movement == 3) {
+    position.SetY(position.GetY()+1);
+  }
+  else {
+    position.SetX(position.GetX()-1);
+  }
 }
 
-int Chameleon::getReqMeat() {
-	return(ratioMeat * weight / 100);
+bool Chameleon::GetBehavior() {
+  return is_wild;
 }
 
-int Chameleon::getReqPlant() {
-	return(ratioPlant * weight / 100);
+int Chameleon::GetReqMeat() {
+  return ratio_meat * weight / 100;
+}
+
+int Chameleon::GetReqPlant() {
+  return ratio_plant * weight / 100;
+}
+
+Point Chameleon::GetPosition() {
+  return position;
 }
 
 bool Chameleon::IsLandAnimal() {
-	return(isLandAnimal);
+  return is_land_animal;
 }
 
 bool Chameleon::IsWaterAnimal() {
-	return(isWaterAnimal);
+  return is_water_animal;
 }
 
 bool Chameleon::IsAirAnimal() {
-	return(isAirAnimal);
+  return is_air_animal;
 }
 
-bool Chameleon::getBehavior() {
-	return(isWild);
+bool Chameleon::IsHerbivore() {
+  return !eat_meat && eat_plant;
 }
 
-Point Chameleon::getPosition() {
-	return(Location);
+bool Chameleon::IsCarnivore() {
+  return eat_meat && !eat_plant;
 }
 
-bool Chameleon::isHerbivore() {
-	return (!eatMeat && eatPlant);
-}
-bool Chameleon::isCarnivore() {
-	return (eatMeat && !eatPlant);
-}
-bool Chameleon::isOmnivore() {
-	return (eatMeat && eatPlant);
+bool Chameleon::IsOmnivore() {
+  return eat_meat && eat_plant;
 }
 
-bool Chameleon::isEnemy(int x) {
-	return (false);
+bool Chameleon::IsEnemy(int x) {
+  return false;
 }
 
-int Chameleon::getID() {
-	return (ID);
+int Chameleon::GetID() {
+  return ID;
 }
 
-// Setter
-void Chameleon::setLocation(int _x, int _y) {
-	Location.setX(_x);
-	Location.setY(_y);
+void Chameleon::SetLocation(int _x, int _y) {
+  position.SetX(_x);
+  position.SetY(_y);
 }
 
-// Getter
-int Chameleon::getX() const {
-	return Location.getX();
+int Chameleon::GetX() const {
+  return position.GetX();
 }
-int Chameleon::getY() const {
-	return Location.getY();
+
+int Chameleon::GetY() const {
+  return position.GetY();
 }

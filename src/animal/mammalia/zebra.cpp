@@ -1,103 +1,104 @@
 #include "zebra.h"
 
-Zebra::Zebra(int _x, int _y, int _weight) : defID(4), defRatioMeat(0), defRatioPlant(45), defLimbCount(4), defSkinType("Hairy"), defEatMeat(false), defEatPlant(true)  {
-	//wolf
-	ID = defID;
-	Location.setX(_x);
-	Location.setY(_y);
-	ratioMeat = defRatioMeat;
-	ratioPlant = defRatioPlant;
-	isLandAnimal = true;
-	isWaterAnimal = false;
-	isAirAnimal = false;
-	weight = _weight;
-	isWild = false;
-	//omnivora
-	eatMeat = defEatMeat;
-	eatPlant = defEatPlant;
-	AnimalFood::AddTotalPlant(ratioPlant * weight / 100);
+Zebra::Zebra(int _x, int _y, int _weight) : def_ID(4),
+                                            def_ratio_meat(0),
+                                            def_ratio_plant(45),
+                                            def_limb_count(4),
+                                            def_skin_type("Hairy"),
+                                            def_eat_meat(false),
+                                            def_eat_plant(true) {
+  ID = def_ID;
+  position.SetX(_x);
+  position.SetY(_y);
+  ratio_meat = def_ratio_meat;
+  ratio_plant = def_ratio_plant;
+  is_land_animal = true;
+  is_water_animal = false;
+  is_air_animal = false;
+  weight = _weight;
+  is_wild = false;
+  eat_meat = def_eat_meat;
+  eat_plant = def_eat_plant;
+  AnimalFood::AddTotalPlant(ratio_plant * weight / 100);
 }
 
 void Zebra::Interact()
 {
-	std::cout << "The zebra is running at the grass field" << std::endl;
+  std::cout << "The zebra is running at the grass field" << std::endl;
 }
 
 void Zebra::Move(int movement) {
-	if (movement == 1) // Move up
-	{
-		Location.setY(Location.getY()-1);
-	}
-	else if (movement == 2) // Move right
-	{
-		Location.setX(Location.getX()+1);
-	}
-	else if (movement == 3) // Move down
-	{
-		Location.setY(Location.getY()+1);
-	}
-	else // Move left
-	{
-		Location.setX(Location.getX()-1);
-	}
+  if (movement == 1) {
+    position.SetY(position.GetY()-1);
+  }
+  else if (movement == 2) {
+    position.SetX(position.GetX()+1);
+  }
+  else if (movement == 3) {
+    position.SetY(position.GetY()+1);
+  }
+  else {
+    position.SetX(position.GetX()-1);
+  }
 }
 
-int Zebra::getReqMeat() {
-	return(ratioMeat * weight / 100);
+bool Zebra::GetBehavior() {
+  return is_wild;
 }
 
-int Zebra::getReqPlant() {
-	return(ratioPlant * weight / 100);
+int Zebra::GetReqMeat() {
+  return ratio_meat * weight / 100;
+}
+
+int Zebra::GetReqPlant() {
+  return ratio_plant * weight / 100;
+}
+
+Point Zebra::GetPosition() {
+  return position;
 }
 
 bool Zebra::IsLandAnimal() {
-	return(isLandAnimal);
+  return is_land_animal;
 }
 
 bool Zebra::IsWaterAnimal() {
-	return(isWaterAnimal);
+  return is_water_animal;
 }
 
 bool Zebra::IsAirAnimal() {
-	return(isAirAnimal);
+  return is_air_animal;
 }
 
-bool Zebra::getBehavior() {
-	return (isWild);
+bool Zebra::IsHerbivore() {
+  return !eat_meat && eat_plant;
 }
 
-Point Zebra::getPosition() {
-	return (Location);
+bool Zebra::IsCarnivore() {
+  return eat_meat && !eat_plant;
 }
 
-bool Zebra::isHerbivore() {
-	return (!eatMeat && eatPlant);
-}
-bool Zebra::isCarnivore() {
-	return (eatMeat && !eatPlant);
-}
-bool Zebra::isOmnivore() {
-	return (eatMeat && eatPlant);
+bool Zebra::IsOmnivore() {
+  return eat_meat && eat_plant;
 }
 
-bool Zebra::isEnemy(int x) {
-	return (false);
+bool Zebra::IsEnemy(int x) {
+  return false;
 }
 
-int Zebra::getID() {
-	return (ID);
+int Zebra::GetID() {
+  return ID;
 }
 
-// Setter
-void Zebra::setLocation(int _x, int _y) {
-	Location.setX(_x);
-	Location.setY(_y);
+void Zebra::SetLocation(int _x, int _y) {
+  position.SetX(_x);
+  position.SetY(_y);
 }
 
-// Getter
-int Zebra::getX() const {
-	return Location.getX();
+int Zebra::GetX() const {
+  return position.GetX();
 }
-int Zebra::getY() const {
-	return Location.getY();
+
+int Zebra::GetY() const {
+  return position.GetY();
 }

@@ -1,17 +1,17 @@
 #include "animalfood.h"
 
-int AnimalFood::totalReqMeat = 0;
-int AnimalFood::totalReqPlant = 0;
+int AnimalFood::total_req_meat = 0;
+int AnimalFood::total_req_plant = 0;
 
-void AnimalFood::AddTotalMeat(int reqMeat) {
-	totalReqMeat += reqMeat;
+void AnimalFood::AddTotalMeat(int req_meat) {
+	total_req_meat += req_meat;
 }
-void AnimalFood::AddTotalMeat(int reqPlant) {
-	totalReqPlant += reqPlant;
+void AnimalFood::AddTotalMeat(int req_plant) {
+	total_req_plant += req_plant;
 }
-int AnimalFood::getTotalMeat() {
-	return totalReqMeat;
+int AnimalFood::GetTotalMeat() {
+	return total_req_meat;
 }
-int AnimalFood::getTotalPlant() {
-	return totalReqPlant;
+int AnimalFood::GetTotalPlant() {
+	return total_req_plant;
 }

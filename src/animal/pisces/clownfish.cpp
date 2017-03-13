@@ -1,103 +1,104 @@
 #include "clownfish.h"
 
-Clownfish::Clownfish(int _x, int _y, int _weight) : defID(14), defRatioMeat(30), defRatioPlant(40), defLimbCount(0), defSkinType("Scale"), defEatMeat(true), defEatPlant(true) {
-	//Clownfish
-	ID = defID;
-	Location.setX(_x);
-	Location.setY(_y);
-	ratioMeat = defRatioMeat;
-	ratioPlant = defRatioPlant;
-	isLandAnimal = false;
-	isWaterAnimal = true;
-	isAirAnimal = false;
-	weight = _weight;
-	isWild = false;
-	//omnivora
-	eatMeat = defEatMeat;
-	eatPlant = defEatPlant;
-	AnimalFood::AddTotalMeat(ratioMeat * weight / 100);
-	AnimalFood::AddTotalPlant(ratioPlant * weight / 100);
+Clownfish::Clownfish(int _x, int _y, int _weight) : def_ID(14),
+                                                    def_ratio_meat(30),
+                                                    def_ratio_plant(40),
+                                                    def_limb_count(0),
+                                                    def_skin_type("Scale"),
+                                                    def_eat_meat(true),
+                                                    def_eat_plant(true) {
+  ID = def_ID;
+  position.SetX(_x);
+  position.SetY(_y);
+  ratio_meat = def_ratio_meat;
+  ratio_plant = def_ratio_plant;
+  is_land_animal = false;
+  is_water_animal = true;
+  is_air_animal = false;
+  weight = _weight;
+  is_wild = false;
+  eat_meat = def_eat_meat;
+  eat_plant = def_eat_plant;
+  AnimalFood::AddTotalMeat(ratio_meat * weight / 100);
+  AnimalFood::AddTotalPlant(ratio_plant * weight / 100);
 }
 
 void Clownfish::Interact() {
-	std::cout << "The clownfish is not as funny as its name implies.." << std::endl;
+  std::cout << "The clownfish is not as funny as its name..." << std::endl;
 }
 
 void Clownfish::Move(int movement) {
-	if (movement == 1) // Move up
-	{
-		Location.setY(Location.getY()-1);
-	}
-	else if (movement == 2) // Move right
-	{
-		Location.setX(Location.getX()+1);
-	}
-	else if (movement == 3) // Move down
-	{
-		Location.setY(Location.getY()+1);
-	}
-	else // Move left
-	{
-		Location.setX(Location.getX()-1);
-	}
+  if (movement == 1) {
+    position.SetY(position.GetY()-1);
+  }
+  else if (movement == 2) {
+    position.SetX(position.GetX()+1);
+  }
+  else if (movement == 3) {
+    position.SetY(position.GetY()+1);
+  }
+  else {
+    position.SetX(position.GetX()-1);
+  }
 }
 
-int Clownfish::getReqMeat() {
-	return(ratioMeat * weight / 100);
+bool Clownfish::GetBehavior() {
+  return is_wild;
 }
 
-int Clownfish::getReqPlant() {
-	return(ratioPlant * weight / 100);
+int Clownfish::GetReqMeat() {
+  return ratio_meat * weight / 100;
+}
+
+int Clownfish::GetReqPlant() {
+  return ratio_plant * weight / 100;
+}
+
+Point Clownfish::GetPosition() {
+  return position;
 }
 
 bool Clownfish::IsLandAnimal() {
-	return(isLandAnimal);
+  return is_land_animal;
 }
 
 bool Clownfish::IsWaterAnimal() {
-	return(isWaterAnimal);
+  return is_water_animal;
 }
 
 bool Clownfish::IsAirAnimal() {
-	return(isAirAnimal);
+  return is_air_animal;
 }
 
-bool Clownfish::getBehavior() {
-	return(isWild);
+bool Clownfish::IsHerbivore() {
+  return !eat_meat && eat_plant;
 }
 
-Point Clownfish::getPosition() {
-	return(Location);
+bool Clownfish::IsCarnivore() {
+  return eat_meat && !eat_plant;
 }
 
-bool Clownfish::isHerbivore() {
-	return (!eatMeat && eatPlant);
-}
-bool Clownfish::isCarnivore() {
-	return (eatMeat && !eatPlant);
-}
-bool Clownfish::isOmnivore() {
-	return (eatMeat && eatPlant);
+bool Clownfish::IsOmnivore() {
+  return eat_meat && eat_plant;
 }
 
-bool Clownfish::isEnemy(int x) {
-	return (false);
+bool Clownfish::IsEnemy(int x) {
+  return false;
 }
 
-int Clownfish::getID() {
-	return (ID);
+int Clownfish::GetID() {
+  return ID;
 }
 
-// Setter
-void Clownfish::setLocation(int _x, int _y) {
-	Location.setX(_x);
-	Location.setY(_y);
+void Clownfish::SetLocation(int _x, int _y) {
+  position.SetX(_x);
+  position.SetY(_y);
 }
 
-// Getter
-int Clownfish::getX() const {
-	return Location.getX();
+int Clownfish::GetX() const {
+  return position.GetX();
 }
-int Clownfish::getY() const {
-	return Location.getY();
+
+int Clownfish::GetY() const {
+  return position.GetY();
 }

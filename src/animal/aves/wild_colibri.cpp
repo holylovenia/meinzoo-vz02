@@ -1,114 +1,115 @@
 #include "wild_colibri.h"
 
-WildColibri::WildColibri(int _x, int _y, int _weight) : defID(21), defRatioMeat(0), defRatioPlant(60), defLimbCount(2), defSkinType("Feather"), defEatMeat(false), defEatPlant(true) {
-	//wildcolibri
-	ID = defID;
-	Location.setX(_x);
-	Location.setY(_y);
-	ratioMeat = defRatioMeat;
-	ratioPlant = defRatioPlant;
-	isLandAnimal = true;
-	isWaterAnimal = false;
-	isAirAnimal = true;
-	weight = _weight;
-	isWild = true;
-	//herbivora
-	eatMeat = defEatMeat;
-	eatPlant = defEatPlant;
-	AnimalFood::AddTotalPlant(ratioPlant * weight / 100);
-	addEnemy(2); // lion
-	addEnemy(3); // tiger
-	addEnemy(9); // python
-	addEnemy(19); // colibri
+WildColibri::WildColibri(int _x, int _y, int _weight) : def_ID(21),
+                                                      def_ratio_meat(0),
+                                                      def_ratio_plant(60),
+                                                      def_limb_count(2),
+                                                      def_skin_type("Feather"),
+                                                      def_eat_meat(false),
+                                                      def_eat_plant(true) {
+  ID = def_ID;
+  position.SetX(_x);
+  position.SetY(_y);
+  ratio_meat = def_ratio_meat;
+  ratio_plant = def_ratio_plant;
+  is_land_animal = true;
+  is_water_animal = true;
+  is_air_animal = true;
+  weight = _weight;
+  is_wild = false;
+  eat_meat = def_eat_meat;
+  eat_plant = def_eat_plant;
+  AnimalFood::AddTotalPlant(ratio_plant * weight / 100);
+  AddEnemy(2);
+  AddEnemy(3);
+  AddEnemy(9);
+  AddEnemy(19);
 }
 
 void WildColibri::Interact() {
-	std::cout << "The wild colibri is going to skewer your eyes" << std::endl;
+  std::cout << "The wild colibri is going to skewer your eyes" << std::endl;
 }
 
 void WildColibri::Move(int movement) {
-	if (movement == 1) // Move up
-	{
-		Location.setY(Location.getY()-1);
-	}
-	else if (movement == 2) // Move right
-	{
-		Location.setX(Location.getX()+1);
-	}
-	else if (movement == 3) // Move down
-	{
-		Location.setY(Location.getY()+1);
-	}
-	else // Move left
-	{
-		Location.setX(Location.getX()-1);
-	}
+  if (movement == 1) {
+    position.SetY(position.GetY()-1);
+  }
+  else if (movement == 2) {
+    position.SetX(position.GetX()+1);
+  }
+  else if (movement == 3) {
+    position.SetY(position.GetY()+1);
+  }
+  else {
+    position.SetX(position.GetX()-1);
+  }
 }
 
-bool WildColibri::getBehavior() {
-	return(isWild);
+bool WildColibri::GetBehavior() {
+  return is_wild;
 }
 
-int WildColibri::getReqMeat() {
-	return(ratioMeat * weight / 100);
+int WildColibri::GetReqMeat() {
+  return ratio_meat * weight / 100;
 }
 
-int WildColibri::getReqPlant() {
-	return(ratioPlant * weight / 100);
+int WildColibri::GetReqPlant() {
+  return ratio_plant * weight / 100;
 }
 
-Point WildColibri::getPosition() {
-	return Location;
+Point WildColibri::GetPosition() {
+  return position;
 }
 
 bool WildColibri::IsLandAnimal() {
-	return(isLandAnimal);
+  return is_land_animal;
 }
 
 bool WildColibri::IsWaterAnimal() {
-	return(isWaterAnimal);
+  return is_water_animal;
 }
 
 bool WildColibri::IsAirAnimal() {
-	return(isAirAnimal);
+  return is_air_animal;
 }
 
-bool WildColibri::isHerbivore() {
-	return (!eatMeat && eatPlant);
-}
-bool WildColibri::isCarnivore() {
-	return (eatMeat && !eatPlant);
-}
-bool WildColibri::isOmnivore() {
-	return (eatMeat && eatPlant);
+bool WildColibri::IsHerbivore() {
+  return !eat_meat && eat_plant;
 }
 
-void WildColibri::addEnemy(int x) {
-	enemy.insert(x);
+bool WildColibri::IsCarnivore() {
+  return eat_meat && !eat_plant;
 }
 
-void WildColibri::removeEnemy(int x) {
-	enemy.erase(x);
+bool WildColibri::IsOmnivore() {
+  return eat_meat && eat_plant;
 }
 
-bool WildColibri::isEnemy(int x) {
-	return(enemy.find(x) != enemy.end());
+void WildColibri::AddEnemy(int x) {
+  enemy.insert(x);
 }
 
-int WildColibri::getID() {
-	return(ID);
+void WildColibri::RemoveEnemy(int x) {
+  enemy.erase(x);
 }
 
-// Setter
-void WildColibri::setLocation(int _x, int _y) {
-	Location.setX(_x);
-	Location.setY(_y);
+bool WildColibri::IsEnemy(int x) {
+  return false;
 }
 
-// Getter
-int WildColibri::getX() const {
-	return Location.getX();
+int WildColibri::GetID() {
+  return ID;
 }
-int WildColibri::getY() const {
-	return Location.getY();
+
+void WildColibri::SetLocation(int _x, int _y) {
+  position.SetX(_x);
+  position.SetY(_y);
+}
+
+int WildColibri::GetX() const {
+  return position.GetX();
+}
+
+int WildColibri::GetY() const {
+  return position.GetY();
 }

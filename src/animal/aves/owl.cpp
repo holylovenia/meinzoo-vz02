@@ -1,102 +1,100 @@
 #include "owl.h"
 
-Owl::Owl(int _x, int _y, int _weight) : defID(19), defRatioMeat(60), defRatioPlant(0), defLimbCount(2), defSkinType("Feather"), defEatMeat(true), defEatPlant(false) {
-	//owl
-	ID = defID;
-	Location.setX(_x);
-	Location.setY(_y);
-	ratioMeat = defRatioMeat;
-	ratioPlant = defRatioPlant;
-	isLandAnimal = true;
-	isWaterAnimal = false;
-	isAirAnimal = true;
-	weight = _weight;
-	isWild = false;
-	//herbivora
-	eatMeat = defEatMeat;
-	eatPlant = defEatPlant;
-	AnimalFood::AddTotalPlant(ratioPlant * weight / 100);
+Owl::Owl(int _x, int _y, int _weight) : def_ID(17),
+                                        def_ratio_meat(60),
+                                        def_ratio_plant(0),
+                                        def_limb_count(2),
+                                        def_skin_type("Feather"),
+                                        def_eat_meat(true),
+                                        def_eat_plant(false) {
+  ID = def_ID;
+  position.SetX(_x);
+  position.SetY(_y);
+  ratio_meat = def_ratio_meat;
+  ratio_plant = def_ratio_plant;
+  is_land_animal = true;
+  is_water_animal = false;
+  is_air_animal = true;
+  weight = _weight;
+  is_wild = false;
+  eat_meat = def_eat_meat;
+  eat_plant = def_eat_plant;
+  AnimalFood::AddTotalMeat(ratio_plant * weight / 100);
 }
 
 void Owl::Interact() {
-	std::cout << "The owl is hooting randomly" << std::endl;
+  std::cout << "The owl is hooting randomly" << std::endl;
 }
 
 void Owl::Move(int movement) {
-	if (movement == 1) // Move up
-	{
-		Location.setY(Location.getY()-1);
-	}
-	else if (movement == 2) // Move right
-	{
-		Location.setX(Location.getX()+1);
-	}
-	else if (movement == 3) // Move down
-	{
-		Location.setY(Location.getY()+1);
-	}
-	else // Move left
-	{
-		Location.setX(Location.getX()-1);
-	}
+  if (movement == 1) {
+    position.SetY(position.GetY()-1);
+  }
+  else if (movement == 2) {
+    position.SetX(position.GetX()+1);
+  }
+  else if (movement == 3) {
+    position.SetY(position.GetY()+1);
+  }
+  else {
+    position.SetX(position.GetX()-1);
+  }
 }
 
-bool Owl::getBehavior() {
-	return(isWild);
+bool Owl::GetBehavior() {
+  return is_wild;
 }
 
-int Owl::getReqMeat() {
-	return(ratioMeat * weight / 100);
+int Owl::GetReqMeat() {
+  return ratio_meat * weight / 100;
 }
 
-int Owl::getReqPlant() {
-	return(ratioPlant * weight / 100);
+int Owl::GetReqPlant() {
+  return ratio_plant * weight / 100;
 }
 
-Point Owl::getPosition() {
-	return Location;
+Point Owl::GetPosition() {
+  return position;
 }
 
 bool Owl::IsLandAnimal() {
-	return(isLandAnimal);
+  return is_land_animal;
 }
 
 bool Owl::IsWaterAnimal() {
-	return(isWaterAnimal);
+  return is_water_animal;
 }
 
 bool Owl::IsAirAnimal() {
-	return(isAirAnimal);
+  return is_air_animal;
 }
 
-bool Owl::isHerbivore() {
-	return (!eatMeat && eatPlant);
+bool Owl::IsHerbivore() {
+  return !eat_meat && eat_plant;
 }
-bool Owl::isCarnivore() {
-	return (eatMeat && !eatPlant);
+bool Owl::IsCarnivore() {
+  return eat_meat && !eat_plant;
 }
-bool Owl::isOmnivore() {
-	return (eatMeat && eatPlant);
-}
-
-bool Owl::isEnemy(int x) {
-	return(false);
+bool Owl::IsOmnivore() {
+  return eat_meat && eat_plant;
 }
 
-int Owl::getID() {
-	return(ID);
+bool Owl::IsEnemy(int x) {
+  return false;
 }
 
-// Setter
-void Owl::setLocation(int _x, int _y) {
-	Location.setX(_x);
-	Location.setY(_y);
+int Owl::GetID() {
+  return ID;
 }
 
-// Getter
-int Owl::getX() const {
-	return Location.getX();
+void Owl::SetLocation(int _x, int _y) {
+  position.SetX(_x);
+  position.SetY(_y);
 }
-int Owl::getY() const {
-	return Location.getY();
+
+int Owl::GetX() const {
+  return position.GetX();
+}
+int Owl::GetY() const {
+  return position.GetY();
 }

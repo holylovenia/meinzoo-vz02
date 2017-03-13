@@ -1,102 +1,103 @@
 #include "lion.h"
 
-Lion::Lion(int _x, int _y, int _weight) : defID(2), defRatioMeat(60), defRatioPlant(0), defLimbCount(4), defSkinType("Hairy"), defEatMeat(true), defEatPlant(false)  {
-	//lion
-	ID = defID;
-	Location.setX(_x);
-	Location.setY(_y);
-	ratioMeat = defRatioMeat;
-	ratioPlant = defRatioPlant;
-	isLandAnimal = true;
-	isWaterAnimal = false;
-	isAirAnimal = false;
-	weight = _weight;
-	isWild = false;
-	//carnivora
-	eatMeat = defEatMeat;
-	eatPlant = defEatPlant;
-	AnimalFood::AddTotalPlant(ratioPlant * weight / 100);
+Lion::Lion(int _x, int _y, int _weight) : def_ID(2),
+                                          def_ratio_meat(60),
+                                          def_ratio_plant(0),
+                                          def_limb_count(4),
+                                          def_skin_type("Hairy"),
+                                          def_eat_meat(true),
+                                          def_eat_plant(false)  {
+  ID = def_ID;
+  position.SetX(_x);
+  position.SetY(_y);
+  ratio_meat = def_ratio_meat;
+  ratio_plant = def_ratio_plant;
+  is_land_animal = true;
+  is_water_animal = false;
+  is_air_animal = false;
+  weight = _weight;
+  is_wild = false;
+  eat_meat = def_eat_meat;
+  eat_plant = def_eat_plant;
+  AnimalFood::AddTotalMeat(ratio_meat * weight / 100);
 }
 
 void Lion::Interact() {
-	std::cout << "The lion is roaring" << std::endl;
+  std::cout << "The lion is roaring" << std::endl;
 }
 
 void Lion::Move(int movement) {
-	if (movement == 1) // Move up
-	{
-		Location.setY(Location.getY()-1);
-	}
-	else if (movement == 2) // Move right
-	{
-		Location.setX(Location.getX()+1);
-	}
-	else if (movement == 3) // Move down
-	{
-		Location.setY(Location.getY()+1);
-	}
-	else // Move left
-	{
-		Location.setX(Location.getX()-1);
-	}
+  if (movement == 1) {
+    position.SetY(position.GetY()-1);
+  }
+  else if (movement == 2) {
+    position.SetX(position.GetX()+1);
+  }
+  else if (movement == 3) {
+    position.SetY(position.GetY()+1);
+  }
+  else {
+    position.SetX(position.GetX()-1);
+  }
 }
 
-int Lion::getReqMeat() {
-	return(ratioMeat * weight / 100);
+bool Lion::GetBehavior() {
+  return is_wild;
 }
 
-int Lion::getReqPlant() {
-	return(ratioPlant * weight / 100);
+int Lion::GetReqMeat() {
+  return ratio_meat * weight / 100;
+}
+
+int Lion::GetReqPlant() {
+  return ratio_plant * weight / 100;
+}
+
+Point Lion::GetPosition() {
+  return position;
 }
 
 bool Lion::IsLandAnimal() {
-	return(isLandAnimal);
+  return is_land_animal;
 }
 
 bool Lion::IsWaterAnimal() {
-	return(isWaterAnimal);
+  return is_water_animal;
 }
 
 bool Lion::IsAirAnimal() {
-	return(isAirAnimal);
+  return is_air_animal;
 }
 
-bool Lion::getBehavior() {
-	return (isWild);
+bool Lion::IsHerbivore() {
+  return !eat_meat && eat_plant;
 }
 
-Point Lion::getPosition() {
-	return (Location);
+bool Lion::IsCarnivore() {
+  return eat_meat && !eat_plant;
 }
 
-bool Lion::isHerbivore() {
-	return (!eatMeat && eatPlant);
-}
-bool Lion::isCarnivore() {
-	return (eatMeat && !eatPlant);
-}
-bool Lion::isOmnivore() {
-	return (eatMeat && eatPlant);
+bool Lion::IsOmnivore() {
+  return eat_meat && eat_plant;
 }
 
-bool Lion::isEnemy(int x) {
-	return (false);
+bool Lion::IsEnemy(int x) {
+  return false;
 }
 
-int Lion::getID() {
-	return (ID);
+int Lion::GetID() {
+  return ID;
 }
 
-// Setter
-void Lion::setLocation(int _x, int _y) {
-	Location.setX(_x);
-	Location.setY(_y);
+void Lion::SetLocation(int _x, int _y) {
+  position.SetX(_x);
+  position.SetY(_y);
 }
 
-// Getter
-int Lion::getX() const {
-	return Location.getX();
+int Lion::GetX() const {
+  return position.GetX();
 }
-int Lion::getY() const {
-	return Location.getY();
+
+int Lion::GetY() const {
+  return position.GetY();
 }

@@ -3,14 +3,14 @@
 
 class AnimalFood {
 	public:
-		static void AddTotalMeat(int reqMeat);
-		static void AddTotalPlant(int reqPlant);
-		static int getTotalMeat();
-		static int getTotalPlant();
+		static void AddTotalMeat(int req_meat);
+		static void AddTotalPlant(int req_plant);
+		static int GetTotalMeat();
+		static int GetTotalPlant();
 
 	protected:
-		static int totalReqMeat;
-		static int totalReqPlant;
+		static int total_req_meat;
+		static int total_req_plant;
 };
 
 #endif
