@@ -1,0 +1,1000 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"defRat",
+				"defRatioMeat"
+			],
+			[
+				"bomb",
+				"bomb_radius"
+			],
+			[
+				"possible",
+				"possibleExtraDigit"
+			],
+			[
+				"dealok",
+				"Dealokasi"
+			],
+			[
+				"Dfa",
+				"DFATable"
+			],
+			[
+				"sym",
+				"SymTable"
+			],
+			[
+				"nS",
+				"nSymbol"
+			],
+			[
+				"found",
+				"foundState"
+			],
+			[
+				"j",
+				"j"
+			],
+			[
+				"string",
+				"stringInput"
+			],
+			[
+				"DFA",
+				"DFATable"
+			],
+			[
+				"GetFirst",
+				"GetFirstIdxKol"
+			],
+			[
+				"TulisIs",
+				"TulisIsiTab"
+			],
+			[
+				"TulisI",
+				"TulisIsiTab"
+			],
+			[
+				"GetIdx",
+				"GetFirstIdx"
+			],
+			[
+				"POSITIF-G",
+				"POSITIF-GANJIL"
+			],
+			[
+				"Detik",
+				"DetikToJAM"
+			],
+			[
+				"file_",
+				"file_path"
+			],
+			[
+				"Mater",
+				"Material-Theme"
+			],
+			[
+				"buy",
+				"buySnack"
+			],
+			[
+				"static",
+				"atomic_compare_exchange_strong_explicit\tatomic"
+			],
+			[
+				"N",
+				"N"
+			],
+			[
+				"le",
+				"Less50"
+			],
+			[
+				"Shor",
+				"Shorter150"
+			],
+			[
+				"shor",
+				"Shorter150"
+			],
+			[
+				"Stat",
+				"StatTidak"
+			],
+			[
+				"show",
+				"showSchedule"
+			],
+			[
+				"dbData",
+				"dbDataFilm"
+			],
+			[
+				"Tanggal",
+				"TanggalFilm"
+			],
+			[
+				"sho",
+				"showNextDay"
+			],
+			[
+				"db",
+				"dbDataKapasitas"
+			],
+			[
+				"Nomor",
+				"NomorPesan"
+			],
+			[
+				"Nom",
+				"NomorPesan"
+			],
+			[
+				"Jam",
+				"JamTayang"
+			],
+			[
+				"Tanga",
+				"TanggalFilm"
+			],
+			[
+				"Is",
+				"IsLebihAkhir"
+			],
+			[
+				"IsJ",
+				"IsJamLebihAwal"
+			],
+			[
+				"IsJam",
+				"IsJamLebihAwal"
+			],
+			[
+				"Keli",
+				"KelilingLingkaran"
+			],
+			[
+				"Kel",
+				"KelilingLingkaran"
+			],
+			[
+				"Input",
+				"InputLingkaran"
+			],
+			[
+				"Luas",
+				"LuasLingkaran"
+			],
+			[
+				"li",
+				"Lingkaran"
+			],
+			[
+				"MA",
+				"MA"
+			],
+			[
+				"CetakMa",
+				"CetakMatriksSatuan"
+			],
+			[
+				"count",
+				"countpass"
+			],
+			[
+				"coun",
+				"countpass"
+			],
+			[
+				"Po",
+				"POSITIF-GANJIL"
+			],
+			[
+				"POSI",
+				"POSITIF-GENAP"
+			],
+			[
+				"is",
+				"isMax"
+			],
+			[
+				"cou",
+				"count0"
+			],
+			[
+				"set",
+				"setIntersect"
+			],
+			[
+				"Int",
+				"Int"
+			],
+			[
+				"min",
+				"minList"
+			],
+			[
+				"l",
+				"l"
+			],
+			[
+				"list",
+				"listPlus"
+			],
+			[
+				"pos",
+				"posOfX"
+			],
+			[
+				"filter",
+				"filterNeg"
+			],
+			[
+				"filt",
+				"filterPos"
+			],
+			[
+				"isE",
+				"isEqFront"
+			],
+			[
+				"ise",
+				"isEqFront"
+			],
+			[
+				"lc",
+				"lc"
+			],
+			[
+				"char",
+				"Char"
+			],
+			[
+				"n",
+				"n"
+			],
+			[
+				"b",
+				"b"
+			],
+			[
+				"deret",
+				"deretSegitiga"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "animal/aves/colibri.h",
+			"settings":
+			{
+				"buffer_size": 1430,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "animal/aves/colibri.cpp",
+			"settings":
+			{
+				"buffer_size": 2202,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/User/C++11.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/C++ Starting Kit/C++ - Starting Kit.sublime-build",
+					""
+				],
+				[
+					"Packages/C++ Starting Kit/C++ - Starting Kit.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Pascal Snippets/fpc.sublime-build",
+					""
+				],
+				[
+					"Packages/Pascal Snippets/fpc.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/User/Pascal.sublime-build",
+					""
+				],
+				[
+					"Packages/User/Pascal.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/Pascal.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/C++.sublime-build",
+					""
+				],
+				[
+					"Packages/User/C++.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/C++.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/C++11.sublime-build",
+					""
+				],
+				[
+					"Packages/User/C++11.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/C++11.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/C.sublime-build",
+					""
+				],
+				[
+					"Packages/User/C.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/C.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/C_ADT.sublime-build",
+					""
+				],
+				[
+					"Packages/User/C_ADT.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/C_ADT.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/Pascal.sublime-build",
+					""
+				],
+				[
+					"Packages/User/Pascal.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/Pascal.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 248.0,
+		"last_filter": "material the",
+		"selected_items":
+		[
+			[
+				"material the",
+				"Material Theme: Activate theme"
+			],
+			[
+				"material",
+				"Material Theme: Activate theme"
+			],
+			[
+				"materi",
+				"Material Theme: Activate theme"
+			],
+			[
+				"material theme",
+				"Material Theme: Activate theme"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"p",
+				"Package Control: Install Package"
+			],
+			[
+				"print",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 382.0
+	},
+	"console":
+	{
+		"height": 186.0,
+		"history":
+		[
+			"$ which enscript",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/aves/colibri.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/aves/colibri.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure/land_cage.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure/land_cage.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/mammalia/wild_bunny.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/mammalia/wild_bunny.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/mammalia/elephant.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/tiger.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/tiger.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/misc/point.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/misc/point.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/cell.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/facility.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/facility.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/park.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/restaurant.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/park.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/pisces/pisces.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/pisces/shark.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/pisces/clownfish.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/pisces/clownfish.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/pisces/barracuda.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/pisces/barracuda.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/elephant.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/elephant.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/pisces/shark.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/mammalia.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/pisces/pisces.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/animal.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/animal.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/reptilia/komodo.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/reptilia/komodo.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/reptilia/python.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/reptilia/reptilia.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/reptilia/reptilia.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/reptilia/python.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/reptilia/iguana.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/reptilia/iguana.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/reptilia/crocodile.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/reptilia/chameleon.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/reptilia/chameleon.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/wolf.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/reptilia/crocodile.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/wolf.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/lion.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/monkey.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/monkey.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/behavior/behavior_tame.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/behavior/behavior_tame.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/behavior/animal_behavior.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/behavior/animal_behavior.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/diet/herbivora.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/diet/herbivora.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/diet/omnivora.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/diet/omnivora.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/diet/animal_diet.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/diet/animal_diet.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/diet/carnivora.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/behavior/behavior_wild.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/lion.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/behavior/behavior_wild.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/mammalia.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/giraffe.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/giraffe.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/peacock.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/peacock.cpp",
+		"/C/Users/Rionaldi Chandraseta/Desktop/GitHubLog.txt",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/owl.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/duck.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/owl.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/eagle.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/colibri.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/eagle.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/duck.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/colibri.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/aves.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/aves.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_KU/Stack of Generic Point/StackOfGPoint.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_KU/Stack of Generic Point/GPoint.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_KU/Stack of Generic Point/StackOfGPoint.cpp",
+		"/C/Users/Rionaldi Chandraseta/AppData/Roaming/Sublime Text 3/Packages/User/C++11.sublime-build",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_KU/Stack of Generic Point/driver.cpp",
+		"/C/Users/Rionaldi Chandraseta/AppData/Local/Temp/Rar$DIa0.984/hello.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_KU/Generic_Stack/stack.cpp",
+		"/C/Users/Rionaldi Chandraseta/Desktop/listdp.c",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_KU/stack.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/ITB - Informatika/Semester 4/IF2240 - Basis Data/Notes.txt",
+		"/C/Users/Rionaldi Chandraseta/Desktop/Test3.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_KU/point.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_KU/Generic_Stack/stack.h",
+		"/C/Users/Rionaldi Chandraseta/Desktop/Stima.txt",
+		"/C/Users/Rionaldi Chandraseta/Desktop/Test2.cpp",
+		"/C/Users/Rionaldi Chandraseta/Desktop/thread.c",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/DRPL_Tugas IV/todo.txt",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/sorter.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/1000_quick_sort.txt",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/1000_data.txt",
+		"/C/Users/Rionaldi Chandraseta/Desktop/Test.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Math_Paper Ideas.txt",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/1000000_selection_sort.txt",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/_quick_sort.txt",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/10000000_data.txt",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/1000000_insertion_sort.txt",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/1000000_merge_sort.txt",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/1000000_quick_sort.txt",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/500000_insertion_sort.txt",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/500000_merge_sort.txt",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/500000_quick_sort.txt",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/500000_selection_sort.txt",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/100000_insertion_sort.txt",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/100000_merge_sort.txt",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/100000_quick_sort.txt",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/100000_selection_sort.txt",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/50000_selection_sort.txt",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/50000_insertion_sort.txt",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/50000_merge_sort.txt",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/50000_quick_sort.txt",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/10000_insertion_sort.txt",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/10000_merge_sort.txt",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/10000_quick_sort.txt",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/10000_selection_sort.txt",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/5000_selection_sort.txt",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/5000_quick_sort.txt",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/5000_merge_sort.txt",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/5000_insertion_sort.txt",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/1000_selection_sort.txt",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/1000_insertion_sort.txt",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/1000_merge_sort.txt"
+	],
+	"find":
+	{
+		"height": 70.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"area",
+			"Shark",
+			"Clownfish",
+			"omnivora",
+			"CLOWNFISH_H",
+			"Shark",
+			"F",
+			"Shark",
+			"SHARK_H",
+			"Elephant",
+			"ELEPHANT_H",
+			"Line",
+			"1",
+			")",
+			" ",
+			"b",
+			"Missing",
+			"insertion_sort",
+			"insertion sort",
+			"stop timer",
+			"name",
+			"DEBUG",
+			"500",
+			"= 400",
+			"400",
+			"0",
+			"bomb_owner != player_key",
+			"bomb_bag",
+			"starting",
+			"ius+1",
+			"us+1",
+			"= r",
+			"r",
+			"blocked",
+			" and value.weights[(i,j-r)] < 500:",
+			"(r)",
+			"r",
+			"200",
+			"playerFound",
+			"False",
+			"chanceTriggered",
+			"750",
+			"200",
+			"4",
+			"300",
+			"return 5",
+			"+",
+			"j",
+			"-",
+			"safe",
+			"\"SAFE",
+			"SAFE PATH",
+			"bomb_radius",
+			"200",
+			"bomb_owner != player_key",
+			"400",
+			"came_from",
+			"priority",
+			"cost_so_far",
+			"came_from",
+			"400",
+			"300",
+			"750",
+			"max_possible_move",
+			"500",
+			"bomb_radius",
+			"700",
+			"0",
+			"3",
+			"4",
+			"5",
+			"bomb_bag",
+			"return 5",
+			"5",
+			"650",
+			"800",
+			"1250",
+			"1000",
+			"900",
+			"500",
+			"200",
+			"700",
+			"150",
+			"200",
+			"100",
+			"50",
+			"100",
+			"300",
+			"100",
+			"print",
+			"0",
+			"state[\"GameBlocks\"][player_x-r",
+			"[player_y][\"Entity\"][\"$type\"] == \"Domain.Entities.DestructibleWallEntity, Domain\"",
+			"or",
+			"value[i",
+			"+= 700",
+			"700",
+			"900",
+			"2",
+			",",
+			"j",
+			"start",
+			"900",
+			"500",
+			"900",
+			"print",
+			"ans",
+			"Find_Reachable_Point",
+			"print",
+			"Stack<Type>",
+			"midfail",
+			"nofsolu",
+			"nOfSolution",
+			"maxlen",
+			"chLead",
+			"c",
+			"ins",
+			"iomanip",
+			"double",
+			"digit",
+			"#",
+			"+",
+			"    \n",
+			"delp",
+			"==0)",
+			"strcmp(in,",
+			"in[0]",
+			"Tab"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Stack<Type>::Stack",
+			"pass",
+			"$",
+			"#",
+			"",
+			"in ==",
+			"in.at(0)",
+			"(strcmp(in,",
+			"stin=",
+			"q",
+			"splitString",
+			"int",
+			"TabInt * T",
+			"Elmt(*T,i)",
+			"(*T)",
+			"NbElmt(*T)",
+			"TabInt * T",
+			"Y",
+			"X",
+			"",
+			"{}",
+			"String"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "animal/aves/colibri.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1430,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								304,
+								304
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 34.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "animal/aves/colibri.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2202,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1746,
+								1746
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1036.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 126.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/C++11.sublime-build",
+	"project": "VirtualZoo-VZ02.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\Rionaldi Chandraseta\\AppData\\Roaming\\Sublime Text 3\\Packages\\Print to HTML\\Print to HTML.sublime-settings"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 188.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
