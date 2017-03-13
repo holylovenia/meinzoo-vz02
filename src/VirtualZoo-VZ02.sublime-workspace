@@ -272,19 +272,10 @@
 	"buffers":
 	[
 		{
-			"file": "animal/aves/colibri.h",
+			"file": "infrastructure/air_cage.h",
 			"settings":
 			{
-				"buffer_size": 1430,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "animal/aves/colibri.cpp",
-			"settings":
-			{
-				"buffer_size": 2202,
+				"buffer_size": 2402,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -514,23 +505,64 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/aves",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/mammalia",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/pisces",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/reptilia",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure/facility"
+	],
 	"file_history":
 	[
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/aves/colibri.h",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/aves/colibri.cpp",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure/land_cage.h",
 		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure/land_cage.cpp",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/mammalia/wild_bunny.h",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/mammalia/wild_bunny.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure/water_cage.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure/water_cage.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure/land_cage.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure/cage.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/facility.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/park.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure/air_cage.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/cell.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/habitat/air_habitat.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/habitat/air_habitat.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/facility.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/habitat/land_habitat.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure/cage.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/animalfood.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/reptilia/python.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/reptilia/chameleon.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/reptilia/komodo.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/reptilia/iguana.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/reptilia/crocodile.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/pisces/barracuda.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/pisces/shark.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/aves/colibri.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/aves/duck.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/aves/eagle.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/aves/owl.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/aves/peacock.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/aves/wild_colibri.h",
 		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/mammalia/elephant.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/mammalia/giraffe.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/mammalia/lion.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/mammalia/wild_bunny.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/mammalia/zebra.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/pisces/clownfish.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/mammalia/monkey.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/mammalia/tiger.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/mammalia/wolf.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/zoo.h",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/aves/colibri.cpp",
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/mammalia/wild_bunny.cpp",
 		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/tiger.cpp",
 		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/mammalia/tiger.h",
 		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/misc/point.cpp",
 		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/misc/point.h",
 		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/cell.cpp",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/facility.cpp",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/facility.h",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/park.h",
 		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/restaurant.h",
 		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/infrastructure/facility/park.cpp",
 		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/pisces/pisces.h",
@@ -613,37 +645,7 @@
 		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/sorter.cpp",
 		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/1000_quick_sort.txt",
 		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/1000_data.txt",
-		"/C/Users/Rionaldi Chandraseta/Desktop/Test.cpp",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Math_Paper Ideas.txt",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/1000000_selection_sort.txt",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/_quick_sort.txt",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/10000000_data.txt",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/1000000_insertion_sort.txt",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/1000000_merge_sort.txt",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/1000000_quick_sort.txt",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/500000_insertion_sort.txt",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/500000_merge_sort.txt",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/500000_quick_sort.txt",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/500000_selection_sort.txt",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/100000_insertion_sort.txt",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/100000_merge_sort.txt",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/100000_quick_sort.txt",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/100000_selection_sort.txt",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/50000_selection_sort.txt",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/50000_insertion_sort.txt",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/50000_merge_sort.txt",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/50000_quick_sort.txt",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/10000_insertion_sort.txt",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/10000_merge_sort.txt",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/10000_quick_sort.txt",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/10000_selection_sort.txt",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/5000_selection_sort.txt",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/5000_quick_sort.txt",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/5000_merge_sort.txt",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/5000_insertion_sort.txt",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/1000_selection_sort.txt",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/1000_insertion_sort.txt",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/Stima_Tugas Kecil II/1000_merge_sort.txt"
+		"/C/Users/Rionaldi Chandraseta/Desktop/Test.cpp"
 	],
 	"find":
 	{
@@ -651,16 +653,93 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 158.0,
 		"where_history":
 		[
+			"..",
+			".",
+			""
 		]
 	},
 	"find_state":
 	{
-		"case_sensitive": false,
+		"case_sensitive": true,
 		"find_history":
 		[
+			"AirCage",
+			"duck",
+			"Duck",
+			"duck",
+			"udara",
+			"AirCage",
+			"vector",
+			"giraffe",
+			"elephant",
+			"Elephant",
+			"peacock",
+			"Colibri",
+			" wild colibri",
+			" {\n  if (nb_animal < int(area.size() / 10 * 3)) { \n    bool placeable = true;\n    if (A.GetBehavior()) {\n      if ((colibri[0] != NULL) && (A.IsEnemy(colibri[0]->GetID()))) {\n        placeable = false;\n      }\n      if ((placeable) && (duck[0] != NULL) && (A.IsEnemy(duck[0]->GetID()))) {\n        placeable = false;\n      }\n      if ((placeable) && (eagle[0] != NULL) && (A.IsEnemy(eagle[0]->GetID()))) {\n        placeable = false;\n      }\n      if ((placeable) && (peacock[0] != NULL) && (A.IsEnemy(peacock[0]->GetID()))) {\n        placeable = false;\n      }\n      if ((placeable) && (wild_colibri[0] != NULL) && (A.IsEnemy(wild_colibri[0]->GetID()))) {\n        placeable = false;\n      }\n      if ((placeable) && (elephant[0] != NULL) && (A.IsEnemy(elephant[0]->GetID()))) {\n        placeable = false;\n      }\n      if ((placeable) && (giraffe[0] != NULL) && (A.IsEnemy(giraffe[0]->GetID()))) {\n        placeable = false;\n      }\n      if ((placeable) && (lion[0] != NULL) && (A.IsEnemy(lion[0]->GetID()))) {\n        placeable = false;\n      }\n      if ((placeable) && (monkey[0] != NULL) && (A.IsEnemy(monkey[0]->GetID()))) {\n        placeable = false;\n      }\n      if ((placeable) && (tiger[0] != NULL) && (A.IsEnemy(tiger[0]->GetID()))) {\n        placeable = false;\n      }\n      if ((placeable) && (wolf[0] != NULL) && (A.IsEnemy(wolf[0]->GetID()))) {\n        placeable = false;\n      }\n      if ((placeable) && (zebra[0] != NULL) && (A.IsEnemy(zebra[0]->GetID()))) {\n        placeable = false;\n      }\n      if ((placeable) && (wild_bunny[0] != NULL) && (A.IsEnemy(wild_bunny[0]->GetID()))) {\n        placeable = false;\n      }\n      if ((placeable) && (chameleon[0] != NULL) && (A.IsEnemy(chameleon[0]->GetID()))) {\n        placeable = false;\n      }\n      if ((placeable) && (crocodile[0] != NULL) && (A.IsEnemy(crocodile[0]->GetID()))) {\n        placeable = false;\n      }\n      if ((placeable) && (iguana[0] != NULL) && (A.IsEnemy(iguana[0]->GetID()))) {\n        placeable = false;\n      }\n      if ((placeable) && (komodo[0] != NULL) && (A.IsEnemy(komodo[0]->GetID()))) {\n        placeable = false;\n      }\n      if ((placeable) && (python[0] != NULL) && (A.IsEnemy(python[0]->GetID()))) {\n        placeable = false;\n      }\n    } else {\n      placeable = true;\n    }\n    if (placeable) {\n      peacock.push_back(&A);\n      nb_animal++;\n    }\n  }\n}",
+			"bool placeable;",
+			"placeable;",
+			"AirCage",
+			"cage",
+			"Colibri",
+			"colibri",
+			"duck",
+			"colibri",
+			"chameleon",
+			"Chameleon",
+			"chameleon",
+			"Chameleon",
+			"chameleon",
+			"Chameleon",
+			"chameleon",
+			"Chameleon",
+			"barracuda",
+			"Barracuda",
+			"barracuda",
+			"Barracuda",
+			"barracuda",
+			"Elephant",
+			"elephant",
+			"Elephant",
+			"elephant",
+			"Elephant",
+			"elephant",
+			"Elephant",
+			"elephant",
+			"Elephant",
+			"elephant",
+			"Elephant",
+			"kelas render.",
+			"colibri",
+			"Elephant",
+			"Colibri",
+			"colibri",
+			"WildColibri",
+			"hewan",
+			"colibri",
+			"Colibri",
+			"hewan",
+			"iswild.",
+			"iswild.\n",
+			"isWild.",
+			";\n",
+			"colibri",
+			"Colibri",
+			"colibri",
+			"Colibri",
+			"colibri",
+			"Colibri",
+			"hewan",
+			"colibri",
+			"hewan",
+			"colibri",
+			"Colibri",
+			"hewan",
+			"setlocation",
+			"hewan",
 			"area",
 			"Shark",
 			"Clownfish",
@@ -714,81 +793,7 @@
 			"\"SAFE",
 			"SAFE PATH",
 			"bomb_radius",
-			"200",
-			"bomb_owner != player_key",
-			"400",
-			"came_from",
-			"priority",
-			"cost_so_far",
-			"came_from",
-			"400",
-			"300",
-			"750",
-			"max_possible_move",
-			"500",
-			"bomb_radius",
-			"700",
-			"0",
-			"3",
-			"4",
-			"5",
-			"bomb_bag",
-			"return 5",
-			"5",
-			"650",
-			"800",
-			"1250",
-			"1000",
-			"900",
-			"500",
-			"200",
-			"700",
-			"150",
-			"200",
-			"100",
-			"50",
-			"100",
-			"300",
-			"100",
-			"print",
-			"0",
-			"state[\"GameBlocks\"][player_x-r",
-			"[player_y][\"Entity\"][\"$type\"] == \"Domain.Entities.DestructibleWallEntity, Domain\"",
-			"or",
-			"value[i",
-			"+= 700",
-			"700",
-			"900",
-			"2",
-			",",
-			"j",
-			"start",
-			"900",
-			"500",
-			"900",
-			"print",
-			"ans",
-			"Find_Reachable_Point",
-			"print",
-			"Stack<Type>",
-			"midfail",
-			"nofsolu",
-			"nOfSolution",
-			"maxlen",
-			"chLead",
-			"c",
-			"ins",
-			"iomanip",
-			"double",
-			"digit",
-			"#",
-			"+",
-			"    \n",
-			"delp",
-			"==0)",
-			"strcmp(in,",
-			"in[0]",
-			"Tab"
+			"200"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -796,6 +801,10 @@
 		"regex": false,
 		"replace_history":
 		[
+			"bool placeable = true;",
+			"placeable = true;",
+			"proses render.",
+			"is_wild.",
 			"Stack<Type>::Stack",
 			"pass",
 			"$",
@@ -833,19 +842,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "animal/aves/colibri.h",
+					"file": "infrastructure/air_cage.h",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1430,
+						"buffer_size": 2402,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								304,
-								304
+								2175,
+								2065
 							]
 						],
 						"settings":
@@ -855,48 +864,17 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 34.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 1,
-					"file": "animal/aves/colibri.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2202,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1746,
-								1746
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1036.0,
+						"translation.y": 867.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				}
+			]
+		},
+		{
+			"sheets":
+			[
 			]
 		}
 	],
@@ -928,7 +906,7 @@
 		"cols":
 		[
 			0.0,
-			0.5,
+			0.53835978836,
 			1.0
 		],
 		"rows":
@@ -950,7 +928,7 @@
 	"project": "VirtualZoo-VZ02.sublime-project",
 	"replace":
 	{
-		"height": 48.0
+		"height": 114.0
 	},
 	"save_all_on_build": true,
 	"select_file":

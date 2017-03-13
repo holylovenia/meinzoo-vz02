@@ -11,6 +11,9 @@ void WaterCage::AddPoint(const Point& p) {
 void WaterCage::RemovePoint(const Point& p) {
   area.erase(p);
 }
+/////////// IMPLEMENT ALERT ///////////////
+void AddAnimal(Duck& A) {}  // TODO: Add Duck, tambahin Duck di prosedur AddAnimal lain juga
+///////////////////////////////////////////
 void WaterCage::AddAnimal(Shark& A) {
   if (nb_animal < int(area.size() / 10 * 3)) { 
     bool placeable = true;
@@ -36,7 +39,7 @@ void WaterCage::AddAnimal(Shark& A) {
 }
 void WaterCage::AddAnimal(Barracuda& A) {
   if (nb_animal < int(area.size() / 10 * 3)) { 
-    bool placeable;
+    bool placeable = true;
     if (A.GetBehavior()) {
       if ((shark[0] != NULL) && (A.IsEnemy(shark[0]->GetID()))) {
         placeable = false;
@@ -61,7 +64,7 @@ void WaterCage::AddAnimal(Barracuda& A) {
 }
 void WaterCage::AddAnimal(Clownfish& A) {
   if (nb_animal < int(area.size() / 10 * 3)) { 
-    bool placeable;
+    bool placeable = true;
     if (A.GetBehavior()) {
       if ((shark[0] != NULL) && (A.IsEnemy(shark[0]->GetID()))) {
         placeable = false;
@@ -86,7 +89,7 @@ void WaterCage::AddAnimal(Clownfish& A) {
 }
 void WaterCage::AddAnimal(Crocodile& A) {
   if (nb_animal < int(area.size() / 10 * 3)) { 
-    bool placeable;
+    bool placeable = true;
     if (A.GetBehavior()) {
       if ((shark[0] != NULL) && (A.IsEnemy(shark[0]->GetID()))) {
         placeable = false;

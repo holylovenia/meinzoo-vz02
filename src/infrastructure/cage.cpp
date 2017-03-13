@@ -16,7 +16,7 @@ void Cage::RemovePoint(const Point& p) {
 void Cage::AddAnimal(Animal& A) {
   if (nb_animal < int(area.size() / 10 * 3)) {
     AnimalBehavior* a = dynamic_cast<AnimalBehavior*>(&A);
-    bool placeable;
+    bool placeable = true;
 
     if (!(a->GetBehavior())) {
       BehaviorWild* b = dynamic_cast<BehaviorWild*>(a);

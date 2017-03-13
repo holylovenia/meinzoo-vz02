@@ -1,5 +1,3 @@
-// file cage.h
-
 #ifndef CAGE_H
 #define CAGE_H
 
