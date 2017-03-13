@@ -1,5 +1,3 @@
-// File: air_habitat.cpp
-
 #include "air_habitat.h"
 
 AirHabitat::AirHabitat(): def_type('A'), def_accessible(false) {

@@ -3,7 +3,6 @@
 
 class WaterHabitat {
   public:
-    // ctor
     WaterHabitat();
 
   protected:
@@ -12,6 +11,7 @@ class WaterHabitat {
 
   private:
     const char def_type;
+    const bool def_accessible;
 };
 
 #endif

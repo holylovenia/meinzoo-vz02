@@ -1,11 +1,8 @@
 #ifndef LAND_HABITAT_H
 #define LAND_HABITAT_H
 
-#include "habitat.h"
-
-class LandHabitat: {
+class LandHabitat {
   public:
-    // ctor
     LandHabitat();
 
   protected:
@@ -14,6 +11,7 @@ class LandHabitat: {
     
   private:
     const char def_type;
+    const bool def_accessible;
 };
 
 #endif

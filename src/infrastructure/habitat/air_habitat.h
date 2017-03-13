@@ -3,7 +3,6 @@
 
 class AirHabitat {
   public:
-    // ctor
     AirHabitat();
 
   protected:
