@@ -175,6 +175,7 @@ class LandCage {
     vector<Iguana*> iguana;
     vector<Komodo*> komodo;
     vector<Python*> python;
+    vector<Owl*> owl;
     int nb_animal;
 };
 

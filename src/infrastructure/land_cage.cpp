@@ -69,6 +69,9 @@ void LandCage::AddAnimal(Colibri& A) {
       if ((placeable) && (python[0] != NULL) && (A.IsEnemy(python[0]->GetID()))) {
         placeable = false;
       }
+      if ((placeable) && (owl[0] != NULL) && (A.IsEnemy(owl[0]->GetID()))) {
+        placeable = false;
+      }
     }
     if (placeable) {
       colibri.push_back(&A);
@@ -132,6 +135,9 @@ void LandCage::AddAnimal(Duck& A) {
         placeable = false;
       }
       if ((placeable) && (python[0] != NULL) && (A.IsEnemy(python[0]->GetID()))) {
+        placeable = false;
+      }
+      if ((placeable) && (owl[0] != NULL) && (A.IsEnemy(owl[0]->GetID()))) {
         placeable = false;
       }
     } else {
@@ -201,6 +207,9 @@ void LandCage::AddAnimal(Eagle& A) {
       if ((placeable) && (python[0] != NULL) && (A.IsEnemy(python[0]->GetID()))) {
         placeable = false;
       }
+      if ((placeable) && (owl[0] != NULL) && (A.IsEnemy(owl[0]->GetID()))) {
+        placeable = false;
+      }
     } else {
       placeable = true;
     }
@@ -210,9 +219,76 @@ void LandCage::AddAnimal(Eagle& A) {
     }
   }
 }
-/////////// IMPLEMENT ALERT /////////////
-void LandCage::AddAnimal(Owl& A) {}    // TODO: Add Owl, tambahin Owl di prosedur AddAnimal lain juga.
-/////////////////////////////////////////
+void LandCage::AddAnimal(Owl& A) {
+if (nb_animal < int(area.size() / 10 * 3)) { 
+    bool placeable = true;
+    if (A.GetBehavior()) {
+      if ((colibri[0] != NULL) && (A.IsEnemy(colibri[0]->GetID()))) {
+        placeable = false;
+      }
+      if ((placeable) && (duck[0] != NULL) && (A.IsEnemy(duck[0]->GetID()))) {
+        placeable = false;
+      }
+      if ((placeable) && (eagle[0] != NULL) && (A.IsEnemy(eagle[0]->GetID()))) {
+        placeable = false;
+      }
+      if ((placeable) && (peacock[0] != NULL) && (A.IsEnemy(peacock[0]->GetID()))) {
+        placeable = false;
+      }
+      if ((placeable) && (wild_colibri[0] != NULL) && (A.IsEnemy(wild_colibri[0]->GetID()))) {
+        placeable = false;
+      }
+      if ((placeable) && (elephant[0] != NULL) && (A.IsEnemy(elephant[0]->GetID()))) {
+        placeable = false;
+      }
+      if ((placeable) && (giraffe[0] != NULL) && (A.IsEnemy(giraffe[0]->GetID()))) {
+        placeable = false;
+      }
+      if ((placeable) && (lion[0] != NULL) && (A.IsEnemy(lion[0]->GetID()))) {
+        placeable = false;
+      }
+      if ((placeable) && (monkey[0] != NULL) && (A.IsEnemy(monkey[0]->GetID()))) {
+        placeable = false;
+      }
+      if ((placeable) && (tiger[0] != NULL) && (A.IsEnemy(tiger[0]->GetID()))) {
+        placeable = false;
+      }
+      if ((placeable) && (wolf[0] != NULL) && (A.IsEnemy(wolf[0]->GetID()))) {
+        placeable = false;
+      }
+      if ((placeable) && (zebra[0] != NULL) && (A.IsEnemy(zebra[0]->GetID()))) {
+        placeable = false;
+      }
+      if ((placeable) && (wild_bunny[0] != NULL) && (A.IsEnemy(wild_bunny[0]->GetID()))) {
+        placeable = false;
+      }
+      if ((placeable) && (chameleon[0] != NULL) && (A.IsEnemy(chameleon[0]->GetID()))) {
+        placeable = false;
+      }
+      if ((placeable) && (crocodile[0] != NULL) && (A.IsEnemy(crocodile[0]->GetID()))) {
+        placeable = false;
+      }
+      if ((placeable) && (iguana[0] != NULL) && (A.IsEnemy(iguana[0]->GetID()))) {
+        placeable = false;
+      }
+      if ((placeable) && (komodo[0] != NULL) && (A.IsEnemy(komodo[0]->GetID()))) {
+        placeable = false;
+      }
+      if ((placeable) && (python[0] != NULL) && (A.IsEnemy(python[0]->GetID()))) {
+        placeable = false;
+      }
+      if ((placeable) && (owl[0] != NULL) && (A.IsEnemy(owl[0]->GetID()))) {
+        placeable = false;
+      }
+    } else {
+      placeable = true;
+    }
+    if (placeable) {
+      owl.push_back(&A);
+      nb_animal++;
+    }
+  }
+}
 void LandCage::AddAnimal(Peacock& A) {
   if (nb_animal < int(area.size() / 10 * 3)) { 
     bool placeable = true;
@@ -269,6 +345,9 @@ void LandCage::AddAnimal(Peacock& A) {
         placeable = false;
       }
       if ((placeable) && (python[0] != NULL) && (A.IsEnemy(python[0]->GetID()))) {
+        placeable = false;
+      }
+      if ((placeable) && (owl[0] != NULL) && (A.IsEnemy(owl[0]->GetID()))) {
         placeable = false;
       }
     } else {
@@ -338,6 +417,9 @@ void LandCage::AddAnimal(WildColibri& A) {
       if ((placeable) && (python[0] != NULL) && (A.IsEnemy(python[0]->GetID()))) {
         placeable = false;
       }
+      if ((placeable) && (owl[0] != NULL) && (A.IsEnemy(owl[0]->GetID()))) {
+        placeable = false;
+      }
     } else {
       placeable = true;
     }
@@ -403,6 +485,9 @@ void LandCage::AddAnimal(Elephant& A) {
         placeable = false;
       }
       if ((placeable) && (python[0] != NULL) && (A.IsEnemy(python[0]->GetID()))) {
+        placeable = false;
+      }
+      if ((placeable) && (owl[0] != NULL) && (A.IsEnemy(owl[0]->GetID()))) {
         placeable = false;
       }
     } else {
@@ -472,6 +557,9 @@ void LandCage::AddAnimal(Giraffe& A) {
       if ((placeable) && (python[0] != NULL) && (A.IsEnemy(python[0]->GetID()))) {
         placeable = false;
       }
+      if ((placeable) && (owl[0] != NULL) && (A.IsEnemy(owl[0]->GetID()))) {
+        placeable = false;
+      }
     } else {
       placeable = true;
     }
@@ -537,6 +625,9 @@ void LandCage::AddAnimal(Lion& A) {
         placeable = false;
       }
       if ((placeable) && (python[0] != NULL) && (A.IsEnemy(python[0]->GetID()))) {
+        placeable = false;
+      }
+      if ((placeable) && (owl[0] != NULL) && (A.IsEnemy(owl[0]->GetID()))) {
         placeable = false;
       }
     } else {
@@ -606,6 +697,9 @@ void LandCage::AddAnimal(Monkey& A) {
       if ((placeable) && (python[0] != NULL) && (A.IsEnemy(python[0]->GetID()))) {
         placeable = false;
       }
+      if ((placeable) && (owl[0] != NULL) && (A.IsEnemy(owl[0]->GetID()))) {
+        placeable = false;
+      }
     } else {
       placeable = true;
     }
@@ -671,6 +765,9 @@ void LandCage::AddAnimal(Tiger& A) {
         placeable = false;
       }
       if ((placeable) && (python[0] != NULL) && (A.IsEnemy(python[0]->GetID()))) {
+        placeable = false;
+      }
+      if ((placeable) && (owl[0] != NULL) && (A.IsEnemy(owl[0]->GetID()))) {
         placeable = false;
       }
     } else {
@@ -740,6 +837,9 @@ void LandCage::AddAnimal(Wolf& A) {
       if ((placeable) && (python[0] != NULL) && (A.IsEnemy(python[0]->GetID()))) {
         placeable = false;
       }
+      if ((placeable) && (owl[0] != NULL) && (A.IsEnemy(owl[0]->GetID()))) {
+        placeable = false;
+      }
     } else {
       placeable = true;
     }
@@ -805,6 +905,9 @@ void LandCage::AddAnimal(Zebra& A) {
         placeable = false;
       }
       if ((placeable) && (python[0] != NULL) && (A.IsEnemy(python[0]->GetID()))) {
+        placeable = false;
+      }
+      if ((placeable) && (owl[0] != NULL) && (A.IsEnemy(owl[0]->GetID()))) {
         placeable = false;
       }
     } else {
@@ -874,6 +977,9 @@ void LandCage::AddAnimal(WildBunny& A) {
       if ((placeable) && (python[0] != NULL) && (A.IsEnemy(python[0]->GetID()))) {
         placeable = false;
       }
+      if ((placeable) && (owl[0] != NULL) && (A.IsEnemy(owl[0]->GetID()))) {
+        placeable = false;
+      }
     } else {
       placeable = true;
     }
@@ -939,6 +1045,9 @@ void LandCage::AddAnimal(Chameleon& A) {
         placeable = false;
       }
       if ((placeable) && (python[0] != NULL) && (A.IsEnemy(python[0]->GetID()))) {
+        placeable = false;
+      }
+      if ((placeable) && (owl[0] != NULL) && (A.IsEnemy(owl[0]->GetID()))) {
         placeable = false;
       }
     } else {
@@ -1008,6 +1117,9 @@ void LandCage::AddAnimal(Crocodile& A) {
       if ((placeable) && (python[0] != NULL) && (A.IsEnemy(python[0]->GetID()))) {
         placeable = false;
       }
+      if ((placeable) && (owl[0] != NULL) && (A.IsEnemy(owl[0]->GetID()))) {
+        placeable = false;
+      }
     } else {
       placeable = true;
     }
@@ -1073,6 +1185,9 @@ void LandCage::AddAnimal(Iguana& A) {
         placeable = false;
       }
       if ((placeable) && (python[0] != NULL) && (A.IsEnemy(python[0]->GetID()))) {
+        placeable = false;
+      }
+      if ((placeable) && (owl[0] != NULL) && (A.IsEnemy(owl[0]->GetID()))) {
         placeable = false;
       }
     } else {
@@ -1142,6 +1257,9 @@ void LandCage::AddAnimal(Komodo& A) {
       if ((placeable) && (python[0] != NULL) && (A.IsEnemy(python[0]->GetID()))) {
         placeable = false;
       }
+      if ((placeable) && (owl[0] != NULL) && (A.IsEnemy(owl[0]->GetID()))) {
+        placeable = false;
+      }
     } else {
       placeable = true;
     }
@@ -1207,6 +1325,9 @@ void LandCage::AddAnimal(Python& A) {
         placeable = false;
       }
       if ((placeable) && (python[0] != NULL) && (A.IsEnemy(python[0]->GetID()))) {
+        placeable = false;
+      }
+      if ((placeable) && (owl[0] != NULL) && (A.IsEnemy(owl[0]->GetID()))) {
         placeable = false;
       }
     } else {
@@ -1515,6 +1636,23 @@ void LandCage::MoveAnimal() {
     }
   } else if (i == 17) {
     for (auto iter = komodo.begin(); iter < komodo.end(); ++iter) {
+      char movement = generator() % 4;
+      bool movement_in_land_cage = false;
+      int no_of_tries = 0;
+      do {      
+        (*iter)->Move(movement);
+        
+        movement_in_land_cage = area.find((*iter)->GetPosition()) != area.end();
+        if (!movement_in_land_cage) {
+          movement = (movement + 2) % 4;
+          (*iter)->Move(movement);
+          movement = (movement + 3) % 4;
+          no_of_tries++;
+        }
+      } while (!movement_in_land_cage && no_of_tries < 4);
+    }
+  } else if (i == 18) {
+    for (auto iter = owl.begin(); iter < owl.end(); ++iter) {
       char movement = generator() % 4;
       bool movement_in_land_cage = false;
       int no_of_tries = 0;
