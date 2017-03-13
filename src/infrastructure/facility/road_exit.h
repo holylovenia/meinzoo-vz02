@@ -4,23 +4,22 @@
 #include <string>
 
 class RoadExit {
-		// ctor
-		RoadExit(bool Accessible);
+    // ctor
+    RoadExit(bool accessible);
 
-		bool IsEntrance();
-		bool IsExit();
+    bool IsEntrance();
+    bool IsExit();
 
-	protected:
-		bool isEntrance;
-		bool isExit;
+  protected:
+    bool is_entrance;
+    bool is_exit;
 
-	private:
-		std::string facilityType;
-		bool isAccessible;
-		const std::string defFacilityType;
-		const bool defRoad;
-		const bool defRoadExit;
+  private:
+    std::string facility_type;
+    bool is_accessible;
+    const std::string def_facility_type;
+    const bool def_road;
+    const bool def_road_exit;
 };
-
 
 #endif

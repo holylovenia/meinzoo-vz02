@@ -3,21 +3,21 @@
 
 #include <string>
 class Park {
-	public:
-		// ctor with parameter
-		Park(bool Accessible, std::string _name);
-		// cctor
-		Park(const Park& P);
-		// operator=
-		Park& operator=(const Park& P);
-		// others
-		std::string getParkName();
+  public:
+    // ctor with parameter
+    Park(bool accessible, std::string _name);
+    // cctor
+    Park(const Park& P);
+    // operator=
+    Park& operator=(const Park& P);
+    // others
+    std::string GetParkName();
 
-	private:
-		std::string name;
-		bool isAccessible;
-		std::string facilityType;
-		const std::string defFacilityType;
+  private:
+    std::string name;
+    bool is_accessible;
+    std::string facility_type;
+    const std::string def_facility_type;
 };
 
 #endif
