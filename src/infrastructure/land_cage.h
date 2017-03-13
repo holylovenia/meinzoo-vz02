@@ -1,5 +1,3 @@
-// file cage.h
-
 #ifndef LAND_CAGE_H
 #define LAND_CAGE_H
 
@@ -30,58 +28,51 @@
 using namespace std;
 
 class LandCage {
-	public:
-		// 0: land, 1: water, 2: air
-		LandCage();
-		
-		void AddPoint(const Point& p);
-		void RemovePoint(const Point& p);
-		
-		void AddAnimal(Colibri& A);
-		void AddAnimal(Duck& A);
-		void AddAnimal(Eagle& A);
-		void AddAnimal(Peacock& A);
-		void AddAnimal(WildColibri& A);
-		void AddAnimal(Elephant& A);
-		void AddAnimal(Giraffe& A);
-		void AddAnimal(Lion& A);
-		void AddAnimal(Monkey& A);
-		void AddAnimal(Tiger& A);
-		void AddAnimal(Wolf& A);
-		void AddAnimal(Zebra& A);
-		void AddAnimal(WildBunny& A);
-		void AddAnimal(Chameleon& A);
-		void AddAnimal(Crocodile& A);
-		void AddAnimal(Iguana& A);
-		void AddAnimal(Komodo& A);
-		void AddAnimal(Python& A);
-		
-		void MoveAnimal();
-		
-		vector<Point> GetArea();
-		//vector<Animal*> GetAnimal();
-		
-	private:
-		set<Point> area;
-		vector<Colibri*> colibri;
-		vector<Duck*> duck;
-		vector<Eagle*> eagle;
-		vector<Peacock*> peacock;
-		vector<WildColibri*> wild_colibri;
-		vector<Elephant*> elephant;
-		vector<Giraffe*> giraffe;
-		vector<Lion*> lion;
-		vector<Monkey*> monkey;
-		vector<Tiger*> tiger;
-		vector<Wolf*> wolf;
-		vector<Zebra*> zebra;
-		vector<WildBunny*> wild_bunny;
-		vector<Chameleon*> chameleon;
-		vector<Crocodile*> crocodile;
-		vector<Iguana*> iguana;
-		vector<Komodo*> komodo;
-		vector<Python*> python;
-		int nbAnimal;
+  public:
+    LandCage();
+    void AddPoint(const Point& p);
+    void RemovePoint(const Point& p);
+    void AddAnimal(Colibri& A);
+    void AddAnimal(Duck& A);
+    void AddAnimal(Eagle& A);
+    void AddAnimal(Peacock& A);
+    void AddAnimal(WildColibri& A);
+    void AddAnimal(Elephant& A);
+    void AddAnimal(Giraffe& A);
+    void AddAnimal(Lion& A);
+    void AddAnimal(Monkey& A);
+    void AddAnimal(Tiger& A);
+    void AddAnimal(Wolf& A);
+    void AddAnimal(Zebra& A);
+    void AddAnimal(WildBunny& A);
+    void AddAnimal(Chameleon& A);
+    void AddAnimal(Crocodile& A);
+    void AddAnimal(Iguana& A);
+    void AddAnimal(Komodo& A);
+    void AddAnimal(Python& A);
+    void MoveAnimal();
+    vector<Point> GetArea();
+  private:
+    set<Point> area;
+    vector<Colibri*> colibri;
+    vector<Duck*> duck;
+    vector<Eagle*> eagle;
+    vector<Peacock*> peacock;
+    vector<WildColibri*> wild_colibri;
+    vector<Elephant*> elephant;
+    vector<Giraffe*> giraffe;
+    vector<Lion*> lion;
+    vector<Monkey*> monkey;
+    vector<Tiger*> tiger;
+    vector<Wolf*> wolf;
+    vector<Zebra*> zebra;
+    vector<WildBunny*> wild_bunny;
+    vector<Chameleon*> chameleon;
+    vector<Crocodile*> crocodile;
+    vector<Iguana*> iguana;
+    vector<Komodo*> komodo;
+    vector<Python*> python;
+    int nb_animal;
 };
 
 #endif
