@@ -84,3 +84,6 @@ int Wolf::GetX() const {
 int Wolf::GetY() const {
   return position.GetY();
 }
+char Wolf::Render() {
+  return 'O';
+}

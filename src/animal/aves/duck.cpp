@@ -85,3 +85,6 @@ int Duck::GetX() const {
 int Duck::GetY() const {
   return position.GetY();
 }
+char Duck::Render() {
+  return 'O';
+}

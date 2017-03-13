@@ -85,3 +85,6 @@ int Peacock::GetX() const {
 int Peacock::GetY() const {
   return position.GetY();
 }
+char Peacock::Render() {
+  return 'O';
+}

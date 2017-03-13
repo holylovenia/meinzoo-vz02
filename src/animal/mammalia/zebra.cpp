@@ -85,3 +85,6 @@ int Zebra::GetX() const {
 int Zebra::GetY() const {
   return position.GetY();
 }
+char Zebra::Render() {
+  return 'O';
+}

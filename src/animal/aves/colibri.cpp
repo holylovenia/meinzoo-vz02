@@ -84,3 +84,6 @@ int Colibri::GetX() const {
 int Colibri::GetY() const {
   return position.GetY();
 }
+char Colibri::Render() {
+  return 'O';
+}

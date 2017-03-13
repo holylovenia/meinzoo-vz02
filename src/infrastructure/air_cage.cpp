@@ -237,3 +237,6 @@ void AirCage::MoveAnimal() {
 vector<Point> AirCage::GetArea() {
   return vector<Point>(area.begin(), area.end());
 }
+char AirCage::Render() {
+  return 'a';
+}

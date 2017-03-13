@@ -84,3 +84,6 @@ int Shark::GetX() const {
 int Shark::GetY() const {
   return position.GetY();
 }
+char Shark::Render() {
+  return 'O';
+}

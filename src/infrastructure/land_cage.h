@@ -52,6 +52,7 @@ class LandCage {
     void AddAnimal(Python& A);
     void MoveAnimal();
     vector<Point> GetArea();
+    char Render();
     
   private:
     set<Point> area;

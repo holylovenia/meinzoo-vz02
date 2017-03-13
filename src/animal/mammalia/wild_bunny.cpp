@@ -94,3 +94,6 @@ int WildBunny::GetX() const {
 int WildBunny::GetY() const {
   return position.GetY();
 }
+char WildBunny::Render() {
+  return 'O';
+}

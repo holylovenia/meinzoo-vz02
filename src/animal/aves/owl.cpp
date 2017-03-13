@@ -84,3 +84,6 @@ int Owl::GetX() const {
 int Owl::GetY() const {
   return position.GetY();
 }
+char Owl::Render() {
+  return 'O';
+}

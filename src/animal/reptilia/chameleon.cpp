@@ -85,3 +85,6 @@ int Chameleon::GetX() const {
 int Chameleon::GetY() const {
   return position.GetY();
 }
+char Chameleon::Render() {
+  return 'O';
+}

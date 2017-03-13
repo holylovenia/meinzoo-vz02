@@ -9,6 +9,7 @@ class Restaurant {
     Restaurant(const Restaurant& R);
     Restaurant& operator=(const Restaurant& R);
     std::string GetRestaurantName();
+    char Render();
 
   private:
     std::string name;

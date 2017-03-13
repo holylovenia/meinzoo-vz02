@@ -85,3 +85,6 @@ int Iguana::GetX() const {
 int Iguana::GetY() const {
   return position.GetY();
 }
+char Iguana::Render() {
+  return 'O';
+}

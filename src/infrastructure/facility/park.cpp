@@ -19,3 +19,6 @@ Park& Park::operator=(const Park& P) {
 std::string Park::GetParkName() {
   return (name);
 }
+char Park::Render() {
+  return '*';
+}

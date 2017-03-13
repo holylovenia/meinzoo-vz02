@@ -84,3 +84,6 @@ int Giraffe::GetX() const {
 int Giraffe::GetY() const {
   return position.GetY();
 }
+char Giraffe::Render() {
+  return 'O';
+}

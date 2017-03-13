@@ -85,3 +85,6 @@ int Clownfish::GetX() const {
 int Clownfish::GetY() const {
   return position.GetY();
 }
+char Clownfish::Render() {
+  return 'O';
+}

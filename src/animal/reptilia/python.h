@@ -26,6 +26,7 @@ class Python {
     int GetX() const;
     int GetY() const;
     bool GetBehavior();
+    char Render();
     
   private:
     int ID;

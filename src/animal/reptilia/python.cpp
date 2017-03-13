@@ -84,3 +84,6 @@ int Python::GetX() const {
 int Python::GetY() const {
   return position.GetY();
 }
+char Python::Render() {
+  return 'O';
+}

@@ -85,3 +85,6 @@ int Monkey::GetX() const {
 int Monkey::GetY() const {
   return position.GetY();
 }
+char Monkey::Render() {
+  return 'O';
+}

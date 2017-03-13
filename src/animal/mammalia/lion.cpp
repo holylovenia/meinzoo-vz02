@@ -84,3 +84,6 @@ int Lion::GetX() const {
 int Lion::GetY() const {
   return position.GetY();
 }
+char Lion::Render() {
+  return 'O';
+}

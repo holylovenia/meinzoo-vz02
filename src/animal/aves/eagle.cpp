@@ -84,3 +84,6 @@ int Eagle::GetX() const {
 int Eagle::GetY() const {
   return position.GetY();
 }
+char Eagle::Render() {
+  return 'O';
+}

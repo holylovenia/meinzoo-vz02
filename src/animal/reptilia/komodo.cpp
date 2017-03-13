@@ -84,3 +84,6 @@ int Komodo::GetX() const {
 int Komodo::GetY() const {
   return position.GetY();
 }
+char Komodo::Render() {
+  return 'O';
+}

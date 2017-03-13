@@ -188,3 +188,6 @@ void WaterCage::MoveAnimal() {
 vector<Point> WaterCage::GetArea() {
   return vector<Point>(area.begin(), area.end());
 }
+char WaterCage::Render() {
+  return 'w';
+}

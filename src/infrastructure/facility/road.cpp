@@ -12,3 +12,6 @@ bool Road::IsEntrance() {
 bool Road::IsExit() {
   return(is_exit);
 }
+char Road::Render() {
+  return '.';
+}

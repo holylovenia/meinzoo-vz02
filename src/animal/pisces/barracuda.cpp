@@ -84,3 +84,6 @@ int Barracuda::GetX() const {
 int Barracuda::GetY() const {
   return position.GetY();
 }
+char Barracuda::Render() {
+  return 'O';
+}

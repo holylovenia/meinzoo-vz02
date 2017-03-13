@@ -84,3 +84,6 @@ int Tiger::GetX() const {
 int Tiger::GetY() const {
   return position.GetY();
 }
+char Tiger::Render() {
+  return 'O';
+}

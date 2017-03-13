@@ -8,6 +8,7 @@ class Park {
     Park(const Park& P);
     Park& operator=(const Park& P);
     std::string GetParkName();
+    char Render();
 
   private:
     std::string name;

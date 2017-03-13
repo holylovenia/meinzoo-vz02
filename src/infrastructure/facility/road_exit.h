@@ -8,6 +8,7 @@ class RoadExit {
     RoadExit(bool accessible);
     bool IsEntrance();
     bool IsExit();
+    char Render();
 
   protected:
     bool is_entrance;

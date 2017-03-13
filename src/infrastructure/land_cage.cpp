@@ -1549,3 +1549,6 @@ void LandCage::MoveAnimal() {
 vector<Point> LandCage::GetArea() {
   return vector<Point>(area.begin(), area.end());
 }
+char LandCage::Render() {
+  return 'l';
+}

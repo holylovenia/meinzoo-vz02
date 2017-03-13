@@ -84,3 +84,6 @@ int Elephant::GetX() const {
 int Elephant::GetY() const {
   return position.GetY();
 }
+char Elephant::Render() {
+  return 'O';
+}

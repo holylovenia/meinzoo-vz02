@@ -84,3 +84,6 @@ int Crocodile::GetX() const {
 int Crocodile::GetY() const {
   return position.GetY();
 }
+char Crocodile::Render() {
+  return 'O';
+}

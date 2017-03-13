@@ -20,3 +20,6 @@ Restaurant& Restaurant::operator=(const Restaurant& R) {
 std::string Restaurant::GetRestaurantName() {
   return (name);
 }
+char Restaurant::Render() {
+  return 'R';
+}
