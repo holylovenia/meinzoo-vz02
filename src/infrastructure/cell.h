@@ -13,14 +13,14 @@ class Cell {
       * Semua habitat tidak bisa diakses (not is_accessible).
       * Road dan semua habitat memiliki nama "" (string kosong).
       * Parameter _entrance dan _exit hanya boleh true saat _type adalah Road.
-      * @param _accessible Nilai true/false cell dapat diakses.
-      * @param _type Tipe cell.
-      * @param _name Nama fasilitas cell.
-      * @param _entrance Nilai true/false cell merupakan entrance.
-      * @param _exit Nilai true/false cell merupakan exit.
+      * @param _accessible Nilai true/false cell dapat diakses. Nilai default = false.
+      * @param _type Tipe cell. Nilai default = "".
+      * @param _name Nama fasilitas cell. Nilai default = "".
+      * @param _entrance Nilai true/false cell merupakan entrance. Nilai default = false.
+      * @param _exit Nilai true/false cell merupakan exit. Nilai default = false.
       */
-    Cell(bool _accessible = false, std::string _type = "",
-                                   std::string _name = "",
+    Cell(bool _accessible = false, const std::string& _type = "",
+                                   const std::string& = "",
                                    bool _entrance = false,
                                    bool _exit = false);
     /** @brief Copy Constructor

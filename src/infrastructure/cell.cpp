@@ -1,37 +1,29 @@
 #include "cell.h"
 
-Cell::Cell(bool _accessible, std::string _type, 
-                             std::string _name, 
+Cell::Cell(bool _accessible, const std::string& _type, 
+                             const std::string& _name, 
                              bool _entrance, 
-                             bool _exit) {
+                             bool _exit): type(_type), name(_name) {
   if ((type == "AirHabitat") || (type == "LandHabitat") ||
     (type == "WaterHabitat")) {
     is_accessible = false;
-  }
-  else {
+  } else {
     is_accessible = _accessible;
   }
-  type = _type;
   if ((type == "Road") || (type == "AirHabitat") ||
-  (type == "LandHabitat") || (type == "WaterHabitat")) {
+      (type == "LandHabitat") || (type == "WaterHabitat")) {
     name = "";
-  }
-  else {
-    name = _name;
   }
   if (type == "Road") {
     is_entrance = _entrance; 
     is_exit = _exit;
-  }
-  else {
+  } else {
     is_entrance = false;
     is_exit = false;
   }
 }
-Cell::Cell(Cell& C) {
+Cell::Cell(Cell& C): type(C.type), name(C.name) {
   is_accessible = C.is_accessible;
-  type = C.type;
-  name = C.name;
   is_entrance = C.is_entrance;
   is_exit = C.is_exit;
 }

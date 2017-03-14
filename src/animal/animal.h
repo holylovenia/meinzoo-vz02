@@ -8,24 +8,25 @@
 #include "../misc/point.h"
 
 /** @class Animal
-  * Kelas Animal sebagai kelas rill untuk semua animal.
+  * Kelas Animal menampung semua jenis hewan
   */
 class Animal {
   public :
     /** @brief Constructor
-      * Menciptakan wild colibri dengan posisi (x,y) dan berat _weight.
-      * @param _ID Identifier suatu spesies hewan
+      * Menciptakan Animal dengan ID sesuai spesies yang diinginkan,
+      * posisi (x,y) dan berat _weight.
+      * @param _ID ID Animal yang diciptakan
       * @param _x Nilai posisi absis.
       * @param _y Nilai posisi ordinat.
-      * @param _weight Nilai berat untuk wild colibri.
+      * @param _weight Nilai berat untuk Animal.
       */
     Animal(int _ID, int _x, int _y, int _weight);
-    /** @brief Menampilkan interaksi dengan wild colibri.
+    /** @brief Menampilkan interaksi dengan Animal.
       * Menuliskan interaksi ke layar.
       */
     void Interact();
-    /** @brief Menggerakkan wild colibri dengan mengubah posisi.
-      * @param movement Nilai menentukan arah gerak wild colibri.
+    /** @brief Menggerakkan animal dengan mengubah posisi.
+      * @param movement Nilai menentukan arah gerak animal.
       */
     void Move(int movement);
     /** @brief Getter nilai is_land_animal.
@@ -40,43 +41,43 @@ class Animal {
       * @return Nilai is_air_animal.
       */
     bool IsAirAnimal();
-    /** @brief Menentukan apakah wild colibri merupakan herbivora.
-      * @return Nilai true/false wild colibri merupakan herbivora. 
+    /** @brief Menentukan apakah Animal merupakan herbivora.
+      * @return Nilai true/false Animal merupakan herbivora. 
       */
     bool IsHerbivore();
-    /** @brief Menentukan apakah wild colibri merupakan carnivora.
-      * @return Nilai true/false wild colibri merupakan carnivora. 
+    /** @brief Menentukan apakah Animal merupakan carnivora.
+      * @return Nilai true/false Animal merupakan carnivora. 
       */
     bool IsCarnivore();
-    /** @brief Menentukan apakah wild colibri merupakan omnivora.
-      * @return Nilai true/false wild colibri merupakan omnivora. 
+    /** @brief Menentukan apakah Animal merupakan omnivora.
+      * @return Nilai true/false Animal merupakan omnivora. 
       */
     bool IsOmnivore();
-    /** @brief Getter nilai kebutuhan makanan wild colibri dalam bentuk daging.
-      * @return Jumlah daging yang dibutuhkan untuk wild colibri tertentu.
+    /** @brief Getter nilai kebutuhan makanan Animal dalam bentuk daging.
+      * @return Jumlah daging yang dibutuhkan untuk Animal tertentu.
       */
     int GetReqMeat();
-    /** @brief Getter nilai kebutuhan makanan wild colibri dalam bentuk tumbuhan.
-      * @return Jumlah tumbuhan yang dibutuhkan untuk wild colibri tertentu.
+    /** @brief Getter nilai kebutuhan makanan Animal dalam bentuk tumbuhan.
+      * @return Jumlah tumbuhan yang dibutuhkan untuk Animal tertentu.
       */
     int GetReqPlant();
     /** @brief Getter nilai point position.
       * @return Nilai position.
       */
     Point GetPosition();
-    /** @brief Menambah musuh wild colibri.
-      * Menambahkan wild colibri dengan ID x dari set.
-      * @param x ID wild colibri yang ingin  ditambah.
+    /** @brief Menambah musuh Animal.
+      * Menambahkan Animal dengan ID x dari set.
+      * @param x ID Animal yang ingin  ditambah.
       */
     void AddEnemy(int x);
-    /** @brief Menghapus musuh wild colibri.
-      * Melenyapkan wild colibri dengan ID x dari set.
-      * @param x ID wild colibri yang ingin dihapus.
+    /** @brief Menghapus musuh Animal.
+      * Melenyapkan Animal dengan ID x dari set.
+      * @param x ID Animal yang ingin dihapus.
       */
     void RemoveEnemy(int x);
-    /** @brief Mengecek status wild colibri.
-      * Memeriksa apakah wild colibri dengan ID x merupakan musuh.
-      * @param x ID wild colibri yang ingin diperiksa.
+    /** @brief Mengecek status Animal.
+      * Memeriksa apakah Animal dengan ID x merupakan musuh.
+      * @param x ID Animal yang ingin diperiksa.
       * @return Nilai true/false apakah merupakan musuh.
       */
     bool IsEnemy(int x);
@@ -84,8 +85,8 @@ class Animal {
       * @return Nilai ID.
       */
     int GetID();
-    /** @brief Menentukan lokasi wild colibri.
-      * Mengubah lokasi wild colibri menjadi di posisi (_x,_y).
+    /** @brief Menentukan lokasi Animal.
+      * Mengubah lokasi Animal menjadi di posisi (_x,_y).
       * @param _x Nilai posisi absis.
       * @param _y Nilai posisi ordinat.
       */

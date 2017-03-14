@@ -18,7 +18,8 @@ using namespace std;
 class Cage {
   public:
     /** @brief Constructor
-      * Menciptakan cage default yaitu dengan habitat darat.
+      * Menciptakan cage default sesuai tipe habitat.
+      * Secara default, cage diciptakan sebagai cage darat.
       */
     explicit Cage(int _type = LAND);
     /** @brief Menambahkan point P menjadi area dalam cage.
