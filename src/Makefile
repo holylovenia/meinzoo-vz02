@@ -7,7 +7,7 @@ SUBDIRS = animal infrastructure misc
 .PHONY: subdirs $(SUBDIRS) all clean
 
 all: subdirs $(OBJS)
-	$(CC) $(OPTIONS) $(OBJS) -o ../zoo.exe
+	$(CC) $(OPTIONS) $(OBJS) -o ../zoo
 
 subdirs: $(SUBDIRS)
 
