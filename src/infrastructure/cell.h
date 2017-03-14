@@ -4,7 +4,7 @@
 #include <string>
 
 /** @class Cell
-  * Kelas Cell yang mendefinisikan aksesibilitas suatu cell.
+  * Kelas Cell mendefinisikan aksesibilitas suatu cell.
   */
 class Cell {
   public:

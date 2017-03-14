@@ -25,11 +25,17 @@ class Person {
       * @param y Nilai posisi ordinat.
       */
     void SetPosition(int x, int y);
-    /** @brief
-      * 
+    /** @brief Mengembalikan character untuk proses render.
+      * @return Karakter untuk dirender.
       */
     char Render() const;
+    /** @brief Menggerakkan person dengan mengubah posisi.
+      * @param movement Nilai menentukan arah gerak animal.
+      */
     void Move(int movement);
+    /** @brief Mengembalikan nilai posisi menjadi default.
+      * Mengubah posisi person menjadi (-1,-1)
+      */
     void ResetPosition();
 
   private:

@@ -2,7 +2,7 @@
 #define ANIMALFOOD_H
 
 /** @class AnimalFood
-  * Kelas AnimalFood yang menghitung jumlah makanan hewan yang diperlukan.
+  * Kelas AnimalFood menghitung jumlah makanan hewan yang diperlukan.
   */
 class AnimalFood {
 	public:

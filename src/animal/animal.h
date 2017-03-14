@@ -7,13 +7,14 @@
 #include "animalfood.h"
 #include "../misc/point.h"
 
-/** @class WildColibri
-  * Kelas WildColibri yang mendefinisikan hewan wild colibri.
+/** @class Animal
+  * Kelas Animal sebagai kelas rill untuk semua animal.
   */
 class Animal {
   public :
     /** @brief Constructor
       * Menciptakan wild colibri dengan posisi (x,y) dan berat _weight.
+      * @param _ID Identifier suatu spesies hewan
       * @param _x Nilai posisi absis.
       * @param _y Nilai posisi ordinat.
       * @param _weight Nilai berat untuk wild colibri.
