@@ -428,7 +428,12 @@ void Animal::RemoveEnemy(int x) {
   enemy.erase(x);
 }
 bool Animal::IsEnemy(int x) {
-  return false;
+  if (!is_wild) {
+    return false;
+  }
+  else {
+    return(enemy.find(x) != enemy.end());
+  }
 }
 int Animal::GetID() {
   return ID;

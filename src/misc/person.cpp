@@ -17,13 +17,13 @@ char Person::Render() {
   return '?';
 }
 void Person::Move(int movement) {
-  if (movement == 1) { // Move up
+  if (movement == 1) {
     position.SetY(position.GetY()-1);
-  } else if (movement == 2) { // Move right
+  } else if (movement == 2) {
     position.SetX(position.GetX()+1);
-  } else if (movement == 3) { // Move down
+  } else if (movement == 3) {
     position.SetY(position.GetY()+1);
-  } else { // Move left
+  } else {
     position.SetX(position.GetX()-1);
   }
 }
