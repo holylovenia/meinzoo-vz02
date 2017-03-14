@@ -5,3 +5,6 @@
 # to native line endings on checkout.
 *.cpp text
 *.h text
+
+*.exe binary
+*.o binary

@@ -1,0 +1,21 @@
+Running main() from gtest_main.cc
+[==========] Running 6 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 6 tests from CellTest
+[ RUN      ] CellTest.Park
+[       OK ] CellTest.Park (0 ms)
+[ RUN      ] CellTest.Restaurant
+[       OK ] CellTest.Restaurant (0 ms)
+[ RUN      ] CellTest.Road
+[       OK ] CellTest.Road (0 ms)
+[ RUN      ] CellTest.AirHabitat
+[       OK ] CellTest.AirHabitat (0 ms)
+[ RUN      ] CellTest.LandHabitat
+[       OK ] CellTest.LandHabitat (0 ms)
+[ RUN      ] CellTest.WaterHabitat
+[       OK ] CellTest.WaterHabitat (0 ms)
+[----------] 6 tests from CellTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 6 tests.
