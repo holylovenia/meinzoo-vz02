@@ -13,7 +13,7 @@ void Person::SetPosition(int x, int y) {
   position.SetX(x);
   position.SetY(y);
 }
-char Person::Render() {
+char Person::Render() const {
   return '?';
 }
 void Person::Move(int movement) {

@@ -19,10 +19,10 @@ class Cell {
       * @param _entrance Nilai true/false cell merupakan entrance.
       * @param _exit Nilai true/false cell merupakan exit.
       */
-    Cell(bool _accessible, std::string _type,
-                           std::string _name,
-                           bool _entrance,
-                           bool _exit);
+    Cell(bool _accessible = false, std::string _type = "",
+                                   std::string _name = "",
+                                   bool _entrance = false,
+                                   bool _exit = false);
     /** @brief Copy Constructor
       * Menciptakan cell yang sama dengan cell yang sudah ada.
       * @param C Objek cell yang telah diciptakan.
@@ -51,7 +51,7 @@ class Cell {
     /** @brief Mengembalikan character untuk proses render.
       * @return Karakter untuk dirender.
       */
-    char Render();
+    char Render() const;
 
   protected:
     bool is_accessible;

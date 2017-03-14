@@ -56,11 +56,10 @@ void Driver::ConsumedFood() {
   int total_meat = 0, total_plant = 0;
   vector<Cage> cages = zoo.GetCages();
   for (auto &c: cages) {
-    vector<Animal*> animal = c.GetAnimal();
+    vector<Animal> animal = c.GetAnimal();
     for (auto &a: animal) {
-      AnimalDiet* d = dynamic_cast<AnimalDiet*>(a);
-      total_meat += d->GetReqMeat();
-      total_plant += d->GetReqPlant();
+      total_meat += a.GetReqMeat();
+      total_plant += a.GetReqPlant();
     }
   }
 
@@ -83,28 +82,30 @@ void Driver::InitZoo() {
     for (int j = 0; j < LENGTH; ++j) {
       switch (instr[j]) {
         case 'w':
-          zoo.SetTile(new WaterHabitat(),i,j); break;
+          zoo.SetTile(new Cell(false,"WaterHabitat","",false,false),i,j); break;
         case 'l':
-          zoo.SetTile(new LandHabitat(),i,j); break;
+          zoo.SetTile(new Cell(false,"LandHabitat","",false,false),i,j); break;
         case 'a':
-          zoo.SetTile(new AirHabitat(),i,j); break;
+          zoo.SetTile(new Cell(false,"AirHabitat","",false,false),i,j); break;
         case '.':
-          zoo.SetTile(new Road(true),i,j); break;
+          zoo.SetTile(new Cell(true,"Road","",false,false),i,j); break;
         case '>':
-          zoo.SetTile(new RoadEntrance(true),i,j); break;
+          zoo.SetTile(new Cell(true,"Road","",true,false),i,j); break;
         case '<':
-          zoo.SetTile(new RoadExit(true),i,j); break;
+          zoo.SetTile(new Cell(true,"Road","",false,true),i,j); break;
         case '*':
-          zoo.SetTile(new Park(false,""),i,j); break;
+          zoo.SetTile(new Cell(false,"Park","",false,false),i,j); break;
         case 'R':
-          zoo.SetTile(new Restaurant(false,""),i,j); break;
+          zoo.SetTile(new Cell(false,"Restaurant","",false,false),i,j); break;
+        default:
+          zoo.SetTile(new Cell(false,"","",false,false),i,j); break;
       }
     }
   }
 
   // Initialize cage
   while (instr != "######") {
-    Cage* c = new Cage(LAND);
+    Cage* c = new Cage();
     getline(inf,instr);
     while (instr[0] != '-') {
       int x, y;
@@ -120,49 +121,49 @@ void Driver::InitZoo() {
       istringstream(instr) >> species >> y >> x >> w;
       Animal* a = NULL;
       if (species == "Wolf") {
-        a = new Wolf(x,y,w);
+        a = new Animal(1,x,y,w);
       } else if (species == "Lion") {
-        a = new Lion(x,y,w);
+        a = new Animal(2,x,y,w);
       } else if (species == "Tiger") {
-        a = new Tiger(x,y,w);
+        a = new Animal(3,x,y,w);
       } else if (species == "Zebra") {
-        a = new Zebra(x,y,w);
+        a = new Animal(4,x,y,w);
       } else if (species == "Monkey") {
-        a = new Monkey(x,y,w);
+        a = new Animal(5,x,y,w);
       } else if (species == "Giraffe") {
-        a = new Giraffe(x,y,w);
+        a = new Animal(6,x,y,w);
       } else if (species == "Elephant") {
-        a = new Elephant(x,y,w);
+        a = new Animal(7,x,y,w);
       } else if (species == "Crocodile") {
-        a = new Crocodile(x,y,w);
+        a = new Animal(8,x,y,w);
       } else if (species == "Python") {
-        a = new Python(x,y,w);
+        a = new Animal(9,x,y,w);
       } else if (species == "Komodo") {
-        a = new Komodo(x,y,w);
+        a = new Animal(10,x,y,w);
       } else if (species == "Iguana") {
-        a = new Iguana(x,y,w);
+        a = new Animal(11,x,y,w);
       } else if (species == "Chameleon") {
-        a = new Chameleon(x,y,w);
+        a = new Animal(12,x,y,w);
       } else if (species == "Shark") {
-        a = new Shark(x,y,w);
+        a = new Animal(13,x,y,w);
       } else if (species == "Clownfish") {
-        a = new Clownfish(x,y,w);
+        a = new Animal(14,x,y,w);
       } else if (species == "Barracuda") {
-        a = new Barracuda(x,y,w);
+        a = new Animal(15,x,y,w);
       } else if (species == "Owl") {
-        a = new Owl(x,y,w);
+        a = new Animal(16,x,y,w);
       } else if (species == "Eagle") {
-        a = new Eagle(x,y,w);
+        a = new Animal(17,x,y,w);
       } else if (species == "Colibri") {
-        a = new Colibri(x,y,w);
+        a = new Animal(18,x,y,w);
       } else if (species == "Peacock") {
-        a = new Peacock(x,y,w);
+        a = new Animal(19,x,y,w);
       } else if (species == "Duck") {
-        a = new Duck(x,y,w);
+        a = new Animal(20,x,y,w);
       } else if (species == "WildColibri") {
-        wild.push(new WildColibri(x,y,w));
+        wild.push(new Animal(21,x,y,w));
       } else {
-        wild.push(new WildBunny(x,y,w));
+        wild.push(new Animal(0,x,y,w));
       }
       if (a != NULL)
         c->AddAnimal(*a);
@@ -182,7 +183,7 @@ void Driver::Tour() {
   bool visited[WIDTH][LENGTH];
   for (int i = 0; i < WIDTH; ++i) {
     for (int j = 0; j < LENGTH; ++j) {
-      visited[i][j] = !(zoo.GetMap()[i][j]->IsAccessible());
+      visited[i][j] = !(zoo.GetMap()[i][j].IsAccessible());
     }
   }
   zoo.ListAllEntranceExit();
@@ -210,7 +211,7 @@ void Driver::Tour() {
       if (adjacent) {
         cout << '\n';
         for (int j = 0; j < it.GetAnimal().size(); ++j) {
-          it.GetAnimal()[j]->Interact();
+          it.GetAnimal()[j].Interact();
         }
       }
     }

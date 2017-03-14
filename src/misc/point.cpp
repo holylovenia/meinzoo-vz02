@@ -28,3 +28,15 @@ bool Point::operator<(const Point& p) const {
   else
     return false;
 }
+Point Point::Up() {
+  return Point(x,y+1);
+}
+Point Point::Down() {
+  return Point(x,y-1);
+}
+Point Point::Left() {
+  return Point(x-1,y);
+}
+Point Point::Right() {
+  return Point(x+1,y);
+}

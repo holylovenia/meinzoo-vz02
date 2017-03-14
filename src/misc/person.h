@@ -28,7 +28,7 @@ class Person {
     /** @brief
       * 
       */
-    char Render();
+    char Render() const;
     void Move(int movement);
     void ResetPosition();
 

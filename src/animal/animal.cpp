@@ -307,7 +307,7 @@ Animal::Animal(int _ID, int _x, int _y, int _weight) {
   }
 }
 
-void Animal::Interact(int ID) {
+void Animal::Interact() {
   if (ID == 0) {
     std::cout << "The wild bunny is looking at you ";
     std::cout << "with murderous intent" << std::endl;

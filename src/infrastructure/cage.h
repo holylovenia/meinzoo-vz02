@@ -20,7 +20,7 @@ class Cage {
     /** @brief Constructor
       * Menciptakan cage default yaitu dengan habitat darat.
       */
-    Cage(int _type = LAND);
+    explicit Cage(int _type = LAND);
     /** @brief Menambahkan point P menjadi area dalam cage.
       * @param p Nilai point yang akan ditambahkan.
       */

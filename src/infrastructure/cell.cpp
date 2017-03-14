@@ -44,9 +44,25 @@ std::string Cell::GetType() const {
 std::string GetName() const {
   return name;
 }
-bool IsEntrance() const {
+bool Cell::IsEntrance() const {
   return is_entrance;
 }
-bool IsExit() const {
+bool Cell::IsExit() const {
   return is_exit;
+}
+char Cell::Render() const {
+  if (type == "AirHabitat")
+    return 'a';
+  else if (type == "LandHabitat")
+    return 'l';
+  else if (type == "WaterHabitat")
+    return 'w';
+  else if (type == "Road")
+    return '.'
+  else if (type == "Park")
+    return '*';
+  else if (type == "Restaurant")
+    return 'R';
+  else
+    return ' ';
 }

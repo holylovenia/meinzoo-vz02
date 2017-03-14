@@ -22,7 +22,7 @@ class Animal {
     /** @brief Menampilkan interaksi dengan wild colibri.
       * Menuliskan interaksi ke layar.
       */
-    void Interact(int ID);
+    void Interact();
     /** @brief Menggerakkan wild colibri dengan mengubah posisi.
       * @param movement Nilai menentukan arah gerak wild colibri.
       */

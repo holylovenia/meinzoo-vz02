@@ -5,13 +5,13 @@
 #include "zoo.h"
 
 Zoo::Zoo() {
-  map = new Cell**[WIDTH];
+  map = new Cell*[WIDTH];
   map_char = new char*[WIDTH];
   for (int i = 0; i < WIDTH; ++i) {
-    map[i] = new Cell*[LENGTH];
+    map[i] = new Cell[LENGTH];
     map_char[i] = new char[LENGTH];
     for (int j = 0; j < LENGTH; ++j) {
-      map[i][j] = NULL;
+      //Cell map[i][j](true,"Road","",false,false);
       map_char[i][j] = ' ';
     }
   }
@@ -24,11 +24,11 @@ Zoo::~Zoo() {
   delete [] map;
   delete [] map_char;
 }
-void Zoo::SetTile(Cell* c, int i, int j) {
+void Zoo::SetTile(const Cell& c, int i, int j) {
   map[i][j] = c;
 }
 Cell& Zoo::GetTile(int i, int j) {
-  return *map[i][j];
+  return map[i][j];
 }
 void Zoo::InsertCage(const Cage& c) {
   cages.push_back(c);
@@ -40,10 +40,10 @@ Cage Zoo::RemoveCage(int i) {
     return c;
   }
 }
-void Zoo::Render(Person& visitor) {
+void Zoo::Render(const Person& visitor) {
   for (int i = 0; i < WIDTH; ++i) {
     for (int j = 0; j < LENGTH; ++j) {
-      map_char[i][j] = map[i][j]->Render();
+      map_char[i][j] = map[i][j].Render();
     }
   }
   for (int i = 0; i < cages.size(); ++i) {
@@ -53,8 +53,8 @@ void Zoo::Render(Person& visitor) {
   }
   for (int i = 0; i < cages.size(); ++i) {
     for (auto &it: cages[i].GetAnimal()) {
-      Point loc = it->GetPosition();
-      map_char[loc.GetY()][loc.GetX()] = it->Render();
+      Point loc = it.GetPosition();
+      map_char[loc.GetY()][loc.GetX()] = it.Render();
     }
   }
   Point loc = visitor.GetPosition();
@@ -72,17 +72,15 @@ void Zoo::Print(int ux, int uy, int lx, int ly) {
 void Zoo::ListAllEntranceExit() {
   for (int i = 0; i < WIDTH; ++i) {
     for (int j = 0; j < LENGTH; ++j) {
-      if (Road* r = dynamic_cast<Road*>(map[i][j])) {
-        if (r->IsEntrance()) {
-          entrance.insert(Point(j,i));
-        } else if (r->IsExit()) {
-          exit.insert(Point(j,i));
-        }
+      if (map[i][j].IsEntrance()) {
+        entrance.insert(Point(j,i));
+      } else if (map[i][j].IsExit()) {
+        exit.insert(Point(j,i));
       }
     }
   }
 }
-Cell*** Zoo::GetMap() {
+Cell** Zoo::GetMap() {
   return map;
 }
 set<Point>& Zoo::GetEntrance() {
