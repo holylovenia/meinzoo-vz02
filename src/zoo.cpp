@@ -5,13 +5,13 @@
 #include "zoo.h"
 
 Zoo::Zoo() {
-  map = new Cell*[WIDTH];
+  map = new Cell**[WIDTH];
   map_char = new char*[WIDTH];
   for (int i = 0; i < WIDTH; ++i) {
-    map[i] = new Cell[LENGTH];
+    map[i] = new Cell*[LENGTH];
     map_char[i] = new char[LENGTH];
     for (int j = 0; j < LENGTH; ++j) {
-      //Cell map[i][j](true,"Road","",false,false);
+      map[i][j] = NULL;
       map_char[i][j] = ' ';
     }
   }
@@ -24,11 +24,11 @@ Zoo::~Zoo() {
   delete [] map;
   delete [] map_char;
 }
-void Zoo::SetTile(const Cell& c, int i, int j) {
+void Zoo::SetTile(Cell* c, int i, int j) {
   map[i][j] = c;
 }
 Cell& Zoo::GetTile(int i, int j) {
-  return map[i][j];
+  return *map[i][j];
 }
 void Zoo::InsertCage(const Cage& c) {
   cages.push_back(c);
@@ -43,7 +43,7 @@ Cage Zoo::RemoveCage(int i) {
 void Zoo::Render(const Person& visitor) {
   for (int i = 0; i < WIDTH; ++i) {
     for (int j = 0; j < LENGTH; ++j) {
-      map_char[i][j] = map[i][j].Render();
+      map_char[i][j] = map[i][j]->Render();
     }
   }
   for (int i = 0; i < cages.size(); ++i) {
@@ -72,15 +72,15 @@ void Zoo::Print(int ux, int uy, int lx, int ly) {
 void Zoo::ListAllEntranceExit() {
   for (int i = 0; i < WIDTH; ++i) {
     for (int j = 0; j < LENGTH; ++j) {
-      if (map[i][j].IsEntrance()) {
+      if (map[i][j]->IsEntrance()) {
         entrance.insert(Point(j,i));
-      } else if (map[i][j].IsExit()) {
+      } else if (map[i][j]->IsExit()) {
         exit.insert(Point(j,i));
       }
     }
   }
 }
-Cell** Zoo::GetMap() {
+Cell*** Zoo::GetMap() {
   return map;
 }
 set<Point>& Zoo::GetEntrance() {

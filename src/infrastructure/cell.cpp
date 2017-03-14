@@ -41,7 +41,7 @@ bool Cell::IsAccessible() const {
 std::string Cell::GetType() const {
   return type;
 }
-std::string GetName() const {
+std::string Cell::GetName() const {
   return name;
 }
 bool Cell::IsEntrance() const {
@@ -58,7 +58,7 @@ char Cell::Render() const {
   else if (type == "WaterHabitat")
     return 'w';
   else if (type == "Road")
-    return '.'
+    return '.';
   else if (type == "Park")
     return '*';
   else if (type == "Restaurant")

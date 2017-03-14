@@ -16,20 +16,20 @@ class Zoo {
   public:
     Zoo();
     ~Zoo();
-    void SetTile(const Cell& c, int i, int j);
+    void SetTile(Cell* c, int i, int j);
     Cell& GetTile(int i, int j);
     void InsertCage(const Cage& c);
     Cage RemoveCage(int i);
     void Render(const Person& visitor);
     void Print(int ux = 0, int uy = 0, int lx = LENGTH - 1, int ly = WIDTH - 1);
     void ListAllEntranceExit();
-    Cell** GetMap();
+    Cell*** GetMap();
     set<Point>& GetEntrance();
     set<Point>& GetExit();
     vector<Cage>& GetCages();
 
   private:
-    Cell** map;
+    Cell*** map;
     char** map_char;
     vector<Cage> cages;
     set<Point> entrance;

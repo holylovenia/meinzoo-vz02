@@ -6,7 +6,7 @@ int AnimalFood::total_req_plant = 0;
 void AnimalFood::AddTotalMeat(int req_meat) {
 	total_req_meat += req_meat;
 }
-void AnimalFood::AddTotalMeat(int req_plant) {
+void AnimalFood::AddTotalPlant(int req_plant) {
 	total_req_plant += req_plant;
 }
 int AnimalFood::GetTotalMeat() {

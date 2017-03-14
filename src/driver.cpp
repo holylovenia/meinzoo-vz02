@@ -7,7 +7,7 @@
 #include <string>
 #include "driver.h"
 
-const string fname = "bin/layout.in";
+const string fname = "layout.in";
 
 Driver::Driver() {
   InitZoo();
@@ -183,7 +183,7 @@ void Driver::Tour() {
   bool visited[WIDTH][LENGTH];
   for (int i = 0; i < WIDTH; ++i) {
     for (int j = 0; j < LENGTH; ++j) {
-      visited[i][j] = !(zoo.GetMap()[i][j].IsAccessible());
+      visited[i][j] = !(zoo.GetMap()[i][j]->IsAccessible());
     }
   }
   zoo.ListAllEntranceExit();
