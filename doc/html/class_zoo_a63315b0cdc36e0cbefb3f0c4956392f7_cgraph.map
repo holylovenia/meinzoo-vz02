@@ -1,0 +1,7 @@
+<map id="Zoo::Render" name="Zoo::Render">
+<area shape="rect" id="node2" href="$class_cell.html#a895618150a1046638c30f24c23807727" title="Mengembalikan character untuk proses render. " alt="" coords="168,5,261,32"/>
+<area shape="rect" id="node3" href="$class_point.html#a28eaaae3447a8d5485a690196eb6d8da" title="Getter nilai ordinat. " alt="" coords="169,56,260,83"/>
+<area shape="rect" id="node4" href="$class_point.html#a1df5f9a8e3606705ebeec25384f58f8b" title="Getter nilai absis. " alt="" coords="171,107,259,133"/>
+<area shape="rect" id="node5" href="$class_person.html#a011a8222d921f3a5d2acfb29904104ee" title="Getter nilai position. " alt="" coords="145,157,284,184"/>
+<area shape="rect" id="node6" href="$class_person.html#ae0eaa14a3a6e8008ccd681f237acd804" title="Mengembalikan character untuk proses render. " alt="" coords="159,208,271,235"/>
+</map>

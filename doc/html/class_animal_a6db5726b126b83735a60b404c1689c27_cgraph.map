@@ -1,0 +1,7 @@
+<map id="Animal::Animal" name="Animal::Animal">
+<area shape="rect" id="node2" href="$class_point.html#a919355c70ffb8d6a97fabfbff301d541" title="Menetapkan nilai absis Mengganti nilai absis menjadi _x. " alt="" coords="211,5,297,32"/>
+<area shape="rect" id="node3" href="$class_point.html#a5f7931b69b7e2c34ec7dfab9ca82019c" title="Menetapkan nilai ordinat Mengganti nilai ordinat menjadi _y. " alt="" coords="209,56,299,83"/>
+<area shape="rect" id="node4" href="$class_animal_food.html#a409b9a8bcd8596e5156552fdd5ed85b9" title="Menambahkan jumlah tumbuhan yang dibutuhkan ke total_req_plant. " alt="" coords="164,107,344,133"/>
+<area shape="rect" id="node5" href="$class_animal.html#af798a4e38f7d29b5500a1d7b014dc103" title="Menambah musuh Animal. Menambahkan Animal dengan ID x dari set. " alt="" coords="187,157,321,184"/>
+<area shape="rect" id="node6" href="$class_animal_food.html#a7823aec7163b9b7f9af70cbb1a01c09a" title="Menambahkan jumlah daging yang dibutuhken ke total_req_meat. " alt="" coords="165,208,343,235"/>
+</map>

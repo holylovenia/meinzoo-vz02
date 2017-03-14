@@ -1,0 +1,9 @@
+<map id="Point::SetY" name="Point::SetY">
+<area shape="rect" id="node2" href="$class_animal.html#a6db5726b126b83735a60b404c1689c27" title="Constructor Menciptakan Animal dengan ID sesuai spesies yang diinginkan, posisi (x,y) dan berat _weight. " alt="" coords="157,5,267,32"/>
+<area shape="rect" id="node3" href="$class_animal.html#a01e450f2b24c367f1d9087450dea6860" title="Menggerakkan animal dengan mengubah posisi. " alt="" coords="162,56,262,83"/>
+<area shape="rect" id="node4" href="$class_animal.html#a4b2dc6670754b42ae20f562a1567673e" title="Menentukan lokasi Animal. Mengubah lokasi Animal menjadi di posisi (_x,_y). " alt="" coords="143,107,281,133"/>
+<area shape="rect" id="node5" href="$class_person.html#a7c5cf07ba41864e8e82b361f8613d3ad" title="Menetapkan nilai position berdasarkan x dan y. " alt="" coords="143,157,281,184"/>
+<area shape="rect" id="node6" href="$class_person.html#a0dcce299b3914e4b3af67a65d7837b0b" title="Menggerakkan person dengan mengubah posisi. " alt="" coords="161,208,263,235"/>
+<area shape="rect" id="node7" href="$class_driver.html#ad9677d7807a61f0a169268f3a30b40fc" title="Menghitung jumlah makanan yang dibutuhkan. Menghitung dan menampilkan jumlah makanan yang dikonsumsi ..." alt="" coords="329,208,483,235"/>
+<area shape="rect" id="node8" href="$class_driver.html#af0658d103e3e810a8e9ef0a53bb2e261" title="Constructor Menciptakan driver yang berisi menu utama. " alt="" coords="531,208,625,235"/>
+</map>

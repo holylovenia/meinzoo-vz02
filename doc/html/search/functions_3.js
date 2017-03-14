@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['getanimal',['GetAnimal',['../class_cage.html#a822ee042b069c1ac9fde30a1c78db92c',1,'Cage']]],
+  ['getarea',['GetArea',['../class_cage.html#a63330aec2bd1808cf0ce8465efd6d727',1,'Cage']]],
+  ['getbehavior',['GetBehavior',['../class_animal.html#aa90fda50322c8bea43b45b60e1d40ede',1,'Animal']]],
+  ['getcages',['GetCages',['../class_zoo.html#a39e3e3a3ef00b301387a3244c83f5649',1,'Zoo']]],
+  ['getentrance',['GetEntrance',['../class_zoo.html#ae76f5003de892d1c3e389ee9726c6aaf',1,'Zoo']]],
+  ['getexit',['GetExit',['../class_zoo.html#a96521c1ca8b1c2b9c1348894f37bd5ba',1,'Zoo']]],
+  ['getid',['GetID',['../class_animal.html#abfb32d0af74791999af1e7cebcff575d',1,'Animal']]],
+  ['getmap',['GetMap',['../class_zoo.html#ae3a73ce4c9dc8d6b53e37861371aa540',1,'Zoo']]],
+  ['getname',['GetName',['../class_cell.html#a48443f301f23996fa48477c9dcc30f59',1,'Cell']]],
+  ['getposition',['GetPosition',['../class_animal.html#a6de753c081823cc1a00ad0904da67b91',1,'Animal::GetPosition()'],['../class_person.html#a011a8222d921f3a5d2acfb29904104ee',1,'Person::GetPosition()']]],
+  ['getreqmeat',['GetReqMeat',['../class_animal.html#a037e1ebe473c2a9f7f7378299c991852',1,'Animal']]],
+  ['getreqplant',['GetReqPlant',['../class_animal.html#abeacea31b23d9e0219be99623380c388',1,'Animal']]],
+  ['gettile',['GetTile',['../class_zoo.html#a336845d18512ecec4dce1b5797df3765',1,'Zoo']]],
+  ['gettotalmeat',['GetTotalMeat',['../class_animal_food.html#a915360911ab5945b8838eedf0823285d',1,'AnimalFood']]],
+  ['gettotalplant',['GetTotalPlant',['../class_animal_food.html#acc5fd01e00c876f21bf4c0afd8b507ea',1,'AnimalFood']]],
+  ['gettype',['GetType',['../class_cell.html#ac82be920238aeb69d4f0ae58a4ee0096',1,'Cell']]],
+  ['getx',['GetX',['../class_animal.html#ab997c26aef0bc729d7b1be6a90b68450',1,'Animal::GetX()'],['../class_point.html#a1df5f9a8e3606705ebeec25384f58f8b',1,'Point::GetX()']]],
+  ['gety',['GetY',['../class_animal.html#a3a6ab41928f4a6a59f501422e522cc14',1,'Animal::GetY()'],['../class_point.html#a28eaaae3447a8d5485a690196eb6d8da',1,'Point::GetY()']]]
+];

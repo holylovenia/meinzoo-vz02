@@ -1,0 +1,9 @@
+<map id="Point::GetX" name="Point::GetX">
+<area shape="rect" id="node2" href="$class_animal.html#a01e450f2b24c367f1d9087450dea6860" title="Menggerakkan animal dengan mengubah posisi. " alt="" coords="142,5,242,32"/>
+<area shape="rect" id="node3" href="$class_animal.html#ab997c26aef0bc729d7b1be6a90b68450" title="Getter nilai absis. " alt="" coords="143,56,241,83"/>
+<area shape="rect" id="node4" href="$class_person.html#a0dcce299b3914e4b3af67a65d7837b0b" title="Menggerakkan person dengan mengubah posisi. " alt="" coords="141,107,243,133"/>
+<area shape="rect" id="node7" href="$class_zoo.html#a63315b0cdc36e0cbefb3f0c4956392f7" title="Melakukan proses render untuk seisi zoo. " alt="" coords="146,157,238,184"/>
+<area shape="rect" id="node5" href="$class_driver.html#ad9677d7807a61f0a169268f3a30b40fc" title="Menghitung jumlah makanan yang dibutuhkan. Menghitung dan menampilkan jumlah makanan yang dikonsumsi ..." alt="" coords="291,107,444,133"/>
+<area shape="rect" id="node6" href="$class_driver.html#af0658d103e3e810a8e9ef0a53bb2e261" title="Constructor Menciptakan driver yang berisi menu utama. " alt="" coords="492,132,587,159"/>
+<area shape="rect" id="node8" href="$class_driver.html#aa8b4e139b99aad4720ce86286783dcdb" title="Menampilkan area tertentu dalam zoo. Menampilkan area dalam zoo sesuai permintaan user..." alt="" coords="304,157,431,184"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Animal::Move" name="Animal::Move">
+<area shape="rect" id="node2" href="$class_point.html#a5f7931b69b7e2c34ec7dfab9ca82019c" title="Menetapkan nilai ordinat Mengganti nilai ordinat menjadi _y. " alt="" coords="154,5,243,32"/>
+<area shape="rect" id="node3" href="$class_point.html#a28eaaae3447a8d5485a690196eb6d8da" title="Getter nilai ordinat. " alt="" coords="153,56,244,83"/>
+<area shape="rect" id="node4" href="$class_point.html#a919355c70ffb8d6a97fabfbff301d541" title="Menetapkan nilai absis Mengganti nilai absis menjadi _x. " alt="" coords="155,107,242,133"/>
+<area shape="rect" id="node5" href="$class_point.html#a1df5f9a8e3606705ebeec25384f58f8b" title="Getter nilai absis. " alt="" coords="155,157,243,184"/>
+</map>

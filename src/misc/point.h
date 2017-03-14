@@ -37,7 +37,7 @@ class Point {
     /** @brief Operator<
       * Membandingkan Point dengan suatu Point lain P.
       * Perbandingan awal berdasarkan absis baru kemudian ordinat.
-      * @param P Object Point yang sudah diciptakan.
+      * @param p Object Point yang sudah diciptakan.
       */
     bool operator<(const Point& p) const;
     /** @brief Menggeser point satu petak ke atas

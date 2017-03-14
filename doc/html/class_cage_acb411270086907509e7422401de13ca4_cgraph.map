@@ -1,0 +1,4 @@
+<map id="Cage::AddAnimal" name="Cage::AddAnimal">
+<area shape="rect" id="node2" href="$class_animal.html#aa90fda50322c8bea43b45b60e1d40ede" title="Getter nilai is_wild. " alt="" coords="176,5,316,32"/>
+<area shape="rect" id="node3" href="$class_animal.html#a72c2b5893bb874a791d3f9ac6caf2a0d" title="Mengecek status Animal. Memeriksa apakah Animal dengan ID x merupakan musuh. " alt="" coords="185,56,307,83"/>
+</map>
