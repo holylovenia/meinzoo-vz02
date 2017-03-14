@@ -271,59 +271,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "infrastructure/cell.h",
-			"settings":
-			{
-				"buffer_size": 1510,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "#include \"cell.h\"\n\nCell::Cell(bool _accessible, std::string _type, \n                             std::string _name, \n                             bool _entrance, \n                             bool _exit) {\n  is_accessible = accessible;\n  type = _type;\n  name = _name;\n  is_entrance = _entrance;\n  is_exit = _exit;\n}\nCell::Cell(Cell& C) {\n  is_accessible = C.is_accessible;\n  type = C.type;\n  name = C.name;\n  is_entrance = C.is_entrance;\n  is_exit = C.is_exit;\n}\nbool Cell::IsAccessible() const {\n  return is_accessible;\n}",
-			"file": "infrastructure/cell.cpp",
-			"file_size": 608,
-			"file_write_time": 131339437990218174,
-			"settings":
-			{
-				"buffer_size": 522,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "infrastructure/habitat/air_habitat.h",
-			"settings":
-			{
-				"buffer_size": 390,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "infrastructure/facility/park.h",
-			"settings":
-			{
-				"buffer_size": 1181,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "infrastructure/facility/restaurant.h",
-			"settings":
-			{
-				"buffer_size": 1306,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "infrastructure/facility/road.cpp",
-			"settings":
-			{
-				"buffer_size": 341,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "Packages/User/C++11.sublime-build",
 	"build_system_choices":
@@ -476,10 +423,18 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 248.0,
-		"last_filter": "material the",
+		"height": 407.0,
+		"last_filter": "package control",
 		"selected_items":
 		[
+			[
+				"package control",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
 			[
 				"material the",
 				"Material Theme: Activate theme"
@@ -495,10 +450,6 @@
 			[
 				"material theme",
 				"Material Theme: Activate theme"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
 			],
 			[
 				"remove",
@@ -529,7 +480,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 382.0
+		"width": 465.0
 	},
 	"console":
 	{
@@ -552,11 +503,15 @@
 	"expanded_folders":
 	[
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure",
-		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure/facility"
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure"
 	],
 	"file_history":
 	[
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure/cell.cpp",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure/cell.h",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure/facility/park.h",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure/facility/restaurant.h",
+		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure/habitat/air_habitat.h",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/infrastructure/facility/road.h",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/aves/duck.h",
 		"/media/rionaldichandraseta/Win10/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo-vz02/src/animal/animalfood.h",
@@ -679,12 +634,7 @@
 		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/eagle.h",
 		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/duck.h",
 		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/colibri.h",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/aves.cpp",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/aves.h",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_KU/Stack of Generic Point/StackOfGPoint.h",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_KU/Stack of Generic Point/GPoint.h",
-		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_KU/Stack of Generic Point/StackOfGPoint.cpp",
-		"/C/Users/Rionaldi Chandraseta/AppData/Roaming/Sublime Text 3/Packages/User/C++11.sublime-build"
+		"/C/Users/Rionaldi Chandraseta/Dropbox/Works/IF_2/OOP_Tugas Besar I/meinzoo/src/animal/aves/aves.cpp"
 	],
 	"find":
 	{
@@ -705,6 +655,9 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"accessible",
+			"LandHabitat",
+			"WaterHabitat",
 			"diRender.",
 			"kelas render.",
 			"kelas Render.",
@@ -829,10 +782,7 @@
 			"300",
 			"return 5",
 			"+",
-			"j",
-			"-",
-			"safe",
-			"\"SAFE"
+			"j"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -878,191 +828,13 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "infrastructure/cell.h",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1510,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								774,
-								774
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		},
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 1,
-					"file": "infrastructure/cell.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 522,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								462,
-								462
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "infrastructure/habitat/air_habitat.h",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 390,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								255,
-								255
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "infrastructure/facility/park.h",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1181,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								168,
-								168
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": -0.0,
-						"translation.y": 570.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "infrastructure/facility/restaurant.h",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1306,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								147,
-								147
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 304.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "infrastructure/facility/road.cpp",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 341,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1150,7 +922,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
