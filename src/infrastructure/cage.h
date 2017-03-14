@@ -36,9 +36,8 @@ class Cage {
     void AddAnimal(Animal& A);
     /** @brief Menghilangkan animal ke-i dari cage.
       * @param i Indeks animal yang ingin dikurangi.
-      * @return Hewan yang telah dihilangkan.
       */
-    Animal* RemoveAnimal(int i);
+    void RemoveAnimal(int i);
     /** @brief Menggerakkan semua animal di dalam cage.
       * Akan dicek agar animal tidak keluar dari cage.
       */
@@ -46,16 +45,16 @@ class Cage {
     /** @brief Getter area cage.
       * @return Set of point yang menyatakan area cage.
       */
-    set<Point> GetArea();
+    set<Point>& GetArea();
     /** @brief Getter daftar animal.
       * @return Vector of pointer to Animal yang berisi hewan.
       */
-    vector<Animal*> GetAnimal();
+    vector<Animal>& GetAnimal();
 
   private:
     int type;
     set<Point> area;
-    vector<Animal*> animal;
+    vector<Animal> animal;
     int nb_animal;
 };
 
