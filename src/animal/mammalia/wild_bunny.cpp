@@ -79,7 +79,7 @@ void WildBunny::RemoveEnemy(int x) {
   enemy.erase(x);
 }
 bool WildBunny::IsEnemy(int x) {
-  return false;
+  return enemy.find(x) != enemy.end();
 }
 int WildBunny::GetID() {
   return ID;

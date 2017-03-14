@@ -79,7 +79,7 @@ void WildColibri::RemoveEnemy(int x) {
   enemy.erase(x);
 }
 bool WildColibri::IsEnemy(int x) {
-  return false;
+  return(enemy.find(x) != enemy.end());
 }
 int WildColibri::GetID() {
   return ID;
