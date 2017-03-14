@@ -1,6 +1,7 @@
 #include <cctype>
 #include <cstdlib>
 #include <ctime>
+#include <iostream>
 #include "zoo.h"
 
 Zoo::Zoo() {
@@ -29,13 +30,33 @@ void Zoo::SetTile(Cell* c, int i, int j) {
 Cell& Zoo::GetTile(int i, int j) {
   return *map[i][j];
 }
-void Zoo::InsertCage(const Cage& c) {
-  cages.push_back(c);
+void Zoo::InsertAirCage(const AirCage& c) {
+  air_cage.push_back(c);
 }
-Cage Zoo::RemoveCage(int i) {
-  if (i < cages.size()) {
-    Cage c = cages[i];
-    cages.erase(cages.begin() + i);
+void Zoo::InsertWaterCage(const WaterCage& c) {
+  water_cage.push_back(c);
+}
+void Zoo::InsertLandCage(const LandCage& c) {
+  land_cage.push_back(c);
+}
+AirCage Zoo::RemoveAirCage(int i) {
+  if (i < air_cage.size()) {
+    AirCage c = air_cage[i];
+    air_cage.erase(air_cage.begin() + i);
+    return c;
+  }
+}
+WaterCage Zoo::RemoveWaterCage(int i) {
+  if (i < water_cage.size()) {
+    WaterCage c = water_cage[i];
+    water_cage.erase(water_cage.begin() + i);
+    return c;
+  }
+}
+LandCage Zoo::RemoveLandCage(int i) {
+  if (i < land_cage.size()) {
+    LandCage c = land_cage[i];
+    land_cage.erase(land_cage.begin() + i);
     return c;
   }
 }
